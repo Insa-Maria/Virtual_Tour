@@ -1,3 +1,6 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,300);
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -42,13 +45,48 @@ a, a:hover, a:active, a:visited {
   overflow: hidden;
 }
 
+#gcuBar {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  right: 40px;
+  height: 130px;
+  width: 30%;
+
+}
+
+.mobile #gcuBar {
+  height: 50px;
+  right: 50px;
+}
+
+/* If there is a fullscreen button the title bar must make space for it */
+body.fullscreen-enabled #gcuBar{
+  right: 80px;
+}
+
+body.fullscreen-enabled.mobile #gcuBar {
+  right: 100px;
+}
+
+#gcuBar .icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  /* width: 100%;*/
+  height: 100%;
+}
+
 #titleBar {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 40px;
-  height: 40px;
-  text-align: center;
+  bottom: 10px;
+  left: 20px;
+  /* right: 40px; */
+  height: 80px;
+  width: 30%;
+  text-align: left;
+  /* background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8); */
 }
 
 .mobile #titleBar {
@@ -57,7 +95,7 @@ a, a:hover, a:active, a:visited {
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
-body.fullscreen-enabled #titleBar {
+body.fullscreen-enabled #titleBar{
   right: 80px;
 }
 
@@ -76,15 +114,16 @@ body.multiple-scenes.mobile #titleBar {
 
 #titleBar .sceneName {
   width: 100%;
-  height: 100%;
+  height: 50%;
+  font-size: 20px;
   line-height: 30px;
   padding: 5px;
-  background-color: rgb(58,68,84);
-  background-color: rgba(58,68,84,0.8);
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
@@ -95,21 +134,57 @@ body.multiple-scenes.mobile #titleBar {
   line-height: 40px;
 }
 
+#titleBar .gcuName {
+  width: 100%;
+  height: 50%;
+  font-size: 27px;
+  line-height: 30px;
+  padding: 5px;
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  text-decoration: underline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.mobile #titleBar .gcuName {
+  line-height: 40px;
+}
+
 #fullscreenToggle {
-  display: none;
+  /* display: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 55px;
+  right: 10px;
   width: 40px;
   height: 40px;
   padding: 5px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; */
+  position: absolute;
+  top: 105px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(88, 88, 88);
+  background-color: rgba(88, 88, 88, 0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .mobile #fullscreenToggle {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 body.fullscreen-enabled #fullscreenToggle {
@@ -118,14 +193,15 @@ body.fullscreen-enabled #fullscreenToggle {
 
 #fullscreenToggle .icon {
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   right: 5px;
   width: 30px;
   height: 30px;
+
 }
 
 .mobile #fullscreenToggle .icon {
-  top: 10px;
+  bottom: 10px;
   right: 10px;
 }
 
@@ -146,15 +222,28 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 #autorotateToggle {
-  display: block;
+  /* display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 100px;
+  right: 10px;
   width: 40px;
   height: 40px;
   padding: 5px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; */
+  position: absolute;
+  top: 57.5px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(88, 88, 88);
+  background-color: rgba(88, 88, 88, 0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .mobile #autorotateToggle {
@@ -164,7 +253,7 @@ body.fullscreen-enabled #fullscreenToggle {
 
 /* If there is a fullscreen button, autorotate must placed a bit to the left */
 body.fullscreen-enabled #autorotateToggle {
-  right: 40px;
+  right: 10px;
 }
 
 body.fullscreen-enabled.mobile #autorotateToggle {
@@ -173,14 +262,14 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 
 #autorotateToggle .icon {
   position: absolute;
-  top: 5px;
+  bottom: 5px;
   right: 5px;
   width: 30px;
   height: 30px;
 }
 
 .mobile #autorotateToggle .icon {
-  top: 10px;
+  bottom: 10px;
   right: 10px;
 }
 
@@ -201,14 +290,27 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneListToggle {
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute;
+  bottom: 670px;
+  right: 10px;
   width: 40px;
   height: 40px;
   padding: 5px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(88, 88, 88);
+  background-color: rgba(88, 88, 88, 0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px;
 }
 
 .mobile #sceneListToggle {
@@ -254,84 +356,356 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneList {
-  position: absolute;
-  top: 0;
-  left: -220px;
+  /* position: absolute;
+  top: 0px;
+  right: -220px;
   padding-top: 40px;
   width: 220px;
   max-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  margin-left: 0;
-  -webkit-transition: margin-left 0.5s ease-in-out;
-  transition: margin-left 0.5s ease-in-out;
+  margin-right: 0;
+  -webkit-transition: margin-right 0.5s ease-in-out;
+  transition: margin-right 0.5s ease-in-out; */
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  padding-top: 0px;
+  padding-left: 0px;
+  width: 300px;
+  height: 100%;
+  transition: all 500ms linear;
+  background-color: rgb(21, 23, 25);
+  background-color: rgba(21, 23, 25, 0.8);
+}
+
+#sceneList .toggle-btn{
+  position: absolute;
+  right: 300px;
+  top: 0px;
+}
+
+#sceneList .active{
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  padding-top: 0px;
+  padding-left: 10px;
+  width: 300px;
+  height: 100%;
+  transition: all 500ms linear;
 }
 
 .mobile #sceneList {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 #sceneList .scenes {
   width: 100%;
-  background-color: rgb(58,68,84);
-  background-color: rgba(58,68,84,0.8);
+  height: 100%;
+  padding-top: 20px;
+  background-color: rgb(36, 36, 36);
+  background-color: rgba(36, 36, 36, 0.8);
+  position: fixed;
+	display: flex;
+  align-items: flex-start;
+  display: block;
+  overflow-y: scroll;
 }
 
 .mobile #sceneList {
   width: 100%;
   height: 100%;
-  left: -100%;
+  right: -100%;
 }
 
 .mobile #sceneList.enabled {
-  margin-left: 100%;
+  margin-right: 100%;
 }
 
 .mobile #sceneList .scenes {
   height: 100%;
+  background-color: rgba(103,115,131,0.8);
+  width: 100%;
+  color: #FFF;
+  display: block;
+
 }
 
 #sceneList.enabled {
-  margin-left: 220px;
+  margin-right: 300px;
 }
 
-#sceneList .scene {
+ul h1 {
+  height: 40px;
+  position: relative;
+  padding-left: 40px;
+  font-size: 20px;
+  font-stretch: narrower;
+
+}
+
+/*
+ul h1 .scene:hover {
+  text-shadow: 0px 0px 10px #fff;
+ }
+
+ ul h1 .scene.current {
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+}
+ */
+
+ i {
+  margin-right: 10px;
+ }
+
+ul label {
+  height: 40px;
+  /* padding-top: 15px;	
+  margin-left: 20px; */
   display: block;
+  font-size: 16px;
+  overflow: auto;
+}
+ ul label:hover{
+  text-shadow: 0px 0px 10px #fff;
+ }
+
+label.title {
+	background: linear-gradient(#2f2f2f, #585858);
+	padding: 10px 15px;
+	cursor: pointer;
+  transition: all .25s;
+}
+
+ul li{
+	height: 40px;
+  transition: all .3s;
+  overflow: hidden;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input:checked + li {
+  height: 615px;
+  background-color: #585858;
+  overflow-y: scroll;
+}
+
+#map:checked + li {
+  height: 75px;
+  background-color: #585858;
+  overflow-y: scroll;
+}
+
+#outdoors:checked + li {
+  height: 500px;
+  background-color: #585858;
+  overflow-y: scroll;
+}
+
+#hamish:checked + li {
+  height: 615px;
+  background-color: #585858;
+  overflow-y: scroll;
+}
+
+#george:checked + li {
+  height: 615px;
+  background-color: #585858;
+  overflow-y: scroll;
+}
+
+#charles:checked + li {
+  height: 615px;
+  background-color: #585858;
+
+}
+
+#govan:checked + li {
+  height: 615px;
+  background-color: #585858;
+  overflow-y: scroll;
+}
+
+
+
+/* Accordion menu FINISH */
+
+
+#sceneList .scene {
+  height: 35px;
   width: 100%;
-  height: 30px;
+  display: block;
+  padding: 10px 35px;
+	transition: all .25s;
 }
 
 .mobile #sceneList .scene {
-  height: 40px;
+  display: block;
+  width: 100%;
+  height: 35px;
+  padding: 10px 35px;
+	transition: all .25s;
 }
+
+/* OFF due to accordion menu
 
 #sceneList .scene .text {
   width: 100%;
   height: 100%;
-  padding: 0 15px;
-  line-height: 30px;
+  padding: 5px 15px;
+  line-height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
+} 
 
 .mobile #sceneList .scene .text {
   line-height: 40px;
 }
 
+*/
+
 .no-touch #sceneList .scene:hover {
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color:  rgb(0, 61, 165);
+  background-color: rgba(0, 61, 165,0.8);
+  box-shadow: inset 5px 0px 0px 0px #fff;
 }
 
 #sceneList .scene.current {
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgb(71, 129, 230);
+  background-color: rgba(71, 129, 230, 0.4);
+  font-weight: 500;
 }
+
 
 /* Hide scene list when only a single scene exists */
 body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: none;
+}
+
+
+/* Style for sceneView */
+#sceneView {
+  position: absolute; 
+  bottom: 10px; 
+  left: 0; 
+  margin-left: 35%;
+  width: 30%;
+  height: 50px;
+  max-width: 30%; 
+  /* background-color: rgb(233, 69, 69);  */
+  -webkit-transition: margin-bottom 0.5s ease-in-out;
+  transition: margin-bottom 0.5s ease-in-out;
+}
+
+.mobile #sceneView {
+  margin-left: 25%;
+}
+
+.mobile #sceneView {
+  width: 100%;
+  height: 100%;
+  left: -100%;
+}
+
+.mobile #sceneView.enabled {
+  margin-bottom: 100%;
+}
+
+
+
+#sceneView.enabled {
+  margin-bottom: -50px;
+}
+
+
+/* Hide scene list when only a single scene exists */
+body.single-scene #sceneView, body.single-scene #sceneViewToggle {
+  display: none;
+}
+
+
+/* Style for bottom bar id=sceneViewToggle */
+#sceneViewToggle {
+  /* position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(0, 61, 165);
+  background-color: rgba(0, 61, 165,0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px; */
+  position: absolute;
+  bottom: -850px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color:rgba(71, 129, 230);
+  background-color: rgba(71, 129, 230, 0.8);
+  -moz-border-radius: 5px; 
+  -webkit-border-radius: 5px; 
+  border-radius: 5px;
+}
+
+.mobile #sceneViewToggle {
+  width: 50px;
+  height: 50px;
+}
+
+#sceneViewToggle .text {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  width: 100%;
+  line-height: 30px;
+}
+
+#sceneViewToggle .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.mobile #sceneViewToggle .icon {
+  top: 10px;
+  right: 10px;
+}
+
+#sceneViewToggle .icon.on {
+  display: none;
+}
+
+#sceneViewToggle .icon.off {
+  display: block;
+}
+
+#sceneViewToggle.enabled .icon.on {
+  display: block;
+}
+
+#sceneViewToggle.enabled .icon.off {
+  display: none;
+}
+
+#sceneControl {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  /* padding-top: 40px; */
+  width: -200px;
+  max-height: -800px;
+  background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8);
 }
 
 /* Link hotspot */
@@ -521,7 +895,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .desktop .info-hotspot.visible .info-hotspot-title-wrapper,
 .desktop.no-touch .info-hotspot .info-hotspot-header:hover .info-hotspot-title-wrapper {
-  width: 220px;
+  width: 260px;
   padding: 0 5px;
   -webkit-transition: width 0s 0.4s,
                       padding 0s 0.4s;
@@ -776,6 +1150,388 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   transition: opacity 0.3s ease-in-out 0.4s;
 }
 
+
+
+
+
+/* Video hotspot */
+
+.video-hotspot {
+  line-height: 1.2em;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s 0.2s;
+  transition: opacity 0.2s 0.2s;
+}
+
+.no-touch .video-hotspot:hover {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.video-hotspot.visible {
+  opacity: 1;
+}
+
+.video-hotspot .video-hotspot-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color:  rgb(45, 88, 163, 0.8);
+  cursor: pointer;
+  -webkit-transition: width 0.3s ease-in-out 0.5s,
+                      border-radius 0.3s ease-in-out 0.5s;
+  transition: width 0.3s ease-in-out 0.5s,
+              border-radius 0.3s ease-in-out 0.5s;
+}
+
+.mobile .video-hotspot .video-hotspot-header {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+
+.desktop.no-touch .video-hotspot .video-hotspot-header:hover {
+  width: 300px;
+  border-radius: 5px;
+  -webkit-transition: width 0.3s ease-in-out,
+                      border-radius 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out,
+              border-radius 0.3s ease-in-out;
+}
+
+.desktop .video-hotspot.visible .video-hotspot-header,
+.desktop.no-touch .video-hotspot.visible .video-hotspot-header:hover {
+  width: 300px;
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  -webkit-transition: width 0.3s ease-in-out,
+                      border-radius 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out,
+              border-radius 0.3s ease-in-out;
+}
+
+.video-hotspot .video-hotspot-icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.mobile .video-hotspot .video-hotspot-icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.video-hotspot .video-hotspot-icon {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.video-hotspot .video-hotspot-title-wrapper {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 0;
+  height: 50px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: width 0s 0.4s,
+                      padding 0s 0.4s;
+  transition: width 0s 0.4s,
+              padding 0s 0.4s;
+}
+
+.desktop .video-hotspot.visible .video-hotspot-title-wrapper,
+.desktop.no-touch .video-hotspot .video-hotspot-header:hover .video-hotspot-title-wrapper {
+  width: 300px;
+  padding: 0 5px;
+  -webkit-transition: width 0s 0.4s,
+                      padding 0s 0.4s;
+  transition: width 0s 0.4s,
+              padding 0s 0.4s;
+}
+
+.video-hotspot .video-hotspot-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.video-hotspot .video-hotspot-title {
+  display: inline-block;
+  vertical-align: middle;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.video-hotspot .video-hotspot-close-wrapper {
+  position: absolute;
+  left: 300px;
+  top: 0;
+  height: 50px;
+  width: 50px;
+  border-top-right-radius: 5px;
+  background-color: rgb(0, 61, 165, 0.8);
+  visibility: hidden;
+  -ms-transform: perspective(200px) rotateY(90deg);
+  -webkit-transform: perspective(200px) rotateY(90deg);
+  transform: perspective(200px) rotateY(90deg);
+  -ms-transform-origin: 0 50% 0;
+  -webkit-transform-origin: 0 50% 0;
+  transform-origin: 0 50% 0;
+  -webkit-transition: -ms-transform 0.3s 0.3s,
+                      -webkit-transform 0.3s 0.3s,
+                      transform 0.3s 0.3s,
+                      visibility 0s 0.6s;
+  transition: -ms-transform 0.3s 0.3s,
+              -webkit-transform 0.3s 0.3s,
+              transform 0.3s 0.3s,
+              visibility 0s 0.6s;
+}
+
+.desktop .video-hotspot.visible .video-hotspot-close-wrapper {
+  visibility: visible;
+  -ms-transform: perspective(200px) rotateY(0deg);
+  -webkit-transform: perspective(200px) rotateY(0deg);
+  transform: perspective(200px) rotateY(0deg);
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      visibility 0s 0s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              visibility 0s 0s;
+}
+
+.video-hotspot .video-hotspot-close-icon {
+  width: 70%;
+  height: 70%;
+  margin: 15%;
+}
+
+.video-hotspot .video-hotspot-text {
+  position: absolute;
+  width: 350px;
+  height: 180px;
+  max-height: 350px;
+  top: 50px;
+  left: 0;
+  padding: 5px;
+  background-color:  rgb(30, 61, 114, 0.8);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  /* overflow-y: auto; */
+  visibility: hidden;
+  /* rotate(90deg) causes transition flicker on Firefox 58 */
+  -ms-transform: perspective(200px) rotateX(-89.999deg);
+  -webkit-transform: perspective(200px) rotateX(-89.999deg);
+  transform: perspective(200px) rotateX(-89.999deg);
+  -ms-transform-origin: 50% 0 0;
+  -webkit-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      visibility 0s 0.3s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              visibility 0s 0.3s;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.desktop .video-hotspot.visible .video-hotspot-text {
+  visibility: visible;
+  -ms-transform: perspective(200px) rotateX(0deg);
+  -webkit-transform: perspective(200px) rotateX(0deg);
+  transform: perspective(200px) rotateX(0deg);
+  -webkit-transition: -ms-transform 0.3s 0.3s,
+                      -webkit-transform 0.3s 0.3s,
+                      transform 0.3s 0.3s,
+                      visibility 0s 0s;
+  transition: -ms-transform 0.3s 0.3s,
+              -webkit-transform 0.3s 0.3s,
+              transform 0.3s 0.3s,
+              visibility 0s 0s;
+}
+
+/* Video hotspot modal */
+
+.desktop .video-hotspot-modal {
+  display: none;
+}
+
+.video-hotspot-modal {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 11000 !important;
+  background-color: rgba(0,0,0,.5);
+  line-height: 1.2em;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s ease-in-out 0.5s,
+                      visibility 0s 0.7s;
+  transition: opacity 0.2s ease-in-out 0.5s,
+              visibility 0s 0.7s;
+}
+
+.video-hotspot-modal.visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.2s ease-in-out,
+                      visibility 0s 0s;
+  transition: opacity 0.2s ease-in-out,
+              visibility 0s 0s;
+}
+
+.video-hotspot-modal .video-hotspot-header {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  right: 10px;
+  width: auto;
+  height: 50px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out 0.2s;
+  transition: opacity 0.3s ease-in-out 0.2s;
+}
+
+.video-hotspot-modal.visible .video-hotspot-header {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out 0.2s;
+  transition: opacity 0.3s ease-in-out 0.2s;
+}
+
+.video-hotspot-modal .video-hotspot-icon-wrapper {
+  width: 50px;
+  height: 50px;
+}
+
+.video-hotspot-modal .video-hotspot-icon {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.video-hotspot-modal .video-hotspot-title-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 50px;
+  width: auto;
+  height: 50px;
+  padding: 0 10px;
+}
+
+.video-hotspot-modal .video-hotspot-title-wrapper:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.video-hotspot-modal .video-hotspot-title {
+  display: inline-block;
+  vertical-align: middle;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.video-hotspot-modal .video-hotspot-close-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 61, 165);
+  background-color: rgb(0, 61, 165, 0.8);
+  cursor: pointer;
+}
+
+.video-hotspot-modal .video-hotspot-close-icon {
+  width: 70%;
+  height: 70%;
+  margin: 15%;
+}
+
+.video-hotspot-modal .video-hotspot-text {
+  position: absolute;
+  top: 110px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color:  rgb(30, 61, 114, 0.8);
+  /* overflow-y: auto; */
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.video-hotspot-modal.visible .video-hotspot-text {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in-out 0.4s;
+  transition: opacity 0.3s ease-in-out 0.4s;
+}
+ 
+/* embed video */
+
+#myframe {
+  background-color: rgba(48, 52, 56, 0.4);
+  position: relative;
+  width: 1280px;
+  height: 480px;
+}
+
+
+
+#iframespot {
+  background-color: rgba(48, 52, 56, 0.4);
+  position: relative;
+  width: 1080px;
+  height: 920px;
+  padding: 20px;
+}
+
+#adsense {
+  background-color: #fff;
+  color: #000;
+}
+
+.adsense-fallback {
+  padding: 1em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
 /* View control buttons */
 
 .viewControlButton {
@@ -785,9 +1541,20 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   left: 50%;
   width: 40px;
   height: 40px;
-  padding: 5px;
+  -webkit-border-radius: 20px; 
+  border-radius: 20px;
+  padding: px;
   background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8);
+  display: none;
+  position: absolute;
+  bottom: 0x;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(71, 129, 230);
+  background-color: rgba(71, 129, 230, 0.8);
 }
 
 body.view-control-buttons .viewControlButton {
@@ -807,9 +1574,14 @@ body.view-control-buttons .viewControlButton {
   right: 5px;
   width: 30px;
   height: 30px;
+
 }
 
 /* Center is at margin-left: -20px */
+.viewControlButton-0 {
+  margin-left: -195px;
+}
+
 .viewControlButton-1 {
   margin-left: -145px;
 }
@@ -828,3 +1600,5 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+

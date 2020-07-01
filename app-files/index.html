@@ -8,158 +8,470 @@
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
+
+
+
 </head>
 <body class="multiple-scenes view-control-buttons">
 
 <div id="pano"></div>
 
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+  <h1>
+    <a href="https://www.gcu.ac.uk/" target="_blank" class="gcuName">gcu.ac.uk</a>
+  </h1>
+</div>
+
+<a id="gcuBar">
+  <img class="icon" src="img/GCULogoP293_shadow_white.png">
+  <h1 class="sceneName"></h1>
+</a> 
+
+
+
 <div id="sceneList">
+  <div class="toggle-btn" onclick="toggleSidebar()">
+    
+    <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand_c.png">
+      <img class="icon on" src="img/close.png">
+    </a>
+
+    <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png">
+      <img class="icon on" src="img/pause.png">
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png">
+      <img class="icon on" src="img/windowed.png">
+    </a>
+
+    <a href="javascript:void(0)" id="sceneViewToggle">
+      <img class="icon off" src="img/down.png">
+      <img class="icon on" src="img/up.png">
+    </a>
+  </div>
+  
   <ul class="scenes">
+    <!-- <label>GCU Virtual Tour</label> -->
     
-      <a href="javascript:void(0)" class="scene" data-id="0-campus-entrance-1-cowcaddens-street">
-        <li class="text">Campus Entrance 1: Cowcaddens Street</li>
-      </a>
+    <h1>GCU Glasgow Campus</h1>
+
+    <input type="radio" name="menu" id="map" checked> 
+    <li>
+      <label for="map" class="title"><i class="fa fa-map-o"></i>Campus Map</label> 
+      <a for="archive" href="javascript:void(0)" class="scene" data-id="0-campus-map">Campus Map</a>
+    </li>
+
+    <input type="radio" name="menu" id="outdoors">
+    <li>
+      <label for="outdoors" class="title"><i class="fa fa-map-signs" aria-hidden="true"></i>Campus Open Areas</label>
+      
+      <a href="javascript:void(0)" class="scene" data-id="1-cowcaddens-rd-main-entrance">Cowcaddens Rd Main Entrance</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="1-campus-street-1">
-        <li class="text">Campus Street 1</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="2-cowcaddens-rd-entrance">Cowcaddens Rd Entrance</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="2-campus-entrance-2-cowcaddens-street">
-        <li class="text">Campus Entrance 2: Cowcaddens Street</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="3-hannover-st-entrance">Hannover St Entrance</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="3-campus-street-2">
-        <li class="text">Campus Street 2</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="4-dobbies-loan-entrance">Dobbies Loan Entrance</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="4-campus-street-3">
-        <li class="text">Campus Street 3</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="5-campus-street-1">Campus Street 1</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="5-campus-entrance-3-hannover-street">
-        <li class="text">Campus Entrance 3: Hannover Street</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="6-campus-street-2">Campus Street 2</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="6-garden-1">
-        <li class="text">Garden 1</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="7-campus-street-3">Campus Street 3</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="7-garden-2">
-        <li class="text">Garden 2</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="8-campus-street-4">Campus Street 4</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="8-garden-3">
-        <li class="text">Garden 3</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="9-library-green-space-">Library Green Space </a>
     
-      <a href="javascript:void(0)" class="scene" data-id="9-garden-4">
-        <li class="text">Garden 4</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="10-green-space-1">Green Space 1</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="10-campus-street-4">
-        <li class="text">Campus Street 4</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="11-green-space-2">Green Space 2</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="11-campus-entrance-4-dobbies-loan">
-        <li class="text">Campus Entrance 4: Dobbie&#39;s Loan</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="12-green-space-3">Green Space 3</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="12-hamish-wood-foyer">
-        <li class="text">Hamish Wood Foyer</li>
-      </a>
+
+
+    </li>
+
+    <input type="radio" name="menu" id="hamish">
+    <li>
+      <label for="hamish" class="title"><i class="fa fa-briefcase" aria-hidden="true"></i>Hamish Wood Building</label>      
+
+      <a href="javascript:void(0)" class="scene" data-id="101-reception">Reception</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="13-hamish-wood-circulation-space">
-        <li class="text">Hamish Wood Circulation Space</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="102-corridor-1">Corridor 1</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="14-hamish-wood-circulation-space">
-        <li class="text">Hamish Wood Circulation Space</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="103-corridor-2">Corridor 2</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="15-hamish-wood-circulation-space">
-        <li class="text">Hamish Wood Circulation Space</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="104-corridor-3">Corridor 3</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="16-hamish-wood-circulation-space">
-        <li class="text">Hamish Wood Circulation Space</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="106-ground-floor">Ground Floor</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="17-lab-w010">
-        <li class="text">Lab W010</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="105-1st-floor-hall">1st Floor Hall</a>
+  
+      <a href="javascript:void(0)" class="scene" data-id="107-the-lantern">The Lantern</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="18-lab-w005">
-        <li class="text">Lab W005</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="108-conference-hall">Conference Hall</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="19-conference-hall">
-        <li class="text">Conference Hall</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="109-w004-lab">W004 Lab</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="20-hamish-wood-1st-floor">
-        <li class="text">Hamish Wood 1st floor</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="110-w005-lab">W005 Lab</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="21-the-lantern">
-        <li class="text">The Lantern</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="111-digital-lab">Digital Lab</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="22-lab-w200">
-        <li class="text">Lab W200</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="112-moot-room">Moot Room</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="23-hamish-wood-3rd-level">
-        <li class="text">Hamish Wood 3rd Level</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="113-law-clinic">Law Clinic</a>
+
+    </li>  
+
+    <input type="radio" name="menu" id="george">
+    <li>
+      <label for="george" class="title"><i class="fa fa-desktop" aria-hidden="true"></i>George Moore Building</label>
+      <a href="javascript:void(0)" class="scene" data-id="13-main-reception">Main Reception</a>
+      
+      <a href="javascript:void(0)" class="scene" data-id="14-entrance-corridor">Entrance Corridor</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="24-law-clinic-w300">
-        <li class="text">Law Clinic W300</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="15-coffee-lab">Coffee Lab</a>
     
-      <a href="javascript:void(0)" class="scene" data-id="25-mootroom-w300">
-        <li class="text">MootRoom W300</li>
-      </a>
+      <a href="javascript:void(0)" class="scene" data-id="16-canteen-corridor">Canteen Corridor</a>
     
+      <a href="javascript:void(0)" class="scene" data-id="17-corridor-to-library">Corridor to Library</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-canteen-1">Canteen 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-canteen-2">Canteen 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-reception">Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="21-gcu-hall">GCU Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="22-1st-floor-hall">1st Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="23-funding-and-finance">Funding and Finance</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="24-campus-life-desk">Campus Life Desk</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="25-welcome-students">Welcome Students</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="26-3rd-floor-hall">3rd Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="27-signal-electronic-lab">Signal Electronic Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="28-lego-lab-1">LEGO Lab 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="29-lego-lab-2">LEGO Lab 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="30-3rd-floor-corridor-1">3rd Floor Corridor 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="31-editing-workshop-1">Editing Workshop 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="32-editing-workshop-2">Editing Workshop 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="33-3rd-floor-corridor-2">3rd Floor Corridor 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="34-tv-production">TV Production</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="35-tv-studio">TV Studio</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="36-3rd-floor-corridor-3">3rd Floor Corridor 3</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="37-multimedia-theatre">Multimedia Theatre</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="38-newsroom-1">Newsroom 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="39-newsroom-2">Newsroom 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="40-3rd-floor-corridor-4">3rd Floor Corridor 4</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="41-3rd-floor-corridor-5">3rd Floor Corridor 5</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="42-radio-production">Radio Production</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="43-tv-studio-2">TV Studio 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="44-6th-floor">6th Floor</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="45-cyber-lab">Cyber Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="46-cisco-lab">CISCO Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="47-emotion-lab-1">Emotion Lab 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="48-emotion-lab-2">Emotion Lab 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="49-7th-floor-hall">7th Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="50-computing--serious-gaming-lab">Computing &amp; Serious Gaming Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="51-digital-forensic-science-1">Digital Forensic Science 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="52-digital-forensic-science-2">Digital Forensic Science 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="53-smart-energy-lab">Smart Energy Lab</a>
+     
+    </li>
+
+    <input type="radio" name="menu" id="charles">
+    <li>
+
+      <label for="charles" class="title"><i class="fa fa-flask" aria-hidden="true"></i>Charles Oakley Laboratories</label>
+      <a href="javascript:void(0)" class="scene" data-id="54-ground-floor-hall">Ground Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="55-sound--production-lab">Sound &amp; Production Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="56-poduction-lab">Poduction Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="57-mechanical-workshop">Mechanical Workshop</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="58-wind-simulator-lab">Wind Simulator Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="59-car-simulation-lab">Car Simulation Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="60-1st-floor-hall">1st Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="61-hydraulics-lab">Hydraulics Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="62-design-studio">Design Studio</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="63-materials-testing-lab">Materials Testing Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="64-computing-research-lab">Computing Research Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="65-pharmacology-research-lab">Pharmacology Research Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="66-tissue-culture-lab">Tissue Culture Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="67-pcr-suite">PCR Suite</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="68-2nd-floor-hall">2nd Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="69-forensic-suite-entrance">Forensic Suite Entrance</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="70-forensic-suite-1">Forensic Suite 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="71-forensic-suite-2">Forensic suite 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="72-physiology-and-anatomical-lab">Physiology and Anatomical Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="73-food-lab">Food Lab</a>
+
+    </li>
+
+    <input type="radio" name="menu" id="govan">
+    <li>
+
+      <label for="govan" class="title"><i class="fa fa-medkit" aria-hidden="true"></i>Govan Mbeki Building</label>
+      <a href="javascript:void(0)" class="scene" data-id="74-entrance">Entrance</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="75-reception">Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="76-ground-floor-hall">Ground Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="77-deeprose-lecture-theatre">Deeprose Lecture Theatre</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="78-vision-centre-vc-entrance">Vision Centre (VC) Entrance</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="79-vc-reception">VC Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="80-vc-showroom">VC Showroom</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="81-vc-eye-examination-1">VC Eye Examination 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="82-vc-practical-room-1">VC Practical Room 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="83-vc-practical-room-2">VC Practical Room 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="84-vc-practical-room-3">VC Practical Room 3</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="85-1st-floor-hall">1st Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="86-eye-examination">Eye Examination</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="87-practical-room-1">Practical Room 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="88-practical-room-2">Practical Room 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="89-3rd-floor-hall">3rd Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="90-x-ray-simulation-lab">X-Ray Simulation Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="91-children-simulation-lab">Children Simulation Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="92-adult-simulation-lab-1">Adult Simulation Lab 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="93-adult-simulation-lab-2">Adult Simulation Lab 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="94-occupational-therapy-flat-entrance">Occupational Therapy Flat Entrance</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="95-occupational-therapy-lab-1">Occupational Therapy Lab 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="96-occupational-therapy-lab-2">Occupational Therapy Lab 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="97-occupational-therapy-flat-1">Occupational Therapy Flat 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="98-occupational-therapy-flat-2">Occupational Therapy Flat 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="99-occupational-therapy-flat-3">Occupational Therapy Flat 3</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="100-occupational-therapy-flat-4">Occupational Therapy Flat 4</a>
+    
+    </li>
+
+    <input type="radio" name="menu" id="milton">
+    <li>
+
+      <label for="milton" class="title"><i class="fa fa-scissors" aria-hidden="true"></i>Milton Street Building</label>
+      <a href="javascript:void(0)" class="scene" data-id="114-entrance">Entrance</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="115-fashion-lab">Fashion Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="116-cut--confection">Cut &amp; Confection</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="117-sewing--tailoring">Sewing &amp; Tailoring</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="118-cad-lab">CAD Lab</a>
+
+    </li>
+
+
+    <input type="radio" name="menu" id="library">
+    <li>
+
+      <label for="library" class="title"><i class="fa fa-book" aria-hidden="true"></i>The Sir Alex Ferguson Library</label>
+      <a href="javascript:void(0)" class="scene" data-id="119-reception">Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="120-main-hall-1">Main Hall 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="121-main-hall-2">Main Hall 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="122-library-garden">Library Garden</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="123-1st-floor">1st Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="124-library-ask--learn">Library Ask &amp; Learn</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="125-group-study-area">2nd Floor Group Study Area</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="126-4th-floor">4th Floor Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="127-individual-study-area">Individual Study Area</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="128-balcony">Balcony</a>
+
+    </li>
+
+    <input type="radio" name="menu" id="student">
+    <li>
+
+      <label for="student" class="title"><i class="fa fa-users" aria-hidden="true"></i>Student Association</label>
+      <a href="javascript:void(0)" class="scene" data-id="133-reception">Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="134-games--bar-area-1">Games &amp; Bar Area 1</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="135-games--bar-area-2">Games &amp; Bar Area 2</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="136-student-association">Student Association</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="137-24h-computer-lab">24h Computer Lab</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="138-climbing-wall">Climbing Wall</a>
+
+    </li>
+    
+    <input type="radio" name="menu" id="gym">
+    <li>
+
+      <label for="gym" class="title"><i class="fa fa-bicycle" aria-hidden="true"></i>ARC Health and Fitness</label>
+      <a href="javascript:void(0)" class="scene" data-id="129-reception">Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="130-main-sports-hall">Main Sports Hall</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="131-cardio-studio">Cardio Studio</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="132-performance-studio">Performance Studio</a>
+
+    </li>
+
+    <input type="radio" name="menu" id="cee">
+    <li>
+
+      <label for="cee" class="title"><i class="fa fa-info-circle" aria-hidden="true"></i>Centre for Executive Education</label>
+      <a href="javascript:void(0)" class="scene" data-id="139-reception">Reception</a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="140-registration--coffee-lab">Registration &amp; Coffee Lab</a>
+    
+    </li>
+
+  </ul>
+
+</div>
+
+<!-- <div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div> -->
+
+<div>
+
+
+</div>
+
+<div id="sceneControl"> <!--id="sceneList" -->
+  <ul> <!-- class="scenes" -->
+
+    <!-- <a href="javascript:void(0)" id="sceneListToggle">
+      <img class="icon off" src="img/expand_c.png">
+      <img class="icon on" src="img/close.png">
+    </a> -->
+
+    <!-- <a href="javascript:void(0)" id="autorotateToggle">
+      <img class="icon off" src="img/play.png">
+      <img class="icon on" src="img/pause.png">
+    </a>
+
+    <a href="javascript:void(0)" id="fullscreenToggle">
+      <img class="icon off" src="img/fullscreen.png">
+      <img class="icon on" src="img/windowed.png">
+    </a>
+
+    <a href="javascript:void(0)" id="sceneViewToggle">
+      <img class="icon off" src="img/down.png">
+      <img class="icon on" src="img/up.png">
+    </a> -->
   </ul>
 </div>
 
-<div id="titleBar">
-  <h1 class="sceneName"></h1>
+
+<div id="sceneView">
+  <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+    <img class="icon" src="img/up.png">
+  </a>
+  <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+    <img class="icon" src="img/down.png">
+  </a>
+  <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+    <img class="icon" src="img/left.png">
+  </a>
+  <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+    <img class="icon" src="img/right.png">
+  </a>
+  <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+    <img class="icon" src="img/plus.png">
+  </a>
+  <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+    <img class="icon" src="img/minus.png">
+  </a>
+
 </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
 
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
 
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
 
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
+
 
 <script src="vendor/es5-shim.js"></script>
 <script src="vendor/eventShim.js"></script>
@@ -168,8 +480,9 @@
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
+<script src="vendor/DeviceOrientationControlMethod.js"></script>
 
-<script src="data.js"></script>
+<script src="data_all.js"></script>
 <script src="index.js"></script>
 
 </body>
