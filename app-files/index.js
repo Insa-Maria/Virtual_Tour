@@ -482,12 +482,23 @@
     // Create text element.
     var videowrapper = document.createElement('div');
     videowrapper.classList.add('video-hotspot-text');
+
     var video = document.createElement('iframe');
     video.classList.add('iframespot');
-    var videolink = hotspot.text;
+    // var videolink = hotspot.text;
     //console.log(hotspot.text);
     videowrapper.innerHTML = "<iframe  src=" + hotspot.text + "></iframe>";
     videowrapper.appendChild(video);
+
+
+    // var ifrm = document.createElement('iframe');
+    // ifrm.classList.add('iframespot');
+    // ifrm.setAttribute("src", hotspot.text);
+    // ifrm.style.width = "560px";
+    // ifrm.style.height = "315px";
+    // videowrapper.appendChild(ifrm);
+
+
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
