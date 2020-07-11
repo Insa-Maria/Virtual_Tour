@@ -49,15 +49,15 @@ a, a:hover, a:active, a:visited {
   position: absolute;
   top: 30px;
   left: 40px;
-  right: 40px;
   height: 130px;
   width: 30%;
 
 }
 
 .mobile #gcuBar {
-  height: 50px;
-  right: 50px;
+  top: 20px;
+  left: 20px;
+  height: 60px;
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
@@ -79,28 +79,32 @@ body.fullscreen-enabled.mobile #gcuBar {
 
 #titleBar {
   position: absolute;
-  bottom: 10px;
+  bottom: 60px;
   left: 20px;
   /* right: 40px; */
-  height: 80px;
-  width: 30%;
+  height: auto;
+  width: auto;
+  text-align: left;  
   text-align: left;
   /* background-color: rgb(103,115,131);
   background-color: rgba(103,115,131,0.8); */
 }
 
 .mobile #titleBar {
-  height: 50px;
-  right: 50px;
+  left: 20px;
+  bottom: 20px;
+  width: auto;
 }
 
 /* If there is a fullscreen button the title bar must make space for it */
 body.fullscreen-enabled #titleBar{
-  right: 80px;
+  left: 40px;
 }
 
 body.fullscreen-enabled.mobile #titleBar {
-  right: 100px;
+  left: 20px;
+  width: auto;
+
 }
 
 /* If there are multiple scenes the title bar must make space for the scene list toggle */
@@ -109,14 +113,14 @@ body.multiple-scenes #titleBar {
 }
 
 body.multiple-scenes.mobile #titleBar {
-  left: 50px;
+  left: 20px;
+  width: auto;
 }
 
 #titleBar .sceneName {
-  width: 100%;
-  height: 50%;
-  font-size: 20px;
-  line-height: 30px;
+  height: 100%;
+  width: auto;
+  font-size: 30px;
   padding: 5px;
   font-family: Arial;
   color: rgb(255, 255, 255);
@@ -131,12 +135,16 @@ body.multiple-scenes.mobile #titleBar {
 }
 
 .mobile #titleBar .sceneName {
-  line-height: 40px;
+  height: 100%;
+  width: auto;
+  bottom: 10%;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #titleBar .gcuName {
-  width: 100%;
-  height: 50%;
+  width: auto;
+  height: 20%;
   font-size: 27px;
   line-height: 30px;
   padding: 5px;
@@ -154,7 +162,11 @@ body.multiple-scenes.mobile #titleBar {
 }
 
 .mobile #titleBar .gcuName {
-  line-height: 40px;
+  height: 100%;
+  width: auto;
+  bottom: 5%;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 #fullscreenToggle {
@@ -183,8 +195,12 @@ body.multiple-scenes.mobile #titleBar {
 }
 
 .mobile #fullscreenToggle {
+  position: absolute;
+  top: 105px;
+  right: 5px;
   width: 40px;
   height: 40px;
+  margin: 5px;
 }
 
 body.fullscreen-enabled #fullscreenToggle {
@@ -201,8 +217,8 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 .mobile #fullscreenToggle .icon {
-  bottom: 10px;
-  right: 10px;
+  position: absolute;
+  width: auto;
 }
 
 #fullscreenToggle .icon.on {
@@ -247,17 +263,21 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 .mobile #autorotateToggle {
-  width: 50px;
-  height: 50px;
+  position: absolute;
+  top: 55px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
 
-/* If there is a fullscreen button, autorotate must placed a bit to the left */
+If there is a fullscreen button, autorotate must placed a bit to the left
 body.fullscreen-enabled #autorotateToggle {
-  right: 10px;
+  right: 5px;
 }
 
 body.fullscreen-enabled.mobile #autorotateToggle {
-  right: 50px;
+  right: 5px;
 }
 
 #autorotateToggle .icon {
@@ -269,8 +289,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 .mobile #autorotateToggle .icon {
-  bottom: 10px;
-  right: 10px;
+  position: absolute;
+  width: auto;
 }
 
 #autorotateToggle .icon.on {
@@ -311,20 +331,18 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border-radius: 5px;
+
 }
 
 .mobile #sceneListToggle {
-  width: 50px;
-  height: 50px;
-}
-
-#sceneListToggle .text {
   position: absolute;
   top: 5px;
-  left: 15px;
-  width: 100%;
-  line-height: 30px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
+
 
 #sceneListToggle .icon {
   position: absolute;
@@ -335,8 +353,8 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 .mobile #sceneListToggle .icon {
-  top: 10px;
-  right: 10px;
+  position: absolute;
+  width: auto;
 }
 
 #sceneListToggle .icon.on {
@@ -383,6 +401,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   position: absolute;
   right: 300px;
   top: 0px;
+  width: auto;
 }
 
 #sceneList .active{
@@ -396,45 +415,69 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   transition: all 500ms linear;
 }
 
-.mobile #sceneList {
-  padding-top: 0px;
+#sceneList.enabled {
+  margin-right: 300px;
 }
+
 
 #sceneList .scenes {
   width: 100%;
   height: 100%;
   padding-top: 20px;
-  background-color: rgb(36, 36, 36);
-  background-color: rgba(36, 36, 36, 0.8);
-  position: fixed;
+  /* background-color: rgb(36, 36, 36);
+  background-color: rgba(36, 36, 36, 0.8); */
+  /* position: fixed; */
+  overflow-x: hidden;
+  overflow-y: auto;
 	display: flex;
   align-items: flex-start;
   display: block;
-  overflow-y: scroll;
 }
 
 .mobile #sceneList {
-  width: 100%;
+  /* position: fixed; */
+  top: 0px;
+  right: -300px;
+  padding-top: 0px;
+  padding-left: 0px;
+  width: -250px;
   height: 100%;
-  right: -100%;
+  transition: all 500ms linear;
+  background-color: rgb(21, 23, 25);
+  background-color: rgba(21, 23, 25, 0.8);
+
 }
+/* 
+#sceneList .active{
+  position: fixed;
+  top: 0px;
+  right: -200px;
+  padding-top: 0px;
+  padding-left: 10px;
+  width: 200px;
+  height: 100%;
+  transition: all 500ms linear;
+} */
 
 .mobile #sceneList.enabled {
-  margin-right: 100%;
+  margin-right: 250px;
 }
 
 .mobile #sceneList .scenes {
+  width: 250px;
   height: 100%;
-  background-color: rgba(103,115,131,0.8);
-  width: 100%;
-  color: #FFF;
+  padding-top: 20px;
+  background-color: rgb(36, 36, 36);
+  background-color: rgba(36, 36, 36, 0.8);
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* position: fixed; */
+	display: flex;
+  align-items: flex-start;
   display: block;
 
 }
 
-#sceneList.enabled {
-  margin-right: 300px;
-}
 
 ul h1 {
   height: 40px;
@@ -443,6 +486,14 @@ ul h1 {
   font-size: 20px;
   font-stretch: narrower;
 
+}
+
+.mobile ul h1 {
+  height: 30px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+  font-stretch: narrower;
 }
 
 /*
@@ -466,8 +517,17 @@ ul label {
   margin-left: 20px; */
   display: block;
   font-size: 16px;
-  overflow: auto;
+
 }
+
+.mobile ul label {
+  height: 30px;
+  /* padding-top: 15px;	
+  margin-left: 20px; */
+  display: block;
+  font-size: 14px;
+}
+
  ul label:hover{
   text-shadow: 0px 0px 10px #fff;
  }
@@ -485,53 +545,92 @@ ul li{
   overflow: hidden;
 }
 
+.mobile ul li{
+	height: 30px;
+  transition: all .3s;
+  overflow-y: hidden;
+}
+
 input[type="radio"] {
 	display: none;
 }
 
-input:checked + li {
-  height: 615px;
+/* input:checked + li {
+  height: 3150px;
   background-color: #585858;
   overflow-y: scroll;
-}
+} */
+
+/* input:checked + li:first-child {
+
+  position: absolute;
+} */
 
 #map:checked + li {
   height: 75px;
   background-color: #585858;
-  overflow-y: scroll;
+
 }
 
 #outdoors:checked + li {
-  height: 500px;
+  height: 460px;
   background-color: #585858;
-  overflow-y: scroll;
+
 }
 
 #hamish:checked + li {
-  height: 615px;
+  height: 500px;
   background-color: #585858;
-  overflow-y: scroll;
+
 }
 
 #george:checked + li {
-  height: 615px;
+  height: 1300px;
   background-color: #585858;
-  overflow-y: scroll;
+
 }
 
 #charles:checked + li {
-  height: 615px;
+  height: 740px;
   background-color: #585858;
 
 }
 
 #govan:checked + li {
-  height: 615px;
+  height: 990px;
   background-color: #585858;
-  overflow-y: scroll;
+
 }
 
+#milton:checked + li {
+  height: 220px;
+  background-color: #585858;
 
+}
+
+#library:checked + li {
+  height: 390px;
+  background-color: #585858;
+
+}
+
+#student:checked + li {
+  height: 250px;
+  background-color: #585858;
+
+}
+
+#gym:checked + li {
+  height: 180px;
+  background-color: #585858;
+
+}
+
+#cee:checked + li {
+  height: 110px;
+  background-color: #585858;
+
+}
 
 /* Accordion menu FINISH */
 
@@ -547,9 +646,10 @@ input:checked + li {
 .mobile #sceneList .scene {
   display: block;
   width: 100%;
-  height: 35px;
-  padding: 10px 35px;
-	transition: all .25s;
+  height: 30px;
+  padding: 7px 20px;
+  /* transition: all .25s; */
+  font-size: 14px;
 }
 
 /* OFF due to accordion menu
@@ -617,8 +717,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   margin-bottom: 100%;
 }
 
-
-
 #sceneView.enabled {
   margin-bottom: -50px;
 }
@@ -632,17 +730,6 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
 
 /* Style for bottom bar id=sceneViewToggle */
 #sceneViewToggle {
-  /* position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(0, 61, 165);
-  background-color: rgba(0, 61, 165,0.8);
-  -moz-border-radius: 5px; 
-  -webkit-border-radius: 5px; 
-  border-radius: 5px; */
   position: absolute;
   bottom: -850px;
   right: 10px;
@@ -660,13 +747,6 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
   height: 50px;
 }
 
-#sceneViewToggle .text {
-  position: absolute;
-  top: 5px;
-  left: 15px;
-  width: 100%;
-  line-height: 30px;
-}
 
 #sceneViewToggle .icon {
   position: absolute;
@@ -708,6 +788,83 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
   background-color: rgba(58,68,84,0.8);
 }
 
+/* View control buttons */
+
+.viewControlButton {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 20px; 
+  border-radius: 20px;
+  padding: px;
+  background-color: rgb(103,115,131);
+  background-color: rgba(103,115,131,0.8);
+  display: none;
+  position: absolute;
+  bottom: 0x;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  background-color: rgb(71, 129, 230);
+  background-color: rgba(71, 129, 230, 0.8);
+}
+
+body.view-control-buttons .viewControlButton {
+  display: block;
+}
+
+/* Hide controls when width is too small */
+@media (max-width: 600px) {
+  body.view-control-buttons .viewControlButton {
+    display: none;
+  }
+}
+
+.viewControlButton .icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+
+}
+
+/* Center is at margin-left: -20px */
+.viewControlButton-0 {
+  margin-left: -195px;
+}
+
+.viewControlButton-1 {
+  margin-left: -145px;
+}
+.viewControlButton-2 {
+  margin-left: -95px;
+}
+.viewControlButton-3 {
+  margin-left: -45px;
+}
+.viewControlButton-4 {
+  margin-left: 5px;
+}
+.viewControlButton-5 {
+  margin-left: 55px;
+}
+.viewControlButton-6 {
+  margin-left: 105px;
+}
+
+
+
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+/**********************************************************/
+
+
 /* Link hotspot */
 
 .link-hotspot {
@@ -739,26 +896,17 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
   position: absolute;
   left: 100%;
   top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
-
   margin-left: 3px;
-
   font-size: 16px;
-
   max-width: 300px;
-
   padding: 8px 10px;
-
   border-radius: 5px;
-
   background-color: rgb(58,68,84);
   background-color: rgba(58,68,84,0.8);
-
   color: #fff;
-
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-
   cursor: pointer;
 
   opacity: 0;
@@ -1406,8 +1554,7 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
   right: 10px;
   width: auto;
   height: 50px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color:  rgb(45, 88, 163, 0.8);
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out 0.2s;
   transition: opacity 0.3s ease-in-out 0.2s;
@@ -1460,12 +1607,13 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
 .video-hotspot-modal .video-hotspot-close-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0px;
   width: 50px;
   height: 50px;
   background-color: rgb(0, 61, 165);
   background-color: rgb(0, 61, 165, 0.8);
   cursor: pointer;
+  z-index: 9999;
 }
 
 .video-hotspot-modal .video-hotspot-close-icon {
@@ -1486,7 +1634,6 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
-
   -moz-user-select: text;
   -webkit-user-select: text;
   -ms-user-select: text;
@@ -1501,21 +1648,21 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
  
 /* embed video */
 
-#myframe {
+
+.iframespot {
   background-color: rgba(48, 52, 56, 0.4);
-  position: relative;
-  width: 1280px;
-  height: 480px;
+  /* position: relative; */
+  width: 340px;
+  height: 170px;
+  /* padding: 10px;  */
 }
 
-
-
-#iframespot {
+.mobuile .iframespot {
   background-color: rgba(48, 52, 56, 0.4);
   position: relative;
-  width: 1080px;
-  height: 920px;
-  padding: 20px;
+  width: 320px;
+  height: 170px;
+  padding: 10px; 
 }
 
 #adsense {
@@ -1529,76 +1676,3 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
   top: 0;
   left: 0;
 }
-
-
-
-/* View control buttons */
-
-.viewControlButton {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 20px; 
-  border-radius: 20px;
-  padding: px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
-  display: none;
-  position: absolute;
-  bottom: 0x;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(71, 129, 230);
-  background-color: rgba(71, 129, 230, 0.8);
-}
-
-body.view-control-buttons .viewControlButton {
-  display: block;
-}
-
-/* Hide controls when width is too small */
-@media (max-width: 600px) {
-  body.view-control-buttons .viewControlButton {
-    display: none;
-  }
-}
-
-.viewControlButton .icon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 30px;
-  height: 30px;
-
-}
-
-/* Center is at margin-left: -20px */
-.viewControlButton-0 {
-  margin-left: -195px;
-}
-
-.viewControlButton-1 {
-  margin-left: -145px;
-}
-.viewControlButton-2 {
-  margin-left: -95px;
-}
-.viewControlButton-3 {
-  margin-left: -45px;
-}
-.viewControlButton-4 {
-  margin-left: 5px;
-}
-.viewControlButton-5 {
-  margin-left: 55px;
-}
-.viewControlButton-6 {
-  margin-left: 105px;
-}
-
-
