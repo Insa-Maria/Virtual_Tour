@@ -160,7 +160,7 @@
 
   // Start with the scene list open on desktop.
   if (!document.body.classList.contains('mobile')) {
-    showSceneList();
+    // showSceneList();
     // showSceneView();
   }
 
@@ -502,7 +502,7 @@
 
     // Hide content when close icon is clicked.
     modal.querySelector('.video-hotspot-close-wrapper').addEventListener('click', function(){
-      toggle();
+      toggle;
     });
 
 

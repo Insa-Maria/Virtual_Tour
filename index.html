@@ -58,51 +58,66 @@
       </a> -->
     </div>
     
+    
     <ul class="scenes">
       <!-- <label>GCU Virtual Tour</label> -->
       
       <h1>GCU Glasgow Campus</h1>
 
-      <input type="radio" name="menu" id="map" checked> 
-      <li>
-        <label for="map" class="title"><i class="fa fa-map-o"></i>Campus Map</label> 
+      <input type="checkbox" name="menu" id="map" checked> 
+      <li class="scenes-sub">
+        <label for="map" class="title">&nbsp;1. Campus Map</label> 
         <a for="archive" href="javascript:void(0)" class="scene" data-id="0-campus-map">Campus Map</a>
       </li>
 
-      <input type="radio" name="menu" id="outdoors">
-      <li>
-          <label for="outdoors" class="title"><i class="fa fa-map-signs" aria-hidden="true"></i>Campus Open Areas</label>
-        
-          <a href="javascript:void(0)" class="scene" data-id="1-cowcaddens-rd-main-entrance">Cowcaddens Rd Main Entrance</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="2-cowcaddens-rd-entrance">Cowcaddens Rd Entrance</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="3-hannover-st-entrance">Hannover St Entrance</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="4-dobbies-loan-entrance">Dobbies Loan Entrance</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="5-campus-street-1">Campus Street 1</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="6-campus-street-2">Campus Street 2</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="7-campus-street-3">Campus Street 3</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="8-campus-street-4">Campus Street 4</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="9-library-green-space-">Library Green Space </a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="10-green-space-1">Green Space 1</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="11-green-space-2">Green Space 2</a>
-        
-          <a href="javascript:void(0)" class="scene" data-id="12-green-space-3">Green Space 3</a>
+      <input type="checkbox" name="menu" id="outdoors">
+      <li class="scenes-sub">
+          <label for="outdoors" class="title">&nbsp;2. Campus Open Areas</label>
 
+          <ul>
+
+            <input type="radio" name="menu" id="outdoors-sub1">
+            <li class="scenes-sub-sub">
+              <label for="outdoors-sub1" class="title-sub"><img class="icon-sub" src="./img/down.png">&nbsp;&nbsp;Entrances</label>
+
+              <a href="javascript:void(0)" class="scene" data-id="1-cowcaddens-rd-main-entrance">Cowcaddens Rd Main Entrance</a>
+              <a href="javascript:void(0)" class="scene" data-id="2-cowcaddens-rd-entrance">Cowcaddens Rd Entrance</a>
+              <a href="javascript:void(0)" class="scene" data-id="3-hannover-st-entrance">Hannover St Entrance</a>
+              <a href="javascript:void(0)" class="scene" data-id="4-dobbies-loan-entrance">Dobbies Loan Entrance</a>
+            </li>
+          </ul>
+
+          <ul>
+
+            <input type="radio" name="menu" id="outdoors-sub2">
+            <li class="scenes-sub-sub">
+              <label for="outdoors-sub2" class="title-sub"><img class="icon-sub" src="./img/down.png">&nbsp;&nbsp;Streets</label>
+
+              <a href="javascript:void(0)" class="scene" data-id="5-campus-street-1">Campus Street 1</a>
+              <a href="javascript:void(0)" class="scene" data-id="6-campus-street-2">Campus Street 2</a>
+              <a href="javascript:void(0)" class="scene" data-id="7-campus-street-3">Campus Street 3</a>
+              <a href="javascript:void(0)" class="scene" data-id="8-campus-street-4">Campus Street 4</a>
+            </li>
+          </ul>
+
+          <ul>
+
+            <input type="radio" name="menu" id="outdoors-sub3">
+            <li class="scenes-sub-sub">
+              <label for="outdoors-sub3" class="title-sub"><img class="icon-sub" src="./img/down.png">&nbsp;&nbsp;Green Sapces</label>
+    
+              <a href="javascript:void(0)" class="scene" data-id="9-library-green-space-">Sr AF Library Garden</a>
+              <a href="javascript:void(0)" class="scene" data-id="10-green-space-1">Hamish Wood Garden</a>
+              <a href="javascript:void(0)" class="scene" data-id="11-green-space-2">Hidden 'Green' Gem</a>
+              <a href="javascript:void(0)" class="scene" data-id="12-green-space-3">Oor Wullie at GCU Garden</a>
+            </li>
+          </ul>
 
       </li>
 
-      <input type="radio" name="menu" id="hamish">
-      <li>
-        <label for="hamish" class="title"><i class="fa fa-briefcase" aria-hidden="true"></i>Hamish Wood Building</label>      
+      <input type="checkbox" name="menu" id="hamish">
+      <li class="scenes-sub">
+        <label for="hamish" class="title">&nbsp;3. Hamish Wood Building</label>      
 
         <a href="javascript:void(0)" class="scene" data-id="101-reception">Reception</a>
       
@@ -132,9 +147,9 @@
 
       </li>  
 
-      <input type="radio" name="menu" id="george">
-      <li>
-        <label for="george" class="title"><i class="fa fa-desktop" aria-hidden="true"></i>George Moore Building</label>
+      <input type="checkbox" name="menu" id="george">
+      <li class="scenes-sub">
+        <label for="george" class="title">&nbsp;4. George Moore Building</label>
         <a href="javascript:void(0)" class="scene" data-id="13-main-reception">Main Reception</a>
         
         <a href="javascript:void(0)" class="scene" data-id="14-entrance-corridor">Entrance Corridor</a>
@@ -148,7 +163,7 @@
         <a href="javascript:void(0)" class="scene" data-id="18-canteen-1">Canteen 1</a>
       
         <a href="javascript:void(0)" class="scene" data-id="19-canteen-2">Canteen 2</a>
-      
+            
         <a href="javascript:void(0)" class="scene" data-id="20-reception">Reception</a>
       
         <a href="javascript:void(0)" class="scene" data-id="21-gcu-hall">GCU Hall</a>
@@ -209,7 +224,7 @@
       
         <a href="javascript:void(0)" class="scene" data-id="49-7th-floor-hall">7th Floor Hall</a>
       
-        <a href="javascript:void(0)" class="scene" data-id="50-computing--serious-gaming-lab">Computing &amp; Serious Gaming Lab</a>
+        <a href="javascript:void(0)" class="scene" data-id="50-computing--serious-gaming-lab">Computing &amp; Gaming Lab</a>
       
         <a href="javascript:void(0)" class="scene" data-id="51-digital-forensic-science-1">Digital Forensic Science 1</a>
       
@@ -219,10 +234,10 @@
       
       </li>
 
-      <input type="radio" name="menu" id="charles">
-      <li>
+      <input type="checkbox" name="menu" id="charles">
+      <li class="scenes-sub">
 
-        <label for="charles" class="title"><i class="fa fa-flask" aria-hidden="true"></i>Charles Oakley Laboratories</label>
+        <label for="charles" class="title">&nbsp;5. Charles Oakley Laboratories</label>
         <a href="javascript:void(0)" class="scene" data-id="54-ground-floor-hall">Ground Floor Hall</a>
       
         <a href="javascript:void(0)" class="scene" data-id="55-sound--production-lab">Sound &amp; Production Lab</a>
@@ -265,10 +280,10 @@
 
       </li>
 
-      <input type="radio" name="menu" id="govan">
-      <li>
+      <input type="checkbox" name="menu" id="govan">
+      <li class="scenes-sub">
 
-        <label for="govan" class="title"><i class="fa fa-medkit" aria-hidden="true"></i>Govan Mbeki Building</label>
+        <label for="govan" class="title">&nbsp;6. Govan Mbeki Building</label>
         <a href="javascript:void(0)" class="scene" data-id="74-entrance">Entrance</a>
       
         <a href="javascript:void(0)" class="scene" data-id="75-reception">Reception</a>
@@ -325,10 +340,10 @@
       
       </li>
 
-      <input type="radio" name="menu" id="milton">
-      <li>
+      <input type="checkbox" name="menu" id="milton">
+      <li class="scenes-sub">
 
-        <label for="milton" class="title"><i class="fa fa-scissors" aria-hidden="true"></i>Milton Street Building</label>
+        <label for="milton" class="title">&nbsp;7. Milton Street Building</label>
         <a href="javascript:void(0)" class="scene" data-id="114-entrance">Entrance</a>
       
         <a href="javascript:void(0)" class="scene" data-id="115-fashion-lab">Fashion Lab</a>
@@ -341,17 +356,17 @@
 
       </li>
 
-      <input type="radio" name="menu" id="library">
-      <li>
+      <input type="checkbox" name="menu" id="library">
+      <li class="scenes-sub">
 
-        <label for="library" class="title"><i class="fa fa-book" aria-hidden="true"></i>The Sir Alex Ferguson Library</label>
+        <label for="library" class="title">&nbsp;8. The Sir Alex Ferguson Library</label>
         <a href="javascript:void(0)" class="scene" data-id="119-reception">Reception</a>
       
         <a href="javascript:void(0)" class="scene" data-id="120-main-hall-1">Main Hall 1</a>
       
         <a href="javascript:void(0)" class="scene" data-id="121-main-hall-2">Main Hall 2</a>
       
-        <a href="javascript:void(0)" class="scene" data-id="122-library-garden">Library Garden</a>
+        <a href="javascript:void(0)" class="scene" data-id="122-library-garden">Sr AF Rooftop Garden</a>
       
         <a href="javascript:void(0)" class="scene" data-id="123-1st-floor">1st Floor Hall</a>
       
@@ -367,10 +382,10 @@
 
       </li>
 
-      <input type="radio" name="menu" id="student">
-      <li>
+      <input type="checkbox" name="menu" id="student">
+      <li class="scenes-sub">
 
-        <label for="student" class="title"><i class="fa fa-users" aria-hidden="true"></i>Student Association</label>
+        <label for="student" class="title">&nbsp;9. Student Association</label>
         <a href="javascript:void(0)" class="scene" data-id="133-reception">Reception</a>
       
         <a href="javascript:void(0)" class="scene" data-id="134-games--bar-area-1">Games &amp; Bar Area 1</a>
@@ -385,10 +400,10 @@
 
       </li>
       
-      <input type="radio" name="menu" id="gym">
-      <li>
+      <input type="checkbox" name="menu" id="gym">
+      <li class="scenes-sub">
 
-        <label for="gym" class="title"><i class="fa fa-bicycle" aria-hidden="true"></i>ARC Health and Fitness</label>
+        <label for="gym" class="title">10. ARC Health and Fitness</label>
         <a href="javascript:void(0)" class="scene" data-id="129-reception">Reception</a>
       
         <a href="javascript:void(0)" class="scene" data-id="130-main-sports-hall">Main Sports Hall</a>
@@ -399,10 +414,10 @@
 
       </li>
 
-      <input type="radio" name="menu" id="cee">
-      <li>
+      <input type="checkbox" name="menu" id="cee">
+      <li class="scenes-sub">
 
-        <label for="cee" class="title"><i class="fa fa-info-circle" aria-hidden="true"></i>Centre for Executive Education</label>
+        <label for="cee" class="title">11. Centre for Executive Education</label>
         <a href="javascript:void(0)" class="scene" data-id="139-reception">Reception</a>
       
         <a href="javascript:void(0)" class="scene" data-id="140-registration--coffee-lab">Registration &amp; Coffee Lab</a>
@@ -410,8 +425,15 @@
       </li>
 
     </ul>
+    
 
   </div>
+
+
+
+
+
+
 
 
   <!-- <div id="sceneControl">  -->
@@ -484,8 +506,11 @@
 <script src="vendor/marzipano.js" ></script>
 <script src="vendor/DeviceOrientationControlMethod.js"></script>
 
+<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+<script src="assets/js/main.js"></script>
+
 <script src="data_all.js"></script>
-<script src="index.js"></script>
+<script src="index.js" defer></script>
 <script type="text/javascript" src="http://www.youtube.com/player_api"></script>
 
 

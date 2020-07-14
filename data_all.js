@@ -39,7 +39,7 @@ var APP_DATA = {
           "yaw": 0.38283292872988994,
           "pitch": 0.5853491890133817,
           "rotation": 0,
-          "target": "3-hannover-st-entrance"
+          "target": "2-cowcaddens-rd-entrance"
         },
         {
           "yaw": 0.7237576769062013,
@@ -66,7 +66,7 @@ var APP_DATA = {
     },
     {
       "id": "1-cowcaddens-rd-main-entrance",
-      "name": "Cowcaddens Rd Main Entrance",
+      "name": "Cowcaddens Main Entrance",
       "levels": [
         {
           "tileSize": 256,
@@ -322,7 +322,7 @@ var APP_DATA = {
           "yaw": 1.0,
           "pitch": -0.25,
           "title": "Caledonian Court",
-          "text": "GCU Student Accommodation"
+          "text": "Our student accommodation located just across the road from our campus - very convenient for these early lectures! You can choose from en-suite or standard rooms. There is also a Laundrette located within the accommodation."
         }
       ],
       "videoHotspots":[
@@ -414,10 +414,10 @@ var APP_DATA = {
           "text": ""
         },
         {
-          "yaw": 2.303982834604552,
-          "pitch": -0.5766311980337022,
+          "yaw": 2.0,
+          "pitch": -0.2,
           "title": "William Harley Building (H)",
-          "text": ""
+          "text": "You will find the Admissions and Enquiry desk on the first floor of this building. Along with the meeting point for the campus tours."
         },
         {
           "yaw": -2.7914722767554547,
@@ -659,7 +659,7 @@ var APP_DATA = {
     },
     {
       "id": "9-library-green-space-",
-      "name": "Library Green Space ",
+      "name": "Sir Alex Ferguson Library garden",
       "levels": [
         {
           "tileSize": 256,
@@ -719,17 +719,23 @@ var APP_DATA = {
           "text": ""
         },
         {
-          "yaw": 3.0957273530128164,
-          "pitch": -0.6148834556383527,
+          "yaw": 2.95,
+          "pitch": -0.23,
           "title": "George Moore Building",
           "text": ""
+        },
+        {
+          "yaw": 1.40,
+          "pitch": -0.0,
+          "title": "Sr. AF Library garden",
+          "text": "Just a few paces from the interior of the Sir Alex Ferguson library, cafe and refectory why not grab your books or bring your lunch and sit in this rich and green courtyard where you can enjoy the outdoors away from the hustle and bustle of the city?"
         }
       ],
       "videoHotspots":[]
     },
     {
       "id": "10-green-space-1",
-      "name": "Green Space 1",
+      "name": "Hamish Wood Garden",
       "levels": [
         {
           "tileSize": 256,
@@ -763,12 +769,19 @@ var APP_DATA = {
           "target": "5-campus-street-1"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -0.36,
+          "pitch": -0.42,
+          "title": "Hamish Wood Garden",
+          "text": "Fletcher Benton's Folded Circles statue is located at the left of the Hamish Wood Building. A great place to relax and take in some inspiration in one of the quieter seated areas on campus."
+        }
+      ],
       "videoHotspots":[]
     },
     {
       "id": "11-green-space-2",
-      "name": "Green Space 2",
+      "name": "Hidden 'Green' Gem",
       "levels": [
         {
           "tileSize": 256,
@@ -802,12 +815,19 @@ var APP_DATA = {
           "target": "12-green-space-3"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -0.36,
+          "pitch": 0.1,
+          "title": "Hidden 'Green' Gem",
+          "text": "Located between the George Moore and Govan Mbeki buildings, you can easily enjoy a quick break with a drink or snack before heading back to your desk or next meeting."
+        }
+      ],
       "videoHotspots":[]
     },
     {
       "id": "12-green-space-3",
-      "name": "Green Space 3",
+      "name": "Oor Wullie at GCU garden",
       "levels": [
         {
           "tileSize": 256,
@@ -853,7 +873,14 @@ var APP_DATA = {
           "target": "18-canteen-1"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -1.0,
+          "pitch": 0.0,
+          "title": "Oor Wullie",
+          "text": "GCU hosts one of over 150 life-size Oor Wullie sculptures that aims at raising awareness of Scotland's national children's hospital charities."
+        }
+      ],
       "videoHotspots":[]
     },
     {
@@ -898,10 +925,17 @@ var APP_DATA = {
           "target": "5-campus-street-1"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": +0.45,
+          "pitch": -0.2,
+          "title": "George Moore Building",
+          "text": "This is the main building for every time of the day. Here, you can find all the student services such as the Campus Life Desk, VISA, Careers and Wellbeing Service, which are located on the 1st Floor. The university’s main restaurant is located on the ground floor. This building is also home to lots of specialised labs for programmes within the School of Engineering, Computing and Built Environment. It also has our Media and Journalism facilities, located on the 3rd Floor."
+        }
+      ],
       "videoHotspots":[
         {
-          "yaw": -0.55,
+          "yaw": -0.65,
           "pitch": -0.2,
           "title": "George Moore Building",
           "text": "https://www.youtube.com/embed/wWolFUTzvwY"
@@ -2945,7 +2979,14 @@ var APP_DATA = {
           "target": "59-car-simulation-lab"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -0.75,
+          "pitch": -0.20,
+          "title": "Charles Oakley Laboratories",
+          "text": "This building is home to our Bioscience Laboratories, Audio Technology facilities, Engineering labs and also the large C001 lecture theatre."
+        }
+      ],
       "videoHotspots":[]
     },
     {
@@ -3909,7 +3950,14 @@ var APP_DATA = {
           "target": "74-entrance"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -0.50,
+          "pitch": -0.05,
+          "title": "Govan Mbeki Building",
+          "text": "This building is used for our Health and Vision Sciences programmes. On the 3rd floor is the Inter-Professional Stimulation Laboratories which includes an 18 bedded hospital ward, Intensive Care Unit along with other interactive rooms. On the ground floor, you can find our Eye Clinic which is used for training purposes but is also open to the public."
+        }
+      ],
       "videoHotspots":[]
     },
     {
@@ -5161,7 +5209,7 @@ var APP_DATA = {
           "yaw": 0.16020639596506747,
           "pitch": 0.22646514830427122,
           "title": "Hamish Wood Main Hall",
-          "text": ""
+          "text": "This building went through a renovation in 2016. It’s modern ground floor now offers a large lecture theatre as well as teaching and conference rooms. The foyer area is used for a wide range of events throughout the year including the university open days. This building is home to programmes within the Glasgow School for Business and Society and the Law Clinic and Law Moot Room are located on the 3rd floor."
         }
       ],
       "videoHotspots":[]
@@ -5804,7 +5852,14 @@ var APP_DATA = {
           "target": "115-fashion-lab"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -0.36,
+          "pitch": -0.42,
+          "title": "Caledonian Court",
+          "text": "Located in this building on the ground floor you will find our Fashion Factory."
+        }
+      ],
       "videoHotspots":[
         {
           "yaw": -0.2,
@@ -6042,7 +6097,14 @@ var APP_DATA = {
           "target": "120-main-hall-1"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": 0.40,
+          "pitch": -0.42,
+          "title": "Sir Alex Ferguson Library",
+          "text": "Formerly the Saltire Centre, our library is modern and offers a variety of study spaces over the 5 floors, so that you can choose a place that best suits your needs, be it social and group study on the lower levels or individual and silent study on the upper level. On the ground floor there is the Library desk where you can borrow books and laptops. There is also café located on this floor. On the 4th floor there is a dedicated Postgraduate Study Area. It is connected internally with both Hamish Wood and George Moore Buildings."
+        }
+      ],
       "videoHotspots":[]
     },
     {
@@ -6222,6 +6284,12 @@ var APP_DATA = {
           "pitch": -0.36292957430487505,
           "title": "George Moore Building",
           "text": ""
+        },
+        {
+          "yaw": -0.04584327324479531,
+          "pitch": +0.10,
+          "title": "Sr AF Rooftop Garden",
+          "text": "Here we have an ideal view over the Saltire courtyard with seating to help relax on the nicer days. Getting up here is a real treat, peaceful and calming with a great view of part of the city centre too."
         },
         {
           "yaw": 1.0408533880625104,
@@ -6564,7 +6632,14 @@ var APP_DATA = {
           "target": "131-cardio-studio"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": -3.2,
+          "pitch": -0.26638523833347705,
+          "title": "ARC",
+          "text": "This is our sports and recreation centre, offering a variety of gym areas, classes, a massage and a hairdresser’s salon. On the ground floor a physiotherapy practice is operating for students, staff and external visitors."
+        }
+      ],
       "videoHotspots":[]
     },
     {
@@ -6757,7 +6832,14 @@ var APP_DATA = {
           "target": "134-games--bar-area-1"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": 1.45,
+          "pitch": -0.20,
+          "title": "Students' Association",
+          "text": "Located on the Ground floor is a social area and 24-hour computer lab. The first floor has a bar and social area, access to welfare and advice centre and the Caley Radio station is also located on this floor. The 2nd floor is the Student Association Offices where you can find out about the variety of societies and sports clubs and how to establish your own."
+        }
+      ],
       "videoHotspots":[
         {
           "yaw": 2.5,
