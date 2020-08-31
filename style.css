@@ -169,6 +169,12 @@ body.multiple-scenes.mobile #titleBar {
   line-height: 30px;
 }
 
+#titleBar .gcuName:hover {
+  font-weight: 500;
+  color: rgb(0, 87, 165);
+  text-shadow: 2px 2px 4px rgb(255, 255, 255); 
+}
+
 #fullscreenToggle {
   /* display: none;
   position: absolute;
@@ -187,8 +193,7 @@ body.multiple-scenes.mobile #titleBar {
   right: 10px;
   width: 40px;
   height: 40px;
-  background-color: rgb(88, 88, 88);
-  background-color: rgba(88, 88, 88, 0.8);
+  background-color: rgb(73, 80, 87);
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border-radius: 5px;
@@ -238,25 +243,12 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 #autorotateToggle {
-  /* display: block;
-  position: absolute;
-  bottom: 100px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
-  -moz-border-radius: 5px; 
-  -webkit-border-radius: 5px; 
-  border-radius: 5px; */
   position: absolute;
   top: 57.5px;
   right: 10px;
   width: 40px;
   height: 40px;
-  background-color: rgb(88, 88, 88);
-  background-color: rgba(88, 88, 88, 0.8);
+  background-color: rgb(73, 80, 87);
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border-radius: 5px;
@@ -309,25 +301,19 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   display: none;
 }
 
+#autorotateToggle:hover, 
+#fullscreenToggle:hover, 
+#sceneListToggle:hover {
+  background-color: rgb(0, 87, 165);  
+}
+
 #sceneListToggle {
-  /* position: absolute;
-  bottom: 670px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
-  -moz-border-radius: 5px; 
-  -webkit-border-radius: 5px; 
-  border-radius: 5px; */
   position: absolute;
   top: 10px;
   right: 10px;
   width: 40px;
   height: 40px;
-  background-color: rgb(88, 88, 88);
-  background-color: rgba(88, 88, 88, 0.8);
+  background-color: rgb(73, 80, 87);
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border-radius: 5px;
@@ -374,17 +360,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneList {
-  /* position: absolute;
-  top: 0px;
-  right: -220px;
-  padding-top: 40px;
-  width: 220px;
-  max-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
-  margin-right: 0;
-  -webkit-transition: margin-right 0.5s ease-in-out;
-  transition: margin-right 0.5s ease-in-out; */
   position: fixed;
   top: 0px;
   right: -330px;
@@ -393,7 +368,7 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: 330px;
   height: 100%;
   transition: all 500ms linear;
-  background-color: rgb(88, 88, 88);
+  /* background-color: rgb(88, 88, 88); */
   /* background-color: rgba(21, 23, 25, 0.8); */
 }
 
@@ -419,13 +394,29 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   margin-right: 330px;
 }
 
+#sceneList .heading{ 
+  height: auto;
+  position: relative;
+  padding: 20px 40px;
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: narrower;
+  background-color: rgb(52, 58, 64);
+}
+
+.mobile #sceneList .heading{ 
+  height: 40px;
+  height: auto;
+  position: relative;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-stretch: narrower;
+}
+
 #sceneList .scenes {
     width: 100%;
     height: 100%;
-    /* padding-top: 20px; */
-    /* background-color: rgb(36, 36, 36);
-    background-color: rgba(36, 36, 36, 0.8); */
-    /* position: fixed; */
+    background-color: rgb(52, 58, 64);
     overflow-x: hidden;
     overflow-y: auto;
     display: flex;
@@ -444,7 +435,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   width: -250px;
   height: 100%;
   transition: all 500ms linear;
-  background-color: rgb(88, 88, 88);
   /* background-color: rgba(21, 23, 25, 0.8); */
 
 }
@@ -483,66 +473,6 @@ body.fullscreen-enabled.mobile #autorotateToggle {
   display: block;
 }
 
-ul h1 {
-  height: auto;
-  position: relative;
-  padding: 20px 40px;
-  font-size: 20px;
-  font-stretch: narrower;
-}
-
-.mobile ul h1 {
-  height: 40px;
-  height: auto;
-  position: relative;
-  padding: 15px 30px;
-  font-size: 16px;
-  font-stretch: narrower;
-}
-
-/*
-ul h1 .scene:hover {
-  text-shadow: 0px 0px 10px #fff;
- }
-
- ul h1 .scene.current {
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
-}
- */
-
-/* label i {
-  padding: 10px;
- } */
-
-/* ul label {
-  height: 40px;
-  /* padding-top: 15px;
-  margin-left: 20px;*//*
-  display: block;
-  font-size: 16px;
-
-} */
-
-/* .mobile ul label {
-  height: 30px;
-  /* padding-top: 15px;	
-  margin-left: 20px; *//*
-  display: block;
-  font-size: 14px;
-} */
-
-/* ul label:hover{
-  text-shadow: 0px 0px 10px #fff;
-} */
-
-/* label.title {
-	background: linear-gradient(#2f2f2f, #585858);
-	padding: 10px 15px;
-	cursor: pointer;
-  transition: all .25s;
-} */
-
 
 
 
@@ -569,9 +499,9 @@ ul h1 .scene:hover {
   height: 35px;
   width: 100%;
   display: block;
-  padding: 10px 30px;
+  padding: 10px 45px;
   transition: all .25s;
-  /* background: rgb(127, 127, 127) */
+  background: rgb(73, 80, 87);
 }
 
 .mobile #sceneList .scene {
@@ -584,14 +514,33 @@ ul h1 .scene:hover {
   /* background: rgb(127, 127, 127) */
 }
 
-#sceneList .title {
+#sceneList .scene:focus {
+  background-color: rgba(0, 87, 165);
+  font-weight: 400;
+  box-shadow: inset 5px 0px 0px 0px #fff;
+} 
+
+#sceneList .title,
+.title-toggle {
   display: block;
   height: 40px;
-  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  display:inline-block;
+  padding: 0px 12px;
   font-size: 16px;
-  /* background: rgb(89, 89, 89); */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgb(52, 58, 64);
+  color: white;
+  border-color: transparent   ;
   cursor: pointer;
   transition: all .25s;
+}
+
+
+#sceneList .title:focus {
+  /* outline: 2px solid; */
+  color: white;
 }
 
 .mobile #sceneList .title {
@@ -603,6 +552,7 @@ ul h1 .scene:hover {
 
 #sceneList .title:hover{
   text-shadow: 0px 0px 10px #fff;
+  background-color: rgb(0, 87, 165);
 }
 
 #sceneList .title-sub {
@@ -610,8 +560,8 @@ ul h1 .scene:hover {
   height: 40px;
   padding: 12px 20px;
   font-size: 16px;
-  background: linear-gradient(rgb(88,88,88), rgb(54, 54, 54));
-  /* background: linear-gradient(#2f2f2f, #585858); */
+  background: linear-gradient(rgb(52, 58, 64), rgb(73,80,87));
+  /* background:  rgb(52, 58, 64); */
   cursor: pointer;
   transition: all .25s;
 }
@@ -623,7 +573,6 @@ ul h1 .scene:hover {
   font-size: 14px;
 
 }
-
 
 
 
@@ -644,67 +593,409 @@ ul h1 .scene:hover {
   transition: all 300ms;
 }
 
-
-.mobile #sceneList .title-sub {
-  height: 30px;
-  /* padding-top: 15px;	
-  margin-left: 20px; */
-  display: block;
-  font-size: 14px;
-}
-
-#sceneList .title-sub:hover{
-  text-shadow: 0px 0px 10px #fff;
-}
-
-/* OFF due to accordion menu
-
-#sceneList .scene .text {
-  width: 100%;
-  height: 100%;
-  padding: 5px 15px;
-  line-height: 40px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-} 
-
-.mobile #sceneList .scene .text {
-  line-height: 40px;
-}
-
-*/
-
 .no-touch #sceneList .scene:hover {
-  /* background-color:  rgb(0, 61, 165); */
-  background-color: rgb(71, 129, 230,0.8);
+  background-color: rgb(0, 87, 165);
   box-shadow: inset 5px 0px 0px 0px #fff;
 }
 
 #sceneList .scene.current {
-  /* background-color: rgb(71, 129, 230); */
-  background-color: rgba(71, 129, 230, 0.5);
-  font-weight: 600;
+  background-color: rgba(0, 87, 165, 0.5);
+  font-weight: 400;
   box-shadow: inset 5px 0px 0px 0px #fff;
 }
 
-.no-touch #sceneList .scene:hover {
-  background-color:  rgb(0, 61, 165);
-  background-color: rgba(0, 61, 165,0.8);
-  box-shadow: inset 5px 0px 0px 0px #fff;
-}
-
-#sceneList .scene.current {
-  background-color: rgb(71, 129, 230);
-  background-color: rgba(71, 129, 230, 0.4);
-  font-weight: 500;
-}
 
 
 /* Hide scene list when only a single scene exists */
 body.single-scene #sceneList, body.single-scene #sceneListToggle {
   display: none;
 }
+
+
+
+/* MAPS MENU: 2. CAMPUS OUTSIDE AREAS */
+
+.maps-toggle:hover,
+.maps-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.maps:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.maps li {
+    display: block;
+    overflow: hidden;
+}
+
+.maps.active{
+  display: block;
+}
+
+.maps-toggle + .maps {
+  display: block; 
+  height: 35px;
+}
+
+.maps-checkbox:checked + .maps{
+    display: block;
+    transition: all .3s; 
+}
+
+/* OUTDOORS MENU: 2. CAMPUS OUTSIDE AREAS */
+.outdoors-toggle:hover,
+.outdoors-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.outdoors:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.outdoors li {
+    display: block;
+    overflow: hidden;
+}
+
+.outdoors.active{
+  display: block;
+}
+
+.outdoors-toggle + .outdoors {
+  display: block; 
+  height: 510px;
+}
+
+.outdoors-checkbox:checked + .outdoors {
+    display: block;
+    transition: all .3s; 
+}
+
+/* HAMISH MENU: 2. CAMPUS OUTSIDE AREAS */
+.hamish-toggle:hover,
+.hamish-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.hamish:focus {
+  color: rgba(0, 87, 165);  
+}
+
+
+.hamish li {
+    display: block;
+    overflow: hidden;
+}
+
+.hamish.active{
+  display: block;
+}
+
+.hamish-toggle + .hamish {
+  display: block; 
+  height: 540px;
+}
+
+.hamish-checkbox:checked + .hamish {
+    display: block;
+    transition: all .3s; 
+}
+
+/* GEORGE MENU: 2. CAMPUS OUTSIDE AREAS */
+.george-toggle:hover,
+.george-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.george:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.george li {
+    display: block;
+    overflow: hidden;
+}
+
+.george.active{
+  display: block;
+}
+
+.george-toggle + .george {
+  display: block; 
+  height: 685px;
+}
+
+.george-checkbox:checked + .george {
+    display: block;
+    transition: all .3s; 
+}
+
+/* GEORGELAB MENU: 2. CAMPUS OUTSIDE AREAS */
+.georgelab-toggle:hover,
+.georgelab-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.georgelab:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.georgelab li {
+    display: block;
+    overflow: hidden;
+}
+
+.georgelab.active{
+  display: block;
+}
+
+.georgelab-toggle + .georgelab {
+  display: block; 
+  height: 1005px;
+}
+
+.georgelab-checkbox:checked + .georgelab {
+    display: block;
+    transition: all .3s; 
+}
+
+/* CHARLES MENU: 2. CAMPUS OUTSIDE AREAS */
+.charles-toggle:hover,
+.charles-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.charles:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.charles li {
+    display: block;
+    overflow: hidden;
+}
+
+.charles.active{
+  display: block;
+}
+
+.charles-toggle + .charles {
+  display: block; 
+  height: 910px;
+}
+
+.charles-checkbox:checked + .charles {
+    display: block;
+    transition: all .3s; 
+}
+
+/* GOVAN MENU: 2. CAMPUS OUTSIDE AREAS */
+.govan-toggle:hover,
+.govan-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.govan:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.govan li {
+    display: block;
+    overflow: hidden;
+}
+
+.govan.active{
+  display: block;
+}
+
+.govan-toggle + .govan {
+  display: block; 
+  height: 1155px;
+}
+
+.govan-checkbox:checked + .govan {
+    display: block;
+    transition: all .3s; 
+}
+
+/* MILTON MENU: 2. CAMPUS OUTSIDE AREAS */
+.milton-toggle:hover,
+.milton-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.milton:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.milton li {
+    display: block;
+    overflow: hidden;
+}
+
+.milton.active{
+  display: block;
+}
+
+.milton-toggle + .milton {
+  display: block; 
+  height: 215px;
+}
+
+.milton-checkbox:checked + .milton {
+    display: block;
+    transition: all .3s; 
+}
+
+/* LIBRARY MENU: 2. CAMPUS OUTSIDE AREAS */
+.library-toggle:hover,
+.library-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.library:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.library li {
+    display: block;
+    overflow: hidden;
+}
+
+.library.active{
+  display: block;
+}
+
+.library-toggle + .library {
+  display: block; 
+  height: 435px;
+}
+
+.library-checkbox:checked + .library {
+    display: block;
+    transition: all .3s; 
+}
+
+/* STUDENT MENU: 2. CAMPUS OUTSIDE AREAS */
+.student-toggle:hover,
+.student-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.student:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.student li {
+    display: block;
+    overflow: hidden;
+}
+
+.student.active{
+  display: block;
+}
+
+.student-toggle + .student {
+  display: block; 
+  height: 295px;
+}
+
+.student-checkbox:checked + .student {
+    display: block;
+    transition: all .3s; 
+}
+
+/* GYM MENU: 2. CAMPUS OUTSIDE AREAS */
+.gym-toggle:hover,
+.gym-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.gym:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.gym li {
+    display: block;
+    overflow: hidden;
+}
+
+.gym.active{
+  display: block;
+}
+
+.gym-toggle + .gym {
+  display: block; 
+  height: 180px;
+}
+
+.gym-checkbox:checked + .gym {
+    display: block;
+    transition: all .3s; 
+}
+
+/* CEE MENU: 2. CAMPUS OUTSIDE AREAS */
+.cee-toggle:hover,
+.cee-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.cee:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.cee li {
+    display: block;
+    overflow: hidden;
+}
+
+.cee.active{
+  display: block;
+}
+
+.cee-toggle + .cee {
+  display: block; 
+  height: 70px;
+}
+
+.cee-checkbox:checked + .cee {
+    display: block;
+    transition: all .3s; 
+}
+
+/* CALEY MENU: 2. CAMPUS OUTSIDE AREAS */
+.caley-toggle:hover,
+.caley-toggle:focus {
+  background-color: rgba(0, 87, 165, 0.5);
+}
+
+.caley:focus {
+  color: rgba(0, 87, 165);  
+}
+
+.caley li {
+    display: block;
+    overflow: hidden;
+}
+
+.caley.active{
+  display: block;
+}
+
+.caley-toggle + .caley {
+  display: block; 
+  height: 40px;
+}
+
+.caley-checkbox:checked + .caley {
+    display: block;
+    transition: all .3s; 
+}
+
+
+
+
+/* old version */
 
 input[type="checkbox"] {
   display: none;
@@ -732,18 +1023,20 @@ input[type="radio"] {
   overflow-y: scroll;
 } */
 
-#map:checked + .scenes-sub {
+ /* map */
+/* #map:checked + .scenes-sub {
   height: 75px;
-}
+} */
 
-#outdoors:checked + .scenes-sub {
-  height: 300px;
+/* outdoor */
 
-}
+/* #outdoors:checked + .scenes-sub {
+  height: 550px;
+
+} */
 
 #outdoors-sub1:checked + .scenes-sub-sub {
-  height: 180px;
-  background-color: rgb(54,54,54);
+  height: 300px;
 }
 
 #outdoors-sub1:checked + .scenes-sub-sub .icon-sub {
@@ -769,62 +1062,301 @@ input[type="radio"] {
 }
 
 
-
-
-/* sub-sub finish */
+/* hamish */
 
 #hamish:checked + .scenes-sub {
-  height: 500px;
+  height: 400px;
   background-color: #585858;
-
 }
+
+#hamish-sub1:checked + .scenes-sub-sub {
+  height: 320px;
+  background-color: rgb(54,54,54);
+}
+
+#hamish-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#hamish-sub2:checked + .scenes-sub-sub {
+ 
+  height: 215px;
+  background-color: rgb(54,54,54);
+}
+
+#hamish-sub2:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* george */
 
 #george:checked + .scenes-sub {
-  height: 1410px;
+  height: 770px;
   background-color: #585858;
-
 }
+
+#george-sub1:checked + .scenes-sub-sub {
+  height: 320px;
+  background-color: rgb(54,54,54);
+}
+
+#george-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#george-sub2:checked + .scenes-sub-sub {
+  height: 180px;
+  background-color: rgb(54,54,54);
+}
+
+#george-sub2:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#george-sub3:checked + .scenes-sub-sub {
+  height: 180px;
+  background-color: rgb(54,54,54);
+}
+
+#george-sub3:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#george-sub4:checked + .scenes-sub-sub {
+  height: 355px;
+  background-color: rgb(54,54,54);
+}
+
+#george-sub4:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#george-sub5:checked + .scenes-sub-sub {
+  height: 530px;
+  background-color: rgb(54,54,54);
+}
+
+#george-sub5:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#george-sub6:checked + .scenes-sub-sub {
+  height: 110px;
+  background-color: rgb(54,54,54);
+}
+
+#george-sub6:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+
+
+/* charles */
 
 #charles:checked + .scenes-sub {
-  height: 745px;
+  height: 520px;
   background-color: #585858;
-
 }
+
+#charles-sub1:checked + .scenes-sub-sub {
+  height: 145px;
+  background-color: rgb(54,54,54);
+}
+
+#charles-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#charles-sub2:checked + .scenes-sub-sub {
+  height: 110px;
+  background-color: rgb(54,54,54);
+}
+
+#charles-sub2:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#charles-sub3:checked + .scenes-sub-sub {
+  height: 180px;
+  background-color: rgb(54,54,54);
+}
+
+#charles-sub3:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#charles-sub4:checked + .scenes-sub-sub {
+  height: 145px;
+  background-color: rgb(54,54,54);
+}
+
+#charles-sub4:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#charles-sub5:checked + .scenes-sub-sub {
+  height: 320px;
+  background-color: rgb(54,54,54);
+}
+
+#charles-sub5:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* govan */
 
 #govan:checked + .scenes-sub {
-  height: 990px;
+  height: 485px;
   background-color: #585858;
-
 }
+
+#govan-sub1:checked + .scenes-sub-sub {
+  height: 250px;
+  background-color: rgb(54,54,54);
+}
+
+#govan-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#govan-sub2:checked + .scenes-sub-sub {
+  height: 285px;
+  background-color: rgb(54,54,54);
+}
+
+#govan-sub2:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#govan-sub3:checked + .scenes-sub-sub {
+  height: 145px;
+  background-color: rgb(54,54,54);
+}
+
+#govan-sub3:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#govan-sub4:checked + .scenes-sub-sub {
+  height: 180px;
+  background-color: rgb(54,54,54);
+}
+
+#govan-sub4:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#govan-sub5:checked + .scenes-sub-sub {
+  height: 295px;
+  background-color: rgb(54,54,54);
+}
+
+#govan-sub5:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* milton */
 
 #milton:checked + .scenes-sub {
-  height: 220px;
-  background-color: #585858;
-
-}
-
-#library:checked + .scenes-sub {
-  height: 395px;
-  background-color: #585858;
-
-}
-
-#student:checked + .scenes-sub {
   height: 255px;
   background-color: #585858;
-
 }
+
+#milton-sub1:checked + .scenes-sub-sub {
+  height: 215px;
+  background-color: rgb(54,54,54);
+}
+
+#milton-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+
+/* library */
+#library:checked + .scenes-sub {
+  height: 340px;
+  background-color: #585858;
+}
+
+#library-sub1:checked + .scenes-sub-sub {
+  height: 250px;
+  background-color: rgb(54,54,54);
+}
+
+#library-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#library-sub2:checked + .scenes-sub-sub {
+  height: 180px;
+  background-color: rgb(54,54,54);
+}
+
+#library-sub2:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* student */
+#student:checked + .scenes-sub {
+  height: 260px;
+  background-color: #585858;
+}
+
+#student-sub1:checked + .scenes-sub-sub {
+  height: 180px;
+  background-color: rgb(54,54,54);
+}
+
+#student-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+#student-sub2:checked + .scenes-sub-sub {
+  height: 110px;
+  background-color: rgb(54,54,54);
+}
+
+#student-sub2:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* gym */
 
 #gym:checked + .scenes-sub {
-  height: 185px;
+  height: 220px;
   background-color: #585858;
-
 }
 
+#gym-sub1:checked + .scenes-sub-sub {
+  height: 210px;
+  background-color: rgb(54,54,54);
+}
+
+#gym-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* cee */
 #cee:checked + .scenes-sub {
-  height: 115px;
+  height: 150px;
   background-color: #585858;
 }
+
+#cee-sub1:checked + .scenes-sub-sub {
+  height: 140px;
+  background-color: rgb(54,54,54);
+}
+
+#cee-sub1:checked + .scenes-sub-sub .icon-sub {
+  transform: rotate(0deg);
+}
+
+/* caley */
+
+#caley:checked + .scenes-sub {
+  height: 75px;
+}
+
 
 
 /* Scrollbar (overflow) width */
@@ -848,6 +1380,11 @@ input[type="radio"] {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(64, 64, 172); 
 }
+
+.scroller{
+  width: 10px;
+
+}}
 
 
 
@@ -894,7 +1431,7 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
 /* Style for bottom bar id=sceneViewToggle */
 #sceneViewToggle {
   position: absolute;
-  bottom: -850px;
+  top: 155px;
   right: 10px;
   width: 40px;
   height: 40px;
@@ -906,9 +1443,17 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
 }
 
 .mobile #sceneViewToggle {
-  width: 50px;
-  height: 50px;
+  position: absolute;
+  top: 155px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
+
+/* body.fullscreen-enabled #sceneViewToggle {
+  display: block;
+} */
 
 
 #sceneViewToggle .icon {
@@ -920,8 +1465,8 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
 }
 
 .mobile #sceneViewToggle .icon {
-  top: 10px;
-  right: 10px;
+  position: absolute;
+  width: auto;
 }
 
 #sceneViewToggle .icon.on {
@@ -956,22 +1501,12 @@ body.single-scene #sceneView, body.single-scene #sceneViewToggle {
 .viewControlButton {
   display: none;
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 50%;
   width: 40px;
   height: 40px;
   -webkit-border-radius: 20px; 
   border-radius: 20px;
-  padding: px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
-  display: none;
-  position: absolute;
-  bottom: 0x;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
   background-color: rgb(71, 129, 230);
   background-color: rgba(71, 129, 230, 0.8);
 }
@@ -1027,6 +1562,114 @@ body.view-control-buttons .viewControlButton {
 /**********************************************************/
 /**********************************************************/
 
+/* MapLink hotspot */
+
+.maplink-hotspot {
+  width: 60px;
+  height: 80px;
+  margin-left: -30px;
+  margin-top: -50px;
+  opacity: 0.9;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.no-touch .maplink-hotspot:hover {
+  opacity: 1;
+  /* background-image: url('img/maplink_hover.png'); */
+}
+
+.mobile .maplink-hotspot {
+  width: 50px;
+  height: 50px;
+}
+
+.maplink-hotspot-icon {
+  /* background-image: url('img/maplink.png'); */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.maplink-hotspot-number {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: transparent;
+  border-color: transparent;
+  padding-bottom: 25px;
+  /* top: 50%;
+  left: 58%; */
+  font-family: Arial;
+  text-shadow: 0px 1px 0.5px rgb(70, 69, 69);
+  font-size: 17px;
+  color: rgb(71, 129, 230);
+  font-weight: 700;
+  /* transform: translate(-50%, -50%); */
+  z-index: 999;
+}
+
+.maplink-hotspot-tooltip {
+  position: absolute;
+  left: 100%;
+  top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
+  margin-left: 3px;
+  font-size: 16px;
+  max-width: 300px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  background-color: rgb(58,68,84);
+  background-color: rgba(58,68,84,0.8);
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+
+  opacity: 0;
+
+  -ms-transform: translateX(-8px);
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+
+  -webkit-transition: -ms-transform 0.3s,
+                      -webkit-transform 0.3s,
+                      transform 0.3s,
+                      opacity 0.3s;
+  transition: -ms-transform 0.3s,
+              -webkit-transform 0.3s,
+              transform 0.3s,
+              opacity 0.3s;
+}
+
+.mobile .maplink-hotspot {
+  top: 0px; /*CHANGED TO 0px. It was 19px = ( 70 - (16 + 2*8) ) / 2 */
+}
+
+.no-touch .maplink-hotspot:hover .maplink-hotspot-tooltip {
+  opacity: 1;
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* Prevent tooltip from triggering */
+.maplink-hotspot-tooltip {
+  pointer-events: none;
+}
+.no-touch .maplink-hotspot:hover .maplink-hotspot-tooltip {
+  pointer-events: all;
+}
+
+/* Fallback mode without pointer-events (IE8-10) */
+.tooltip-fallback .maplink-hotspot-tooltip {
+  display: none;
+}
+.no-touch .tooltip-fallback .maplink-hotspot:hover .maplink-hotspot-tooltip {
+  display: block;
+}
 
 /* Link hotspot */
 
@@ -1047,6 +1690,15 @@ body.view-control-buttons .viewControlButton {
 .mobile .link-hotspot {
   width: 50px;
   height: 50px;
+}
+
+.link-hotspot .link-hotspot-icon-wrapper {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 .link-hotspot-icon {
@@ -1175,14 +1827,25 @@ body.view-control-buttons .viewControlButton {
 }
 
 .info-hotspot .info-hotspot-icon-wrapper {
+  position: absolute;
   width: 40px;
   height: 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border-color: transparent;                  
 }
+
+/* .info-hotspot .button:focus-visible{
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 20px;
+} */
 
 .mobile .info-hotspot .info-hotspot-icon-wrapper {
   width: 34px;
   height: 34px;
 }
+
 
 .info-hotspot .info-hotspot-icon {
   width: 90%;
@@ -1524,10 +2187,18 @@ body.view-control-buttons .viewControlButton {
               border-radius 0.3s ease-in-out;
 }
 
-.video-hotspot .video-hotspot-icon-wrapper {
+.video-hotspot .video-hotspot-icon-wrapper, .video-hotspot .video-hotspot-close-wrapper{
   width: 50px;
   height: 50px;
+  background-color: transparent;
+  border-color: transparent;
 }
+
+/* .video-hotspot .button:focus-visible{
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 20px;
+} */
 
 .mobile .video-hotspot .video-hotspot-icon-wrapper {
   width: 40px;

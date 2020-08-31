@@ -93,6 +93,12 @@
       pinFirstLevel: true
     });
 
+    // Create Map_link hotspots.
+    data.maplinkHotspots.forEach(function(hotspot) {
+      var element = createMapLinkHotspotElement(hotspot);
+      scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+    });
+
     // Create link hotspots.
     data.linkHotspots.forEach(function(hotspot) {
       var element = createLinkHotspotElement(hotspot);
@@ -160,7 +166,7 @@
 
   // Start with the scene list open on desktop.
   if (!document.body.classList.contains('mobile')) {
-    // showSceneList();
+    showSceneList();
     // showSceneView();
   }
 
@@ -199,6 +205,180 @@
   controls.registerMethod('rightElement', new Marzipano.ElementPressControlMethod(viewRightElement,  'x',  velocity, friction), true);
   controls.registerMethod('inElement',    new Marzipano.ElementPressControlMethod(viewInElement,  'zoom', -velocity, friction), true);
   controls.registerMethod('outElement',   new Marzipano.ElementPressControlMethod(viewOutElement, 'zoom',  velocity, friction), true);
+// Associate view controls with keyboard
+  controls.enableMethodGroup('arrowKeys');
+
+
+  // SceneList Menu Keyboard accessible - MAPS
+  var MapsToggle = document.querySelector('#maps-toggle');
+  var Maps = document.querySelector('#maps');
+
+  if (MapsToggle){
+    console.log('Found a ' + MapsToggle +'element');
+    MapsToggle.addEventListener('click', function(event) {
+      expandMapsMenu();
+    });
+  } else {
+    console.log('Did not found any maps-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - OUTDOORS
+  var OutdoorsToggle = document.querySelector('#outdoors-toggle');
+  var Outdoors = document.querySelector('#outdoors');
+
+  if (OutdoorsToggle){
+    console.log('Found a ' + OutdoorsToggle +'element');
+    OutdoorsToggle.addEventListener('click', function(event) {
+      expandOutdoorsMenu();
+    });
+  } else {
+    console.log('Did not found any outdoors-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - HAMISH
+  var HamishToggle = document.querySelector('#hamish-toggle');
+  var Hamish = document.querySelector('#hamish');
+
+  if (HamishToggle){
+    console.log('Found a ' + HamishToggle +'element');
+    HamishToggle.addEventListener('click', function(event) {
+      expandHamishMenu();
+    });
+  } else {
+    console.log('Did not found any hamish-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - GEORGE
+  var GeorgeToggle = document.querySelector('#george-toggle');
+  var George = document.querySelector('#george');
+
+  if (GeorgeToggle){
+    console.log('Found a ' + GeorgeToggle +'element');
+    GeorgeToggle.addEventListener('click', function(event) {
+      expandGeorgeMenu();
+    });
+  } else {
+    console.log('Did not found any george-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - GEORGELAB
+  var GeorgelabToggle = document.querySelector('#georgelab-toggle');
+  var Georgelab = document.querySelector('#georgelab');
+
+  if (GeorgelabToggle){
+    console.log('Found a ' + GeorgelabToggle +'element');
+    GeorgelabToggle.addEventListener('click', function(event) {
+      expandGeorgelabMenu();
+    });
+  } else {
+    console.log('Did not found any georgelab-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - CHARLES
+  var CharlesToggle = document.querySelector('#charles-toggle');
+  var Charles = document.querySelector('#charles');
+
+  if (CharlesToggle){
+    console.log('Found a ' + CharlesToggle +'element');
+    CharlesToggle.addEventListener('click', function(event) {
+      expandCharlesMenu();
+    });
+  } else {
+    console.log('Did not found any charles-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - GOVAN
+  var GovanToggle = document.querySelector('#govan-toggle');
+  var Govan = document.querySelector('#govan');
+
+  if (GovanToggle){
+    console.log('Found a ' + GovanToggle +'element');
+    GovanToggle.addEventListener('click', function(event) {
+      expandGovanMenu();
+    });
+  } else {
+    console.log('Did not found any govan-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - MILTON
+  var MiltonToggle = document.querySelector('#milton-toggle');
+  var Milton = document.querySelector('#milton');
+
+  if (MiltonToggle){
+    console.log('Found a ' + MiltonToggle +'element');
+    MiltonToggle.addEventListener('click', function(event) {
+      expandMiltonMenu();
+    });
+  } else {
+    console.log('Did not found any Milton-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - LIBRARY
+  var LibraryToggle = document.querySelector('#library-toggle');
+  var Library = document.querySelector('#library');
+
+  if (LibraryToggle){
+    console.log('Found a ' + LibraryToggle +'element');
+    LibraryToggle.addEventListener('click', function(event) {
+      expandLibraryMenu();
+    });
+  } else {
+    console.log('Did not found any library-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - STUDENT
+  var StudentToggle = document.querySelector('#student-toggle');
+  var Student = document.querySelector('#student');
+
+  if (StudentToggle){
+    console.log('Found a ' + StudentToggle +'element');
+    StudentToggle.addEventListener('click', function(event) {
+      expandStudentMenu();
+    });
+  } else {
+    console.log('Did not found any student-toggle')
+  };
+  
+  // SceneList Menu Keyboard accessible - GYM
+  var GymToggle = document.querySelector('#gym-toggle');
+  var Gym = document.querySelector('#gym');
+
+  if (GymToggle){
+    console.log('Found a ' + GymToggle +'element');
+    GymToggle.addEventListener('click', function(event) {
+      expandGymMenu();
+    });
+  } else {
+    console.log('Did not found any gym-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - CEE
+  var CeeToggle = document.querySelector('#cee-toggle');
+  var Cee = document.querySelector('#cee');
+
+  if (CeeToggle){
+    console.log('Found a ' + CeeToggle +'element');
+    CeeToggle.addEventListener('click', function(event) {
+      expandCeeMenu();
+    });
+  } else {
+    console.log('Did not found any cee-toggle')
+  };
+
+  // SceneList Menu Keyboard accessible - CALEY
+  var CaleyToggle = document.querySelector('#caley-toggle');
+  var Caley = document.querySelector('#caley');
+
+  if (CaleyToggle){
+    console.log('Found a ' + CaleyToggle +'element');
+    CaleyToggle.addEventListener('click', function(event) {
+      expandCaleyMenu();
+    });
+  } else {
+    console.log('Did not found any caley-toggle')
+  };
+
+    
 
   function sanitize(s) {
     return s.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;');
@@ -206,11 +386,40 @@
 
   function switchScene(scene) {
     stopAutorotate();
+    removeElementIframspot("iframespot");
     scene.view.setParameters(scene.data.initialViewParameters);
     scene.scene.switchTo();
-    startAutorotate();
+    stopAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
+    // addElementIframspot();
+        
+  }
+
+  function removeElementIframspot(){
+    var delete_elements = document.getElementsByClassName("iframespot");
+  
+    while (delete_elements.length>0){
+      delete_elements[0].parentNode.removeChild(delete_elements[0]);
+    }
+    // console.log(delete_elements);
+    // return delete_elements;
+  }
+
+  function addElementIframspot(hotspot){
+    
+    var videowrapper = document.getElementsByClassName('video-hotspot-text');
+
+    while (videowrapper.length>0){
+      var wrapper = document.getElementsByClassName('video-hotspot');
+      var videowrapper = document.getElementsByClassName('video-hotspot-text');
+      var video = document.createElement('div');
+      
+      video.classList.add('iframespot');
+      video.innerHTML = '<iframe width="340" height="170" src=""></iframe>"';
+      // videowrapper.appendChild(video);
+      // wrapper.classList.toggle('visible');
+    }; 
   }
 
   function updateSceneName(scene) {
@@ -244,25 +453,24 @@
   }
 
 // Functions for sceneView Toggle: showSceneToggle,  hideScene
-  function showSceneView() {
-    sceneViewElement.classList.add('enabled');
-    sceneViewToggleElement.classList.add('enabled');
-  }
+  // function showSceneView() {
+  //   sceneViewElement.classList.add('enabled');
+  //   sceneViewToggleElement.classList.add('enabled');
+  // }
 
-  function hideSceneView() {
-    sceneViewElement.classList.remove('enabled');
-    sceneViewToggleElement.classList.remove('enabled');
-  }
+  // function hideSceneView() {
+  //   sceneViewElement.classList.remove('enabled');
+  //   sceneViewToggleElement.classList.remove('enabled');
+  // }
 
-  function toggleSceneView() {
-    sceneViewElement.classList.toggle('enabled');
-    sceneViewToggleElement.classList.toggle('enabled');
-  }
+  // function toggleSceneView() {
+  //   sceneViewElement.classList.toggle('enabled');
+  //   sceneViewToggleElement.classList.toggle('enabled');
+  // }
 
   function toggleSidebar(){
     document.getElementById("sceneList").classList.toggle('active');
   }
-
 
   function startAutorotate() {
     if (!autorotateToggleElement.classList.contains('enabled')) {
@@ -287,6 +495,176 @@
     }
   }
 
+  function expandMapsMenu() {
+
+    var MapsOpen = Maps.classList.contains("active");
+    var newMenuOpenStatus = !MapsOpen;
+
+    MapsToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Maps.classList.toggle("active");
+  }
+  
+  function expandOutdoorsMenu() {
+
+    var OutdoorsOpen = Outdoors.classList.contains("active");
+    var newMenuOpenStatus = !OutdoorsOpen;
+
+    OutdoorsToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Outdoors.classList.toggle("active");
+  }
+
+  function expandHamishMenu() {
+
+    var HamishOpen = Hamish.classList.contains("active");
+    var newMenuOpenStatus = !HamishOpen;
+
+    HamishToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Hamish.classList.toggle("active");
+  }
+
+  function expandGeorgeMenu() {
+
+    var GeorgeOpen = George.classList.contains("active");
+    var newMenuOpenStatus = !GeorgeOpen;
+
+    GeorgeToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    George.classList.toggle("active");
+  }
+
+  function expandGeorgelabMenu() {
+
+    var GeorgelabOpen = Georgelab.classList.contains("active");
+    var newMenuOpenStatus = !GeorgelabOpen;
+
+    GeorgelabToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Georgelab.classList.toggle("active");
+  }
+
+  function expandCharlesMenu() {
+
+    var CharlesOpen = Charles.classList.contains("active");
+    var newMenuOpenStatus = !CharlesOpen;
+
+    CharlesToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Charles.classList.toggle("active");
+  }
+
+  function expandGovanMenu() {
+
+    var GovanOpen = Govan.classList.contains("active");
+    var newMenuOpenStatus = !GovanOpen;
+
+    GovanToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Govan.classList.toggle("active");
+  }
+
+  function expandMiltonMenu() {
+
+    var MiltonOpen = Milton.classList.contains("active");
+    var newMenuOpenStatus = !MiltonOpen;
+
+    MiltonToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Milton.classList.toggle("active");
+  }
+
+  function expandLibraryMenu() {
+
+    var LibraryOpen = Library.classList.contains("active");
+    var newMenuOpenStatus = !LibraryOpen;
+
+    LibraryToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Library.classList.toggle("active");
+  }
+
+  function expandStudentMenu() {
+
+    var StudentOpen = Student.classList.contains("active");
+    var newMenuOpenStatus = !StudentOpen;
+
+    StudentToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Student.classList.toggle("active");
+  }
+
+  function expandGymMenu() {
+
+    var GymOpen = Gym.classList.contains("active");
+    var newMenuOpenStatus = !GymOpen;
+
+    GymToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Gym.classList.toggle("active");
+  }
+
+  function expandCeeMenu() {
+
+    var CeeOpen = Cee.classList.contains("active");
+    var newMenuOpenStatus = !CeeOpen;
+
+    CeeToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Cee.classList.toggle("active");
+  }
+
+  function expandCaleyMenu() {
+
+    var CaleyOpen = Caley.classList.contains("active");
+    var newMenuOpenStatus = !CaleyOpen;
+
+    CaleyToggle.setAttribute("aria-expanded", newMenuOpenStatus);
+    Caley.classList.toggle("active");
+  }
+
+
+  
+
+  function createMapLinkHotspotElement(hotspot) {
+
+    // Create wrapper element to hold icon and tooltip.
+    var wrapper = document.createElement('div');
+    wrapper.classList.add('hotspot');
+    wrapper.classList.add('maplink-hotspot');
+
+    // Create image element.
+    var icon = document.createElement('img');
+    icon.src = 'img/maplink.png';
+    icon.classList.add('maplink-hotspot-icon');
+    icon.setAttribute('alt','Map Hotspot link icon');
+
+
+    // Create number element.
+    var number = document.createElement('button');
+    number.classList.add('maplink-hotspot-number');
+    number.setAttribute('alt','Map Hotspot link button');
+    number.innerHTML = hotspot.text;
+    
+
+    // Set rotation transform.
+    var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
+    for (var i = 0; i < transformProperties.length; i++) {
+      var property = transformProperties[i];
+      icon.style[property] = 'rotate(' + hotspot.rotation + 'rad)';
+    }
+
+    // Add click event handler.
+    wrapper.addEventListener('click', function() {
+      switchScene(findSceneById(hotspot.target));
+    });
+
+    // Prevent touch and scroll events from reaching the parent element.
+    // This prevents the view control logic from interfering with the hotspot.
+    stopTouchAndScrollEventPropagation(wrapper);
+
+    // Create tooltip element.
+    var tooltip = document.createElement('div');
+    tooltip.classList.add('hotspot-tooltip');
+    tooltip.classList.add('maplink-hotspot-tooltip');
+    tooltip.innerHTML = findSceneDataById(hotspot.target).name;
+
+    wrapper.appendChild(number);
+    wrapper.appendChild(icon);
+    wrapper.appendChild(tooltip);
+
+    return wrapper;
+  }
+
   function createLinkHotspotElement(hotspot) {
 
     // Create wrapper element to hold icon and tooltip.
@@ -298,6 +676,12 @@
     var icon = document.createElement('img');
     icon.src = 'img/link.png';
     icon.classList.add('link-hotspot-icon');
+    icon.setAttribute('alt','Link Hotspot icon');
+
+    //create 
+    var iconWrapper = document.createElement('button');
+    iconWrapper.classList.add('link-hotspot-icon-wrapper');
+    iconWrapper.setAttribute('alt','Link Hotspot button');
 
     // Set rotation transform.
     var transformProperties = [ '-ms-transform', '-webkit-transform', 'transform' ];
@@ -321,6 +705,7 @@
     tooltip.classList.add('link-hotspot-tooltip');
     tooltip.innerHTML = findSceneDataById(hotspot.target).name;
 
+    wrapper.appendChild(iconWrapper);
     wrapper.appendChild(icon);
     wrapper.appendChild(tooltip);
 
@@ -338,13 +723,18 @@
     var header = document.createElement('div');
     header.classList.add('info-hotspot-header');
 
-    // Create image element.
-    var iconWrapper = document.createElement('div');
+    
+    // Create image wrapper element.
+    var iconWrapper = document.createElement('button');
     iconWrapper.classList.add('info-hotspot-icon-wrapper');
+    iconWrapper.setAttribute('alt','Info Hotspot button');
+
+    // Create image element.
     var icon = document.createElement('img');
     icon.src = 'img/info.png';
     icon.classList.add('info-hotspot-icon');
     iconWrapper.appendChild(icon);
+    icon.setAttribute('alt','Info Hotspot icon');
 
     // Create title element.
     var titleWrapper = document.createElement('div');
@@ -415,13 +805,17 @@
     var header = document.createElement('div');
     header.classList.add('video-hotspot-header');
 
-    // Create image element.
-    var iconWrapper = document.createElement('div');
+    // Create image wrapper element.
+    var iconWrapper = document.createElement('button');
     iconWrapper.classList.add('video-hotspot-icon-wrapper');
+    iconWrapper.setAttribute('alt','Video Hotspot icon');
+
+    // Create image element.
     var icon = document.createElement('img');
     icon.src = 'img/video.png';
     icon.classList.add('video-hotspot-icon');
     iconWrapper.appendChild(icon);
+    icon.setAttribute('alt','Video Hotspot icon');
 
     // Create title element.
     var titleWrapper = document.createElement('div');
@@ -432,7 +826,7 @@
     titleWrapper.appendChild(title);
 
     // Create close element.
-    var closeWrapper = document.createElement('div');
+    var closeWrapper = document.createElement('button');
     closeWrapper.classList.add('video-hotspot-close-wrapper');
     var closeIcon = document.createElement('img');
     closeIcon.src = 'img/close.png';
@@ -448,7 +842,8 @@
     var videowrapper = document.createElement('div');
     videowrapper.classList.add('video-hotspot-text');
     var video = document.createElement('div');
-    videowrapper.appendChild(video);
+    // DELETE so video stops playing: videowrapper.appendChild(video);
+
     
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
@@ -501,9 +896,8 @@
     wrapper.querySelector('.video-hotspot-header').addEventListener('click', toggle);
 
     // Hide content when close icon is clicked.
-    modal.querySelector('.video-hotspot-close-wrapper').addEventListener('click', function(){
-      toggle;
-    });
+    modal.querySelector('.video-hotspot-close-wrapper').addEventListener('click', toggle);
+
 
 
     // Prevent touch and scroll events from reaching the parent element.

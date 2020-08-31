@@ -28,6 +28,97 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[
+        // {
+        //   "yaw": -0.3081602714408227,
+        //   "pitch": 0.5656440868813473,
+		    //   "rotation": 0,
+        //   "target": "Britania Building"
+        // },
+        // {
+        //   "yaw": -0.0621108515259472,
+        //   "pitch": 0.47470697653876215,
+		    //  "rotation": 0,
+        //   "target": "William Harley"
+        // },
+        {
+          "yaw": 0.4735391415429575,
+          "pitch": 0.1842759466249646,
+	    	  "rotation": 0,
+          "target": "133-reception",
+          "text" : "9"
+        },
+        {
+          "yaw": 0.35,
+          "pitch": 0.3,
+		      "rotation": 0,
+          "target": "129-reception",
+          "text" : "10"
+        },
+        {
+          "yaw": 0.12,
+          "pitch": 0.38,
+	    	  "rotation": 0,
+          "target": "139-reception",
+          "text" : "11"
+        },
+                {
+          "yaw": -0.19903880461597367,
+          "pitch": -0.23251673905017967,
+		      "rotation": 0,
+          "target": "4-dobbies-loan-entrance",
+          "text" : "12"
+        },
+        {
+          "yaw": -0.15,
+          "pitch": -0.05,
+	    	  "rotation": 0,
+          "target": "54-ground-floor-hall",
+          "text" : "5"
+        },
+                {
+          "yaw": 0.19,
+          "pitch": 0.19,
+		      "rotation": 0,
+          "target": "75-reception",
+          "text" : "6"
+        },
+        {
+          "yaw": -0.0969289433029683,
+          "pitch": 0.24,
+		      "rotation": 0,
+          "target": "13-main-reception",
+          "text" : "3"
+        },
+        {
+          "yaw": -0.05,
+          "pitch": 0.05,
+		      "rotation": 0,
+          "target": "21-gcu-hall",
+          "text" : "2"
+        },
+        {
+          "yaw": -0.33,
+          "pitch": 0.3,
+		      "rotation": 0,
+          "target": "101-reception",
+          "text" : "4"
+        },
+        {
+          "yaw": -0.28,
+          "pitch": 0.05,
+		      "rotation": 0,
+          "target": "119-reception",
+          "text" : "8"
+        },
+        {
+          "yaw": -0.6315157829765425,
+          "pitch": -0.05,
+	    	  "rotation": 0,
+          "target": "114-entrance",
+          "text" : "7"
+        }
+      ],
       "linkHotspots": [
         {
           "yaw": -0.09436020402345058,
@@ -46,13 +137,14 @@ var APP_DATA = {
           "pitch": 0.24483398702164827,
           "rotation": 10.995574287564278,
           "target": "3-hannover-st-entrance"
-        },
-        {
-          "yaw": -0.3568808889731514,
-          "pitch": -0.15648284832412784,
-          "rotation": 15.707963267948973,
-          "target": "4-dobbies-loan-entrance"
         }
+        // ,
+        // {
+        //   "yaw": -0.3568808889731514,
+        //   "pitch": -0.15648284832412784,
+        //   "rotation": 15.707963267948973,
+        //   "target": "4-dobbies-loan-entrance"
+        // }
       ],
       "infoHotspots": [],
       "videoHotspots":[
@@ -92,6 +184,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.046581521969123685,
@@ -126,18 +219,11 @@ var APP_DATA = {
           "text": ""
         }
       ],
-      "videoHotspots":[
-        {
-          "yaw": +0.05,
-          "pitch": -0.2,
-          "title": "GCU Video Introduction",
-          "text": "https://www.youtube.com/embed/oygou64Y5WA"
-        }
-      ]
+      "videoHotspots":[]
     },
     {
       "id": "2-cowcaddens-rd-entrance",
-      "name": "Cowcaddens Rd Entrance",
+      "name": "Cowcaddens Rd, ARC Entrance",
       "levels": [
         {
           "tileSize": 256,
@@ -163,6 +249,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.5246313981822848,
@@ -189,7 +276,7 @@ var APP_DATA = {
     },
     {
       "id": "3-hannover-st-entrance",
-      "name": "Hannover St Entrance",
+      "name": "North Hanover St Entrance",
       "levels": [
         {
           "tileSize": 256,
@@ -215,6 +302,7 @@ var APP_DATA = {
         "yaw": 55,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.5143145912687608,
@@ -246,26 +334,33 @@ var APP_DATA = {
           "yaw": 0.5324184181092271,
           "pitch": -0.45782129224739876,
           "title": "Student Association",
-          "text": ""
+          "text": "Located on the Ground floor is a social area and 24-hour computer lab. The first floor has a bar and social area, access to welfare and advice centre and the Caley Radio station is also located on this floor. The 2nd floor is the Student Association Offices where you can find out about the variety of societies and sports clubs and how to establish your own."
         },
         {
           "yaw": -2.2,
           "pitch": -0.19,
-          "title": "ARC Health and Fitness",
-          "text": ""
+          "title": "ARC Gym",
+          "text": "Arc Health and Wellbeing Facility"
         },
         {
           "yaw": -1.45,
           "pitch": -0.3,
-          "title": "Govan Mbeki Building",
+          "title": "Govan Mbeki Building (A)",
           "text": ""
         }
       ],
-      "videoHotspots":[]
+      "videoHotspots":[
+        {
+          "yaw": 0.0,
+          "pitch": -0.07,
+          "title": "Freshers Week at GCU",
+          "text": "https://www.youtube.com/embed/JSaqd2hjPVs"
+        }
+      ]
     },
     {
       "id": "4-dobbies-loan-entrance",
-      "name": "Dobbies Loan Entrance",
+      "name": "Caledonian Court",
       "levels": [
         {
           "tileSize": 256,
@@ -291,6 +386,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.3706416393716552,
@@ -330,7 +426,7 @@ var APP_DATA = {
           "yaw": +0.8,
           "pitch": -0.03,
           "title": "Student Accomodation",
-          "text": "https://www.youtube.com/embed/xK4CpM8BQsE"
+          "text": "https://www.youtube.com/embed/pGe8R8w4bzc"
         }
       ]
     },
@@ -362,10 +458,11 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
-          "yaw": -0.31150155615821085,
-          "pitch": 0.17367062861289995,
+          "yaw": -0.4,
+          "pitch": 0.12,
           "rotation": 0,
           "target": "101-reception"
         },
@@ -383,7 +480,7 @@ var APP_DATA = {
         },
         {
           "yaw": 1.2741083114687513,
-          "pitch": -0.01150904670652153,
+          "pitch": +0.03,
           "rotation": 0,
           "target": "13-main-reception"
         },
@@ -405,13 +502,13 @@ var APP_DATA = {
           "yaw": 1.1332699942909876,
           "pitch": -0.3298595444115122,
           "title": "George Moore Building (M)",
-          "text": "George Moore Building (M) Restaurant, Study Club and Campus Life desk"
+          "text": "This is the main building for every time of the day. Here, you can find all the student services such as the Campus Life Desk, VISA, Careers and Wellbeing Service, which are located on the 1st Floor. The university’s main restaurant is located on the ground floor. This building is also home to lots of specialised labs for programmes within the School of Engineering, Computing and Built Environment. It also has our Media and Journalism facilities, located on the 3rd Floor."
         },
         {
           "yaw": -0.40872108043605593,
-          "pitch": -0.18220413707120997,
+          "pitch": -0.10,
           "title": "Hamish Wood Building (W)",
-          "text": ""
+          "text": "This building went through a renovation in 2016. It’s modern ground floor now offers a large lecture theatre as well as teaching and conference rooms. The foyer area is used for a wide range of events throughout the year including the university open days. This building is home to programmes within the Glasgow School for Business and Society and the Law Clinic and Law Moot Room are located on the 3rd floor."
         },
         {
           "yaw": 2.0,
@@ -456,6 +553,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0,
@@ -487,29 +585,22 @@ var APP_DATA = {
           "yaw": -1.4533317074485996,
           "pitch": -0.3987375467223373,
           "title": "Govan Mbeki Building (A)",
-          "text": ""
+          "text": "This building is used for our Health and Vision Sciences programmes. On the 3rd floor is the Inter-Professional Stimulation Laboratories which includes an 18 bedded hospital ward, Intensive Care Unit along with other interactive rooms. On the ground floor, you can find our Eye Clinic which is used for training purposes but is also open to the public."
         },
         {
           "yaw": 0.8062295673618607,
           "pitch": -0.1996515167328976,
-          "title": "ARC Health and Fitness",
+          "title": "ARC Gym",
           "text": "Arc Health and Wellbeing Facility"
         },
         {
           "yaw": 2.0648702824666065,
           "pitch": -0.2692894286351475,
-          "title": "Centre for Executive Education (CEE)&nbsp;",
-          "text": "Centre for Executive Education (CEE) Registration and student cards here"
+          "title": "CEE",
+          "text": "Centre for Executive Education (CEE)."
         }
       ],
-      "videoHotspots":[
-        {
-          "yaw": -2.5,
-          "pitch": -0.07,
-          "title": "Freshers Week at GCU",
-          "text": "https://www.youtube.com/embed/JSaqd2hjPVs"
-        }
-      ]
+      "videoHotspots":[]
     },
     {
       "id": "7-campus-street-3",
@@ -539,6 +630,7 @@ var APP_DATA = {
         "yaw": +90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.9612614790480194,
@@ -567,21 +659,21 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": 0.9755553911898325,
-          "pitch": -0.2735455332822525,
-          "title": "Centre for Executive Education (CEE)&nbsp;<br>",
-          "text": "Centre for Executive Education (CEE) Registration and student cards here<br>"
-        },
-        {
           "yaw": -2.280377826000734,
           "pitch": -0.3019379060424594,
-          "title": "ARC Health and Fitness",
-          "text": "Arc Health and Wellbeing Facility"
+          "title": "ARC Gym",
+          "text": "This is our sports and recreation centre, offering a variety of gym areas, classes, a massage and a hairdresser’s salon. On the ground floor a physiotherapy practice is operating for students, staff and external visitors."
+        },
+        {
+          "yaw": 1.0,
+          "pitch": -0.3019379060424594,
+          "title": "CEE",
+          "text": "On the ground floor of the CEE is the Learning Café, offering areas for group study. Ideal for some relaxed study where you can go online whilst having a coffee and snack from the café area."
         },
         {
           "yaw": 2.5880907611591235,
           "pitch": -0.5150111222591072,
-          "title": "Govan Mbeki Building",
+          "title": "Govan Mbeki Building (A)",
           "text": ""
         }
       ],
@@ -615,18 +707,19 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
-        {
-          "yaw": -0.17083744267851664,
-          "pitch": 0.053317179249811275,
-          "rotation": 0,
-          "target": "114-entrance"
-        },
         {
           "yaw": 0.11237314665933518,
           "pitch": 0.06495034669965705,
           "rotation": 0.7853981633974483,
           "target": "4-dobbies-loan-entrance"
+        },
+        {
+          "yaw": -0.17083744267851664,
+          "pitch": 0.053317179249811275,
+          "rotation": 0,
+          "target": "114-entrance"
         },
         {
           "yaw": -2.049989594657294,
@@ -644,22 +737,22 @@ var APP_DATA = {
       "infoHotspots": [
         {
           "yaw": 2.441811388551076,
-          "pitch": -0.25094348482433304,
+          "pitch": -0.15,
           "title": "Charles Oakley Laboratories",
-          "text": ""
+          "text": "This building is home to our Bioscience Laboratories, Audio Technology facilities, Engineering labs and also the large C001 lecture theatre."
         },
         {
-          "yaw": -0.07732239611897995,
+          "yaw": -0.15,
           "pitch": -0.2160660549679534,
           "title": "Milton Street Building",
-          "text": ""
+          "text": "Located in this building on the ground floor you will find our Fashion Factory."
         }
       ],
       "videoHotspots":[]
     },
     {
       "id": "9-library-green-space-",
-      "name": "Sir Alex Ferguson Library garden",
+      "name": "Library Garden",
       "levels": [
         {
           "tileSize": 256,
@@ -685,6 +778,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.0466496815258957,
@@ -721,13 +815,13 @@ var APP_DATA = {
         {
           "yaw": 2.95,
           "pitch": -0.23,
-          "title": "George Moore Building",
+          "title": "George Moore Building (M)",
           "text": ""
         },
         {
           "yaw": 1.40,
           "pitch": -0.0,
-          "title": "Sr. AF Library garden",
+          "title": "Library Garden",
           "text": "Just a few paces from the interior of the Sir Alex Ferguson library, cafe and refectory why not grab your books or bring your lunch and sit in this rich and green courtyard where you can enjoy the outdoors away from the hustle and bustle of the city?"
         }
       ],
@@ -761,6 +855,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.998176454981209,
@@ -807,6 +902,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": +2.7,
@@ -853,6 +949,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.40,
@@ -885,7 +982,7 @@ var APP_DATA = {
     },
     {
       "id": "13-main-reception",
-      "name": "Main Reception",
+      "name": "George Moore Building",
       "levels": [
         {
           "tileSize": 256,
@@ -911,6 +1008,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.05252533671647086,
@@ -925,14 +1023,7 @@ var APP_DATA = {
           "target": "5-campus-street-1"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": +0.45,
-          "pitch": -0.2,
-          "title": "George Moore Building",
-          "text": "This is the main building for every time of the day. Here, you can find all the student services such as the Campus Life Desk, VISA, Careers and Wellbeing Service, which are located on the 1st Floor. The university’s main restaurant is located on the ground floor. This building is also home to lots of specialised labs for programmes within the School of Engineering, Computing and Built Environment. It also has our Media and Journalism facilities, located on the 3rd Floor."
-        }
-      ],
+      "infoHotspots": [],
       "videoHotspots":[
         {
           "yaw": -0.65,
@@ -970,6 +1061,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.06570696276029864,
@@ -995,7 +1087,7 @@ var APP_DATA = {
     },
     {
       "id": "15-coffee-lab",
-      "name": "Coffee Lab",
+      "name": "Grab and Go Café, George Moore",
       "levels": [
         {
           "tileSize": 256,
@@ -1021,10 +1113,11 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.5682890798828675,
-          "pitch": 0.2509264704700911,
+          "pitch": 0.27,
           "rotation": 0,
           "target": "76-ground-floor-hall"
         },
@@ -1045,7 +1138,7 @@ var APP_DATA = {
         {
           "yaw": 1.648818543560199,
           "pitch": 0.0829730958462509,
-          "title": "Connection to Govan Mbeki Building",
+          "title": "Connection to Govan Mbeki",
           "text": "Corridor Connection to Govan Mbeki Building Ground Floor"
         }
       ],
@@ -1053,7 +1146,7 @@ var APP_DATA = {
     },
     {
       "id": "16-canteen-corridor",
-      "name": "Canteen Corridor",
+      "name": "Restaurant Corridor",
       "levels": [
         {
           "tileSize": 256,
@@ -1079,6 +1172,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.019212435395434824,
@@ -1104,7 +1198,7 @@ var APP_DATA = {
     },
     {
       "id": "17-corridor-to-library",
-      "name": "Corridor to Library",
+      "name": "Corridor Link: Library-George Moore",
       "levels": [
         {
           "tileSize": 256,
@@ -1130,6 +1224,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -3.0581155334205725,
@@ -1155,7 +1250,7 @@ var APP_DATA = {
     },
     {
       "id": "18-canteen-1",
-      "name": "Canteen 1",
+      "name": "Restaurant 1",
       "levels": [
         {
           "tileSize": 256,
@@ -1181,6 +1276,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.17701446470996096,
@@ -1206,7 +1302,7 @@ var APP_DATA = {
     },
     {
       "id": "19-canteen-2",
-      "name": "Canteen 2",
+      "name": "Restaurant 2",
       "levels": [
         {
           "tileSize": 256,
@@ -1232,6 +1328,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.5800277950360062,
@@ -1257,7 +1354,7 @@ var APP_DATA = {
     },
     {
       "id": "20-reception",
-      "name": "Reception",
+      "name": "Campus Desk Life Reception",
       "levels": [
         {
           "tileSize": 256,
@@ -1283,6 +1380,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.09739650396312172,
@@ -1315,7 +1413,7 @@ var APP_DATA = {
     },
     {
       "id": "21-gcu-hall",
-      "name": "GCU Hall",
+      "name": "Campus Life Lounge",
       "levels": [
         {
           "tileSize": 256,
@@ -1341,18 +1439,19 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
-        {
-          "yaw": -0.40636773541205784,
-          "pitch": 0.3221492163551467,
-          "rotation": 0,
-          "target": "23-funding-and-finance"
-        },
         {
           "yaw": -2.7948058979333688,
           "pitch": 0.23747828019864414,
           "rotation": 0,
           "target": "20-reception"
+        },
+        {
+          "yaw": -0.10015709763970904,
+          "pitch": 0.3676241343767934,
+          "rotation": 0,
+          "target": "25-welcome-students"
         },
         {
           "yaw": -0.2612369590117165,
@@ -1361,10 +1460,10 @@ var APP_DATA = {
           "target": "24-campus-life-desk"
         },
         {
-          "yaw": -0.10015709763970904,
-          "pitch": 0.3676241343767934,
+          "yaw": -0.40636773541205784,
+          "pitch": 0.3221492163551467,
           "rotation": 0,
-          "target": "25-welcome-students"
+          "target": "23-funding-and-finance"
         }
       ],
       "infoHotspots": [],
@@ -1372,7 +1471,7 @@ var APP_DATA = {
     },
     {
       "id": "22-1st-floor-hall",
-      "name": "1st Floor Hall",
+      "name": "1st Floor Hall, George Moore",
       "levels": [
         {
           "tileSize": 256,
@@ -1398,6 +1497,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.0774832992626315,
@@ -1432,8 +1532,8 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": 0.7418866748256381,
-          "pitch": -0.18028452651865834,
+          "yaw": 0.80,
+          "pitch": 0.00,
           "title": "Corridor to Library",
           "text": "Corridor Connection to the Sir Alex Ferguson Library"
         }
@@ -1468,6 +1568,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.6918885864020563,
@@ -1527,6 +1628,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.08660080155556216,
@@ -1555,7 +1657,14 @@ var APP_DATA = {
           "text": ""
         }
       ],
-      "videoHotspots":[]
+      "videoHotspots":[
+        {
+          "yaw": +1.5,
+          "pitch": 0.1,
+          "title": "Student Registration at GCU",
+          "text": "https://www.youtube.com/embed/qX0GPMuTjRY"
+        }
+      ]
     },
     {
       "id": "25-welcome-students",
@@ -1585,6 +1694,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.3725728365490433,
@@ -1630,6 +1740,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.152403115541766,
@@ -1706,6 +1817,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 3.15,
@@ -1745,6 +1857,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.5259574269944274,
@@ -1790,6 +1903,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.13965722358812727,
@@ -1835,6 +1949,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.1807335624893973,
@@ -1892,6 +2007,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.3853877960524734,
@@ -1931,6 +2047,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.2230905994756522,
@@ -1970,6 +2087,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.07093935544468799,
@@ -2021,6 +2139,7 @@ var APP_DATA = {
         "yaw": -45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.359749876697273,
@@ -2066,6 +2185,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.3655534855430975,
@@ -2105,6 +2225,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.7433879759624364,
@@ -2169,6 +2290,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.7821248917350125,
@@ -2208,6 +2330,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.13509498256181374,
@@ -2253,6 +2376,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.07756459045661579,
@@ -2292,6 +2416,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -3.1341843034472916,
@@ -2344,6 +2469,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.5554482124942357,
@@ -2395,6 +2521,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.8243617407970252,
@@ -2434,6 +2561,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.146889023899929,
@@ -2473,6 +2601,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.7642823085622972,
@@ -2542,6 +2671,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.35,
@@ -2581,6 +2711,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.2,
@@ -2620,6 +2751,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.5842508852672275,
@@ -2665,6 +2797,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.2392857660175185,
@@ -2704,6 +2837,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.1479744315059897,
@@ -2779,6 +2913,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.4974687417759167,
@@ -2818,6 +2953,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.6141096618899766,
@@ -2857,6 +2993,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.07093928131319416,
@@ -2896,6 +3033,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.609895250804529,
@@ -2909,7 +3047,7 @@ var APP_DATA = {
     },
     {
       "id": "54-ground-floor-hall",
-      "name": "Ground Floor Hall",
+      "name": "Charles Oakley Laboratories",
       "levels": [
         {
           "tileSize": 256,
@@ -2935,6 +3073,7 @@ var APP_DATA = {
         "yaw": -45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.7967328150650443,
@@ -3017,6 +3156,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.2718256831693164,
@@ -3062,6 +3202,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.2688220591122263,
@@ -3101,6 +3242,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -3.118947199446932,
@@ -3140,6 +3282,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.7471005011020795,
@@ -3179,6 +3322,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.0239706989436428,
@@ -3218,6 +3362,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.7824039639502534,
@@ -3311,7 +3456,15 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "maplinkHotspots":[],
+      "linkHotspots": [
+        {
+          "yaw": +1.35,
+          "pitch": 0.0010470195377738634,
+          "rotation": 0,
+          "target": "60-1st-floor-hall"
+        }
+      ],
       "infoHotspots": [],
       "videoHotspots":[]
     },
@@ -3343,6 +3496,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.6123183467835,
@@ -3382,6 +3536,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.6090821191280096,
@@ -3421,6 +3576,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.828251789284323,
@@ -3460,6 +3616,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.1330927656802956,
@@ -3506,6 +3663,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.8974037543787396,
@@ -3545,6 +3703,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.9809686966224227,
@@ -3584,6 +3743,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.2106936344367316,
@@ -3653,6 +3813,7 @@ var APP_DATA = {
         "yaw": 135,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 3.0997970226910017,
@@ -3704,6 +3865,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.994620985283696,
@@ -3743,6 +3905,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.757992803225445,
@@ -3782,6 +3945,7 @@ var APP_DATA = {
         "yaw": 135,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.9270407916377934,
@@ -3821,6 +3985,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.2121549052885019,
@@ -3860,6 +4025,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.3158329730617062,
@@ -3891,14 +4057,14 @@ var APP_DATA = {
           "yaw": 0.6600935714298526,
           "pitch": -0.20702629286979146,
           "title": "CEE",
-          "text": "Centre for Executive Education (CEE) Registration and student cards here"
+          "text": "Centre for Executive Education (CEE)."
         }
       ],
       "videoHotspots":[]
     },
     {
       "id": "75-reception",
-      "name": "Reception",
+      "name": "Govan Mbeki Building",
       "levels": [
         {
           "tileSize": 256,
@@ -3924,14 +4090,9 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
-        {
-          "yaw": -0.5804922109646498,
-          "pitch": 0.07875195788498601,
-          "rotation": 4.71238898038469,
-          "target": "76-ground-floor-hall"
-        },
-        {
+                {
           "yaw": 0.2672222792294914,
           "pitch": -0.036311591596208004,
           "rotation": 0,
@@ -3944,25 +4105,24 @@ var APP_DATA = {
           "target": "85-1st-floor-hall"
         },
         {
+          "yaw": -0.5804922109646498,
+          "pitch": 0.07875195788498601,
+          "rotation": 4.71238898038469,
+          "target": "76-ground-floor-hall"
+        },
+        {
           "yaw": 2.378752019183974,
           "pitch": 0.07445969274229824,
           "rotation": 0,
           "target": "74-entrance"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": -0.50,
-          "pitch": -0.05,
-          "title": "Govan Mbeki Building",
-          "text": "This building is used for our Health and Vision Sciences programmes. On the 3rd floor is the Inter-Professional Stimulation Laboratories which includes an 18 bedded hospital ward, Intensive Care Unit along with other interactive rooms. On the ground floor, you can find our Eye Clinic which is used for training purposes but is also open to the public."
-        }
-      ],
+      "infoHotspots": [],
       "videoHotspots":[]
     },
     {
       "id": "76-ground-floor-hall",
-      "name": "Ground Floor Hall",
+      "name": "Ground Floor Hall, Govan Mbeki",
       "levels": [
         {
           "tileSize": 256,
@@ -3988,6 +4148,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.0310780913109312,
@@ -4008,25 +4169,25 @@ var APP_DATA = {
           "target": "75-reception"
         },
         {
-          "yaw": -3.049036270529024,
-          "pitch": 0.6169528080579916,
-          "rotation": 12.566370614359176,
+          "yaw": -2.8,
+          "pitch": 0.30,
+          "rotation": 7.0685834705770345,
           "target": "15-coffee-lab"
         }
       ],
       "infoHotspots": [
         {
-          "yaw": -2.8654540455596287,
-          "pitch": 0.6506571196593338,
-          "title": "Connection to George Moore Building",
-          "text": "Corridor Connection to George Moore Building Coffee Lab"
+          "yaw": -2.7,
+          "pitch": 0.35,
+          "title": "Connection to George Moore",
+          "text": "Corridor Connection to Grab and Go Café, George Moore"
         }
       ],
       "videoHotspots":[]
     },
     {
       "id": "77-deeprose-lecture-theatre",
-      "name": "Deeprose Lecture Theatre",
+      "name": "Deeprose Lecture Theatre (A005)",
       "levels": [
         {
           "tileSize": 256,
@@ -4052,6 +4213,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.518889695600805,
@@ -4091,6 +4253,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.621942861707721,
@@ -4143,6 +4306,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.34014828787632645,
@@ -4194,6 +4358,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.3127275163400434,
@@ -4233,6 +4398,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.2596498575857833,
@@ -4272,6 +4438,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.08178982138915103,
@@ -4330,6 +4497,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.1744399017035665,
@@ -4375,6 +4543,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.6752456511375904,
@@ -4414,18 +4583,25 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
-          "yaw": -0.7641347547467632,
-          "pitch": 0.2933849162904938,
-          "rotation": 6.283185307179586,
-          "target": "87-practical-room-1"
+          "yaw": 0.7174916608703974,
+          "pitch": 0.4150390954757839,
+          "rotation": 4.71238898038469,
+          "target": "86-eye-examination"
         },
         {
-          "yaw": -0.5489916452033494,
-          "pitch": 0.3150187986826083,
-          "rotation": 6.283185307179586,
-          "target": "86-eye-examination"
+          "yaw": 0.7174916608703974,
+          "pitch": 0.26880728869298665,
+          "rotation": 10.995574287564278,
+          "target": "90-x-ray-simulation-lab"
+        },
+        {
+          "yaw": 0.7174916608703974,
+          "pitch": 0.5593558435014003,
+          "rotation": 4.71238898038469,
+          "target": "95-occupational-therapy-lab-1"
         },
         {
           "yaw": -2.404697609402268,
@@ -4445,7 +4621,7 @@ var APP_DATA = {
     },
     {
       "id": "86-eye-examination",
-      "name": "Eye Examination",
+      "name": "Vision Science Lab: Eye Examination",
       "levels": [
         {
           "tileSize": 256,
@@ -4471,12 +4647,19 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
-          "yaw": 0.8345414178985457,
-          "pitch": 0.06126142575832638,
+          "yaw": 0.83,
+          "pitch": 0.16,
           "rotation": 0,
           "target": "85-1st-floor-hall"
+        },
+        {
+          "yaw": 0.83,
+          "pitch": 0.02,
+          "rotation": 4.71238898038469,
+          "target": "87-practical-room-1"
         }
       ],
       "infoHotspots": [],
@@ -4484,7 +4667,7 @@ var APP_DATA = {
     },
     {
       "id": "87-practical-room-1",
-      "name": "Practical Room 1",
+      "name": "Vision Science Lab: Practical Room 1",
       "levels": [
         {
           "tileSize": 256,
@@ -4510,12 +4693,19 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.17770568660637664,
-          "pitch": -0.004829844910066328,
+          "pitch": 0.15,
           "rotation": 0,
           "target": "85-1st-floor-hall"
+        },
+        {
+          "yaw": 0.17770568660637664,
+          "pitch": -0.01,
+          "rotation": 4.71238898038469,
+          "target": "95-occupational-therapy-lab-1"
         },
         {
           "yaw": 0.4931377114032145,
@@ -4529,7 +4719,7 @@ var APP_DATA = {
     },
     {
       "id": "88-practical-room-2",
-      "name": "Practical Room 2",
+      "name": "Vision Science Lab: Practical Room 2",
       "levels": [
         {
           "tileSize": 256,
@@ -4555,6 +4745,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.5919354736898628,
@@ -4594,43 +4785,39 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.7174916608703974,
           "pitch": 0.26880728869298665,
           "rotation": 10.995574287564278,
-          "target": "90-x-ray-simulation-lab"
+          "target": "91-children-simulation-lab"
         },
         {
           "yaw": 0.7174916608703974,
           "pitch": 0.4150390954757839,
           "rotation": 4.71238898038469,
-          "target": "91-children-simulation-lab"
-        },
-        {
-          "yaw": 0.7174916608703974,
-          "pitch": 0.5593558435014003,
-          "rotation": 4.71238898038469,
-          "target": "92-adult-simulation-lab-1"
-        },
-        {
-          "yaw": 0.7174916608703974,
-          "pitch": 0.6864289496914822,
-          "rotation": 4.71238898038469,
-          "target": "93-adult-simulation-lab-2"
-        },
-        {
-          "yaw": -0.5577882083250127,
-          "pitch": 0.21252969660712395,
-          "rotation": 0,
-          "target": "95-occupational-therapy-lab-1"
-        },
-        {
-          "yaw": -0.7471024275245437,
-          "pitch": 0.1999715820603143,
-          "rotation": 12.566370614359176,
           "target": "94-occupational-therapy-flat-entrance"
         },
+        // {
+        //   "yaw": 0.7174916608703974,
+        //   "pitch": 0.5593558435014003,
+        //   "rotation": 4.71238898038469,
+        //   "target": "92-adult-simulation-lab-1"
+        // },
+        // {
+        //   "yaw": 0.7174916608703974,
+        //   "pitch": 0.6864289496914822,
+        //   "rotation": 4.71238898038469,
+        //   "target": "93-adult-simulation-lab-2"
+        // },
+        // {
+        //   "yaw": -0.7471024275245437,
+        //   "pitch": 0.1999715820603143,
+        //   "rotation": 12.566370614359176,
+        //   "target": "94-occupational-therapy-flat-entrance"
+        // }
+        ,
         {
           "yaw": -2.3973404959384794,
           "pitch": 0.06746633615482978,
@@ -4656,7 +4843,7 @@ var APP_DATA = {
     },
     {
       "id": "90-x-ray-simulation-lab",
-      "name": "X-Ray Simulation Lab",
+      "name": "Imaging Suite",
       "levels": [
         {
           "tileSize": 256,
@@ -4682,18 +4869,19 @@ var APP_DATA = {
         "yaw": -45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.9283624083050306,
           "pitch": 0.11786119499644165,
           "rotation": 6.283185307179586,
-          "target": "89-3rd-floor-hall"
+          "target": "85-1st-floor-hall"
         },
         {
           "yaw": 2.910965346485974,
           "pitch": -0.048380923523271946,
           "rotation": 4.71238898038469,
-          "target": "91-children-simulation-lab"
+          "target": "86-eye-examination"
         }
       ],
       "infoHotspots": [],
@@ -4701,7 +4889,7 @@ var APP_DATA = {
     },
     {
       "id": "91-children-simulation-lab",
-      "name": "Children Simulation Lab",
+      "name": "Inter Professional Simulation Centre 1",
       "levels": [
         {
           "tileSize": 256,
@@ -4727,6 +4915,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.1651311485619473,
@@ -4746,7 +4935,7 @@ var APP_DATA = {
     },
     {
       "id": "92-adult-simulation-lab-1",
-      "name": "Adult Simulation Lab 1",
+      "name": "Inter Professional Simulation Centre 2",
       "levels": [
         {
           "tileSize": 256,
@@ -4772,6 +4961,7 @@ var APP_DATA = {
         "yaw": 135,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.324927914532182,
@@ -4791,7 +4981,7 @@ var APP_DATA = {
     },
     {
       "id": "93-adult-simulation-lab-2",
-      "name": "Adult Simulation Lab 2",
+      "name": "Inter Professional Simulation Centre 3",
       "levels": [
         {
           "tileSize": 256,
@@ -4817,6 +5007,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.6724339211531642,
@@ -4862,6 +5053,7 @@ var APP_DATA = {
         "yaw": 135,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.021499682841293,
@@ -4894,7 +5086,7 @@ var APP_DATA = {
     },
     {
       "id": "95-occupational-therapy-lab-1",
-      "name": "Occupational Therapy Lab 1",
+      "name": "Physio Practical Room 1",
       "levels": [
         {
           "tileSize": 256,
@@ -4920,18 +5112,19 @@ var APP_DATA = {
         "yaw": 90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.0829612443922638,
           "pitch": -0.04049580327133029,
-          "rotation": 0,
-          "target": "89-3rd-floor-hall"
+          "rotation": 1.5707963267948966,
+          "target": "87-practical-room-1"
         },
         {
           "yaw": 1.088061597134919,
           "pitch": 0.08776265542460848,
-          "rotation": 1.5707963267948966,
-          "target": "94-occupational-therapy-flat-entrance"
+          "rotation": 0,
+          "target": "85-1st-floor-hall"
         }
       ],
       "infoHotspots": [],
@@ -4939,7 +5132,7 @@ var APP_DATA = {
     },
     {
       "id": "96-occupational-therapy-lab-2",
-      "name": "Occupational Therapy Lab 2",
+      "name": "Physio Practical Room 2",
       "levels": [
         {
           "tileSize": 256,
@@ -4965,6 +5158,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.682429374760982,
@@ -5004,6 +5198,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.726876600882253,
@@ -5049,6 +5244,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.632954290835947,
@@ -5094,6 +5290,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.741673743721199,
@@ -5139,6 +5336,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.0593593861959176,
@@ -5152,7 +5350,7 @@ var APP_DATA = {
     },
     {
       "id": "101-reception",
-      "name": "Reception",
+      "name": "Hamish Wood Building",
       "levels": [
         {
           "tileSize": 256,
@@ -5178,6 +5376,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.2266592508040226,
@@ -5201,15 +5400,9 @@ var APP_DATA = {
       "infoHotspots": [
         {
           "yaw": 0.0426406776304038,
-          "pitch": -0.6982074849527766,
+          "pitch": -0.55,
           "title": "The Lantern",
           "text": ""
-        },
-        {
-          "yaw": 0.16020639596506747,
-          "pitch": 0.22646514830427122,
-          "title": "Hamish Wood Main Hall",
-          "text": "This building went through a renovation in 2016. It’s modern ground floor now offers a large lecture theatre as well as teaching and conference rooms. The foyer area is used for a wide range of events throughout the year including the university open days. This building is home to programmes within the Glasgow School for Business and Society and the Law Clinic and Law Moot Room are located on the 3rd floor."
         }
       ],
       "videoHotspots":[]
@@ -5242,6 +5435,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.04216603194570823,
@@ -5287,6 +5481,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.14971617129003967,
@@ -5324,7 +5519,7 @@ var APP_DATA = {
     },
     {
       "id": "104-corridor-3",
-      "name": "Corridor 3",
+      "name": "Hamish Wood Consevatory",
       "levels": [
         {
           "tileSize": 256,
@@ -5350,6 +5545,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 3.122221074939981,
@@ -5395,6 +5591,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.2125177735943744,
@@ -5432,7 +5629,7 @@ var APP_DATA = {
     },
     {
       "id": "106-ground-floor",
-      "name": "Ground Floor",
+      "name": "Ground Floor Hall",
       "levels": [
         {
           "tileSize": 256,
@@ -5458,6 +5655,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.5440944383591813,
@@ -5528,6 +5726,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.0769151135855424,
@@ -5541,14 +5740,14 @@ var APP_DATA = {
         {
           "yaw": +1.9,
           "pitch": 0.0,
-          "title": "GCU's Chancellow",
+          "title": "GCU's Chancellor",
           "text": "https://www.youtube.com/embed/I6XP2SLWca8"
         }
       ]
     },
     {
       "id": "108-conference-hall",
-      "name": "Conference Hall",
+      "name": "Conference Hall (W011)",
       "levels": [
         {
           "tileSize": 256,
@@ -5574,6 +5773,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.446395736857398,
@@ -5593,7 +5793,7 @@ var APP_DATA = {
     },
     {
       "id": "109-w004-lab",
-      "name": "W004 Lab",
+      "name": "Room W010",
       "levels": [
         {
           "tileSize": 256,
@@ -5619,6 +5819,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.7140977509614173,
@@ -5638,7 +5839,7 @@ var APP_DATA = {
     },
     {
       "id": "110-w005-lab",
-      "name": "W005 Lab",
+      "name": "Room W007",
       "levels": [
         {
           "tileSize": 256,
@@ -5664,6 +5865,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.6242333850113164,
@@ -5703,6 +5905,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.3894395347683943,
@@ -5748,6 +5951,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.8100896049477058,
@@ -5793,6 +5997,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.8149328897356023,
@@ -5812,7 +6017,7 @@ var APP_DATA = {
     },
     {
       "id": "114-entrance",
-      "name": "Entrance",
+      "name": "Milton Street Building",
       "levels": [
         {
           "tileSize": 256,
@@ -5838,6 +6043,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 3.117823439789115,
@@ -5856,7 +6062,7 @@ var APP_DATA = {
         {
           "yaw": -0.36,
           "pitch": -0.42,
-          "title": "Caledonian Court",
+          "title": "Milton Street Building",
           "text": "Located in this building on the ground floor you will find our Fashion Factory."
         }
       ],
@@ -5871,7 +6077,7 @@ var APP_DATA = {
     },
     {
       "id": "115-fashion-lab",
-      "name": "Fashion Lab",
+      "name": "Fashion Lab 1",
       "levels": [
         {
           "tileSize": 256,
@@ -5897,6 +6103,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.9787856485995725,
@@ -5922,7 +6129,7 @@ var APP_DATA = {
     },
     {
       "id": "116-cut--confection",
-      "name": "Cut & Confection",
+      "name": "Fashion Lab 2",
       "levels": [
         {
           "tileSize": 256,
@@ -5948,6 +6155,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.1261658561794095,
@@ -5973,7 +6181,7 @@ var APP_DATA = {
     },
     {
       "id": "117-sewing--tailoring",
-      "name": "Sewing & Tailoring",
+      "name": "Fashion Lab 3",
       "levels": [
         {
           "tileSize": 256,
@@ -5999,6 +6207,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.6203373989283243,
@@ -6038,6 +6247,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.1974369042322603,
@@ -6057,7 +6267,7 @@ var APP_DATA = {
     },
     {
       "id": "119-reception",
-      "name": "Reception",
+      "name": "The Sir Alex Ferguson Library",
       "levels": [
         {
           "tileSize": 256,
@@ -6083,6 +6293,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.895618248558254,
@@ -6109,7 +6320,7 @@ var APP_DATA = {
     },
     {
       "id": "120-main-hall-1",
-      "name": "Main Hall 1",
+      "name": "Main Hall 1, Library",
       "levels": [
         {
           "tileSize": 256,
@@ -6135,6 +6346,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.600589578998468,
@@ -6193,6 +6405,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.8977523265384235,
@@ -6233,18 +6446,11 @@ var APP_DATA = {
           "text": ""
         }
       ],
-      "videoHotspots":[
-        {
-          "yaw": -0.2,
-          "pitch": -0.02,
-          "title": "Sir Alex Ferguson at the Opening",
-          "text": "https://www.youtube.com/embed/a7swDOxhvBI"
-        }
-      ]
+      "videoHotspots":[]
     },
     {
       "id": "122-library-garden",
-      "name": "Library Garden",
+      "name": "The Sr AF Rooftop Garden",
       "levels": [
         {
           "tileSize": 256,
@@ -6270,6 +6476,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.4642984937229535,
@@ -6302,7 +6509,7 @@ var APP_DATA = {
     },
     {
       "id": "123-1st-floor",
-      "name": "1st Floor",
+      "name": "1st Floor, The Sir Alex Ferguson Library ",
       "levels": [
         {
           "tileSize": 256,
@@ -6328,10 +6535,11 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 3.0371546968085426,
-          "pitch": 0.08557802110716395,
+          "pitch": 0.18,
           "rotation": 3.141592653589793,
           "target": "121-main-hall-2"
         },
@@ -6352,6 +6560,24 @@ var APP_DATA = {
           "pitch": 0.19037971079656302,
           "rotation": 6.283185307179586,
           "target": "22-1st-floor-hall"
+        },
+        {
+          "yaw": 3.0371546968085426,
+          "pitch": 0.07,
+          "rotation": 0,
+          "target": "125-group-study-area"
+        },
+        {
+          "yaw": 3.0371546968085426,
+          "pitch": -0.03,
+          "rotation": 0,
+          "target": "122-library-garden"
+        },
+        {
+          "yaw": 3.0371546968085426,
+          "pitch": -0.13,
+          "rotation": 0,
+          "target": "126-4th-floor"
         }
       ],
       "infoHotspots": [
@@ -6392,6 +6618,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.718913115930821,
@@ -6400,12 +6627,19 @@ var APP_DATA = {
           "target": "123-1st-floor"
         }
       ],
-      "infoHotspots": [],
+      "infoHotspots": [
+        {
+          "yaw": 1.9,
+          "pitch": -0.05,
+          "title": "Connection to Hamish Wood",
+          "text": "Corridor Connection to Hamish Wood Building 1st Floor Hall"
+          }
+      ],
       "videoHotspots":[]
     },
     {
       "id": "125-group-study-area",
-      "name": "2nd Floor Group Study Area",
+      "name": "Group Study Area",
       "levels": [
         {
           "tileSize": 256,
@@ -6431,10 +6665,17 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.05,
-          "pitch": -0.02,
+          "pitch": -0.04,
+          "rotation": 0,
+          "target": "127-individual-study-area"
+        },
+        {
+          "yaw": -1.05,
+          "pitch": +0.07,
           "rotation": 3.141592653589793,
           "target": "121-main-hall-2"
         }
@@ -6444,7 +6685,7 @@ var APP_DATA = {
     },
     {
       "id": "126-4th-floor",
-      "name": "4th Floor",
+      "name": "4th Floor Hall",
       "levels": [
         {
           "tileSize": 256,
@@ -6470,6 +6711,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.4686917299082989,
@@ -6528,6 +6770,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.1674106459048055,
@@ -6567,6 +6810,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 0.1163996745232474,
@@ -6580,7 +6824,7 @@ var APP_DATA = {
     },
     {
       "id": "129-reception",
-      "name": "Reception",
+      "name": "ARC Gym",
       "levels": [
         {
           "tileSize": 256,
@@ -6606,6 +6850,7 @@ var APP_DATA = {
         "yaw": -135,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.19555184080264176,
@@ -6636,8 +6881,8 @@ var APP_DATA = {
         {
           "yaw": -3.2,
           "pitch": -0.26638523833347705,
-          "title": "ARC",
-          "text": "This is our sports and recreation centre, offering a variety of gym areas, classes, a massage and a hairdresser’s salon. On the ground floor a physiotherapy practice is operating for students, staff and external visitors."
+          "title": "ARC Reception",
+          "text": ""
         }
       ],
       "videoHotspots":[]
@@ -6670,6 +6915,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 1.8233619895899427,
@@ -6690,7 +6936,7 @@ var APP_DATA = {
     },
     {
       "id": "131-cardio-studio",
-      "name": "Cardio Studio",
+      "name": "Gym Area 1",
       "levels": [
         {
           "tileSize": 256,
@@ -6716,6 +6962,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.60440212622008,
@@ -6735,7 +6982,7 @@ var APP_DATA = {
     },
     {
       "id": "132-performance-studio",
-      "name": "Performance Studio",
+      "name": "Gym Area 2",
       "levels": [
         {
           "tileSize": 256,
@@ -6761,6 +7008,7 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.621049342952789,
@@ -6774,7 +7022,7 @@ var APP_DATA = {
     },
     {
       "id": "133-reception",
-      "name": "Reception",
+      "name": "Student Association",
       "levels": [
         {
           "tileSize": 256,
@@ -6800,6 +7048,7 @@ var APP_DATA = {
         "yaw": 90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -1.116990459190692,
@@ -6810,19 +7059,19 @@ var APP_DATA = {
         {
           "yaw": -2.5207083562984884,
           "pitch": 0.19,
-          "rotation": 0,
+          "rotation": 3.141592653589793,
           "target": "137-24h-computer-lab"
         },
         {
           "yaw": -2.5207083562984884,
           "pitch": 0.09,
-          "rotation": 0,
+          "rotation": 3.141592653589793,
           "target": "138-climbing-wall"
         },
         {
           "yaw": -2.5207083562984884,
           "pitch": -0.01,
-          "rotation": 0,
+          "rotation": 3.141592653589793,
           "target": "136-student-association"
         },
         {
@@ -6832,14 +7081,7 @@ var APP_DATA = {
           "target": "134-games--bar-area-1"
         }
       ],
-      "infoHotspots": [
-        {
-          "yaw": 1.45,
-          "pitch": -0.20,
-          "title": "Students' Association",
-          "text": "Located on the Ground floor is a social area and 24-hour computer lab. The first floor has a bar and social area, access to welfare and advice centre and the Caley Radio station is also located on this floor. The 2nd floor is the Student Association Offices where you can find out about the variety of societies and sports clubs and how to establish your own."
-        }
-      ],
+      "infoHotspots": [],
       "videoHotspots":[
         {
           "yaw": 2.5,
@@ -6877,6 +7119,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.47929356684700153,
@@ -6922,6 +7165,7 @@ var APP_DATA = {
         "yaw": 90,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.2775145898829185,
@@ -6941,7 +7185,7 @@ var APP_DATA = {
     },
     {
       "id": "136-student-association",
-      "name": "Student Association",
+      "name": "Social Learning Space",
       "levels": [
         {
           "tileSize": 256,
@@ -6967,7 +7211,21 @@ var APP_DATA = {
         "yaw": -90,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "maplinkHotspots":[],
+      "linkHotspots": [
+        {
+          "yaw": -3.0,
+          "pitch": 0.19,
+          "rotation": 0,
+          "target": "133-reception"
+        },
+        {
+          "yaw": -3.0,
+          "pitch": 0.07,
+          "rotation": 4.71238898038469,
+          "target": "137-24h-computer-lab"
+        },
+      ],
       "infoHotspots": [],
       "videoHotspots":[]
     },
@@ -6999,7 +7257,15 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
-      "linkHotspots": [],
+      "maplinkHotspots":[],
+      "linkHotspots": [
+        {
+          "yaw": +1.7,
+          "pitch": 0.19,
+          "rotation": 0,
+          "target": "133-reception"
+        },
+      ],
       "infoHotspots": [],
       "videoHotspots":[]
     },
@@ -7031,6 +7297,7 @@ var APP_DATA = {
         "yaw": 45,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": 2.5,
@@ -7044,7 +7311,7 @@ var APP_DATA = {
     },
     {
       "id": "139-reception",
-      "name": "Reception",
+      "name": "Centre for Executive Education",
       "levels": [
         {
           "tileSize": 256,
@@ -7070,6 +7337,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -2.3787945388233123,
@@ -7089,7 +7357,7 @@ var APP_DATA = {
     },
     {
       "id": "140-registration--coffee-lab",
-      "name": "Registration & Coffee Lab",
+      "name": "CEE Learning Café",
       "levels": [
         {
           "tileSize": 256,
@@ -7115,6 +7383,7 @@ var APP_DATA = {
         "yaw": 0,
         "fov": 1.5707963267948966
       },
+      "maplinkHotspots":[],
       "linkHotspots": [
         {
           "yaw": -0.3,
@@ -7124,14 +7393,7 @@ var APP_DATA = {
         }
       ],
       "infoHotspots": [],
-      "videoHotspots":[
-        {
-          "yaw": -0.9,
-          "pitch": -0.08,
-          "title": "Student Registration at GCU",
-          "text": "https://www.youtube.com/embed/qX0GPMuTjRY"
-        }
-      ]
+      "videoHotspots":[]
     }
   ],
   "name": "Project Title",
