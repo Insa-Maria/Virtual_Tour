@@ -1,0 +1,81 @@
+{
+  "_from": "tincanjs",
+  "_id": "tincanjs@0.50.0",
+  "_inBundle": false,
+  "_integrity": "sha1-rnjtAYiyowvbpaAxOzj5AkaV9Ow=",
+  "_location": "/tincanjs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "tincanjs",
+    "name": "tincanjs",
+    "escapedName": "tincanjs",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/tincanjs/-/tincanjs-0.50.0.tgz",
+  "_shasum": "ae78ed0188b2a30bdba5a0313b38f9024695f4ec",
+  "_spec": "tincanjs",
+  "_where": "C:\\POTREE_BASE\\Node.js\\node_modules",
+  "author": {
+    "name": "Rustici Software",
+    "email": "support@tincanapi.com"
+  },
+  "bugs": {
+    "url": "https://github.com/RusticiSoftware/TinCanJS/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Brian J. Miller",
+      "email": "brian.miller@rusticisoftware.com"
+    }
+  ],
+  "dependencies": {
+    "arraybuffer-slice": "0.1.2",
+    "js-polyfills": "0.1.22",
+    "text-encoding": "0.6.0",
+    "xhr2": "0.0.7"
+  },
+  "deprecated": false,
+  "description": "Experience API (Tin Can API) Library",
+  "devDependencies": {
+    "grunt": "0.4.4",
+    "grunt-contrib-concat": "0.3.0",
+    "grunt-contrib-jshint": "0.12.0",
+    "grunt-contrib-uglify": "0.4.0",
+    "grunt-contrib-watch": "0.6.1",
+    "grunt-contrib-yuidoc": "^0.5.2",
+    "qunit": "0.9.1"
+  },
+  "directories": {
+    "src": "src",
+    "doc": "doc"
+  },
+  "homepage": "https://github.com/RusticiSoftware/TinCanJS#readme",
+  "keywords": [
+    "tincan",
+    "tin can",
+    "e-learning",
+    "scorm",
+    "lrs",
+    "experienceapi",
+    "experience api",
+    "xapi",
+    "cmi5"
+  ],
+  "license": "Apache-2.0",
+  "main": "build/tincan-node.js",
+  "name": "tincanjs",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RusticiSoftware/TinCanJS.git"
+  },
+  "version": "0.50.0"
+}

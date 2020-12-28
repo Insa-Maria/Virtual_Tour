@@ -1,0 +1,91 @@
+<!doctype html>  
+<html  lang="en">
+<head>
+    <title>xAPI Tutorial: Get started in under 1 hour</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0 maximum-scale=3.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+    <style> @-ms-viewport { width: device-width; } </style>
+    
+   <!-- Includes for ADL's xAPI Wrapper -->  
+   <!-- Download the files from: -->  
+   <!-- https://github.com/adlnet/xAPIWrapper -->  
+   <script type="text/javascript" src="./cryptojs_v3.1.2.js"></script>  
+   <script type="text/javascript" src="./xapiwrapper.min.js"></script>  
+    <!------------------------------------->      
+      
+    <script>  
+    function send_statement(){  
+        // var conf = {  
+        //      "endpoint" : "https://trial-lrs.yetanalytics.io/xapi",  
+        //      "auth" : "Basic " + toBase64("0913009482ade408b4de43e73cdb856f:d86ace2ab5942ceaf526f2f9fbfc09ee")  
+        //      }; 
+        var conf = {
+            "endpoint" : "https://trial-lrs.yetanalytics.io/xapi/",
+            "user" : "0913009482ade408b4de43e73cdb856f",
+            "password" : "d86ace2ab5942ceaf526f2f9fbfc09ee",
+            "allowFail": false
+            };
+          
+        ADL.XAPIWrapper.changeConfig(conf);  
+        
+           
+        //define the xapi statement being sent  
+        var statement = {  
+            "actor": {  
+                "mbox": "mailto:Tester@example.com",  
+                "name": "Your Name Here: GCU student",  
+                "objectType": "Agent"  
+            },  
+            "verb": {  
+                "id": "http://example.com/xapi/interacted",  
+                "display": {"en-US": "interacted"}  
+            },  
+            "object": {  
+                "id": "http://example.com/button_example",  
+                "definition": {  
+                    "name": {"en-US": "GCU Button example"},  
+                    "description": {"en-US": "Example xAPI GCU Button"}  
+                },  
+                "objectType": "Activity"  
+            }  
+        }; //end statement definition  
+
+        // console.log(statement); // added to test
+   
+        // Dispatch the statement to the LRS  
+
+        var result = ADL.XAPIWrapper.sendStatement(statement);
+        //var result = ADL.XAPIWrapper.sendStatement(statement, function(resp, obj){ 
+        //     ADL.XAPIWrapper.log("[" + result.id + "]: " + result.xhr.status + " - " + result.xhr.statusText);});
+         
+        // ADL.XAPIWrapper.log("[" + result.id + "]: " + result.xhr.status + " - " + result.xhr.statusText); // added Send statemetn https://developer.aliyun.com/mirror/npm/package/xapiwrapper
+
+        // ADL.XAPIWrapper.getStatements(null, null, function(xhr) {
+            
+        //     console.log("ok")
+
+        //     if (xhr.status == 200) {
+               
+        //         let payload = JSON.parse(xhr.responseText)
+        //         console.log(payload.statement)
+        //     }
+        // });
+    }
+    </script>  
+  
+</head>  
+  
+<body>  
+    <button type="button" onclick="send_statement()">Send Statements - A</button>  
+
+    <button type="button" onclick="send_statement()">Send Statements - B </button>
+    
+    <button type="button" onclick="send_statement()">Send Statements - C </button>
+
+
+    <!--Add the TinCan xAPI Wrapper-->
+    <script src="tincan-min.js"></script> 
+
+</body>  
+</html>  

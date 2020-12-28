@@ -204,19 +204,19 @@ var APP_DATA = {
           "yaw": 0.33246410110233526,
           "pitch": -0.533836089213974,
           "title": "William Harley Building (H)",
-          "text": ""
+          "text": "William Harley Building"
         },
         {
           "yaw": -0.1105652554347607,
           "pitch": -0.42771270822916563,
           "title": "Hamish Wood Building (W)",
-          "text": ""
+          "text": "Hamish Wood Building "
         },
         {
           "yaw": -0.643632570251194,
           "pitch": -0.8229013615216001,
           "title": "Britannia Building",
-          "text": ""
+          "text": "Britannia Building"
         }
       ],
       "videoHotspots":[]
@@ -268,8 +268,8 @@ var APP_DATA = {
         {
           "yaw": 1.0919236730868498,
           "pitch": -0.3021659115402713,
-          "title": "Govan Mbeki Building",
-          "text": ""
+          "title": "Govan Mbeki Building (A)",
+          "text": "Govan Mbeki Building (A)"
         }
       ],
       "videoHotspots":[]
@@ -346,7 +346,7 @@ var APP_DATA = {
           "yaw": -1.45,
           "pitch": -0.3,
           "title": "Govan Mbeki Building (A)",
-          "text": ""
+          "text": "Govan Mbeki Building (A)"
         }
       ],
       "videoHotspots":[
@@ -406,13 +406,13 @@ var APP_DATA = {
           "yaw": -0.9141569541659074,
           "pitch": -0.10778374002924274,
           "title": "Milton Street Building",
-          "text": ""
+          "text": "Milton Street Building"
         },
         {
           "yaw": -2.5257121081895644,
           "pitch": -0.5168158214511642,
           "title": "Charles Oakley Laboratories",
-          "text": ""
+          "text": "Charles Oakley Laboratories"
         },
         {
           "yaw": 1.0,
@@ -520,7 +520,7 @@ var APP_DATA = {
           "yaw": -2.7914722767554547,
           "pitch": -0.26638523833347705,
           "title": "Britannia Building",
-          "text": ""
+          "text": "Britannia Building"
         }
       ],
       "videoHotspots":[]
@@ -674,7 +674,7 @@ var APP_DATA = {
           "yaw": 2.5880907611591235,
           "pitch": -0.5150111222591072,
           "title": "Govan Mbeki Building (A)",
-          "text": ""
+          "text": "Govan Mbeki Building (A)"
         }
       ],
       "videoHotspots":[]
@@ -810,13 +810,13 @@ var APP_DATA = {
           "yaw": -0.8471995549013052,
           "pitch": -0.3038287000429243,
           "title": "Hamish Wood Building (W)",
-          "text": ""
+          "text": "Hamish Wood Building (W)"
         },
         {
           "yaw": 2.95,
           "pitch": -0.23,
           "title": "George Moore Building (M)",
-          "text": ""
+          "text": "George Moore Building (M)"
         },
         {
           "yaw": 1.40,
@@ -1654,7 +1654,7 @@ var APP_DATA = {
           "yaw": 1.29781227471012,
           "pitch": -0.041446701830381016,
           "title": "Campus Life Desk",
-          "text": ""
+          "text": "Campus Life Desk"
         }
       ],
       "videoHotspots":[
@@ -2257,7 +2257,7 @@ var APP_DATA = {
           "yaw": 0.8243983957133487,
           "pitch": -0.4304862103830942,
           "title": "Fall of Fame",
-          "text": ""
+          "text": "Fall of Fame"
         }
       ],
       "videoHotspots":[]
@@ -2436,7 +2436,7 @@ var APP_DATA = {
           "yaw": 1.5731444853377896,
           "pitch": -0.4612863077457767,
           "title": "Going for Gold",
-          "text": ""
+          "text": "Going for Gold"
         }
       ],
       "videoHotspots":[]
@@ -4051,7 +4051,7 @@ var APP_DATA = {
           "yaw": 0.005109333930601423,
           "pitch": -0.06911499395367571,
           "title": "ARC Health and Fitness",
-          "text": ""
+          "text": "ARC Health and Fitness"
         },
         {
           "yaw": 0.6600935714298526,
@@ -5079,7 +5079,7 @@ var APP_DATA = {
           "yaw": 2.2,
           "pitch": -0.1,
           "title": "Ocupational Therapy Flat",
-          "text": ""
+          "text": "Ocupational Therapy Flat"
         }
       ],
       "videoHotspots":[]
@@ -5402,7 +5402,7 @@ var APP_DATA = {
           "yaw": 0.0426406776304038,
           "pitch": -0.55,
           "title": "The Lantern",
-          "text": ""
+          "text": "The Lantern"
         }
       ],
       "videoHotspots":[]
@@ -5693,7 +5693,7 @@ var APP_DATA = {
           "yaw": 0.5302392881586115,
           "pitch": -0.06332547442664094,
           "title": "Lift",
-          "text": ""
+          "text": "Lift"
         }
       ],
       "videoHotspots":[]
@@ -6443,7 +6443,7 @@ var APP_DATA = {
           "yaw": -1.5,
           "pitch": -0.02,
           "title": "Coffee & Snack Bar",
-          "text": ""
+          "text": "Coffee & Snack Bar"
         }
       ],
       "videoHotspots":[]
@@ -6490,7 +6490,7 @@ var APP_DATA = {
           "yaw": -0.04584327324479531,
           "pitch": -0.36292957430487505,
           "title": "George Moore Building",
-          "text": ""
+          "text": "George Moore Building"
         },
         {
           "yaw": -0.04584327324479531,
@@ -6502,7 +6502,7 @@ var APP_DATA = {
           "yaw": 1.0408533880625104,
           "pitch": -0.5139183240113105,
           "title": "Hamish Wood Building",
-          "text": ""
+          "text": "Hamish Wood Building"
         }
       ],
       "videoHotspots":[]

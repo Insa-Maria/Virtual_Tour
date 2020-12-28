@@ -15,6 +15,7 @@
  */
 'use strict';
 
+
 (function() {
   var Marzipano = window.Marzipano;
   var bowser = window.bowser;
@@ -33,6 +34,15 @@
   // var sceneViewToggleElement = document.querySelector('#sceneViewToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
+
+
+  //Add the xAPI TheVerb and TheObject objects! ***NEW***
+  // const TinCan = require("tincanjs");
+
+  var TheVerb = {id:"http://adlnet.gov/expapi/verbs/experienced", display:{ "en-US": "experienced" }};
+  var TheObject = {id:"http://myurl.com/activities/marzipano", "definition":{ "description":{ "en-US": "" }}};
+  //  var TheObject_link = {id:"http://myurl.com/activities/marzipano_linkhotspot", "definition": {"name": { "en-US": "" }},"description":""};
+
 
 
   // Detect desktop or mobile mode.
@@ -103,12 +113,31 @@
     data.linkHotspots.forEach(function(hotspot) {
       var element = createLinkHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+
+      // // added from   https://digitallearningsolutions.com.au/connecting-marzipano-to-xapi-part-one/
+      // element.addEventListener('click', function() {
+      //   TheObject_link.definition.name = 'Link - Click. '+ hotspot.title;
+      //   TheObject_link.description =  hotspot.text;
+        
+      //  sendxAPI_link(hotspot,TheVerb,TheObject_link);
+      // });
+      
     });
 
     // Create info hotspots.
     data.infoHotspots.forEach(function(hotspot) {
       var element = createInfoHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
+
+
+      // added from   https://digitallearningsolutions.com.au/connecting-marzipano-to-xapi-part-one/
+      element.addEventListener('click', function() {
+        TheObject.definition_name = 'Info_Hotspot - Click. '+  hotspot.title ;
+        TheObject.definition_description =  hotspot.text; //edited to TheObject.definition.description
+        
+       sendxAPI(hotspot,TheVerb,TheObject);
+      });
+    
     });
 
     //scene.hotspotContainer().createHotspot( document.getElementById('myframe'), { yaw: -0.5150948165335372, pitch: 0.08472012770918269 }, { perspective: { radius: 1640, extraRotations: "rotateX(5deg)" }} );
@@ -946,9 +975,105 @@
   }
 
 
-
   // Display the initial scene.
   switchScene(scenes[0]);
 
+
+  // Added for XAPI add a new function that accepts two parameters ***NEW***
+  function sendxAPI(TheeEvent,TheVerb,TheObject){
+    
+    var statement = '';
+    statement = new TinCan.Statement({
+      "actor": {  
+        "mbox": "student_name@example.com",  
+        "name": "Student Name",  
+        "objectType": "Agent" 
+      },
+      "verb": {  
+        "id": TheVerb.id, //different from xAPI-test
+        "display": { "en-US": TheVerb.display["en-US"] }
+      },
+      "object": {  
+        "id": TheObject.id,
+        "definition": {
+          "name": { "en-US": TheObject.definition_name },
+          "description": {"en-US": TheObject.definition_description}
+        }
+      },
+      "target": {
+        "id": "http://rusticisoftware.github.com/TinCanJS"}
+      }
+    );
+
+    var lrs;
+    try {
+      lrs = new TinCan.LRS(
+        {
+          "endpoint" : "https://trial-lrs.yetanalytics.io/xapi/",  
+          "auth" : "Basic " + toBase64 ("eace9d1160f335dec0c78cf31463aed1:9a46fb8a07dbdaa72116eff29b0e9d35")  
+               
+          // "endpoint" : "https://trial-lrs.yetanalytics.io/xapi/",
+          // "user" : "eace9d1160f335dec0c78cf31463aed1",
+          // "password" : "9a46fb8a07dbdaa72116eff29b0e9d35",
+          // "allowFail": false
+        }
+      );
+    }
+
+    catch (ex) {
+      console.log("Failed to setup LRS object: ", ex);
+      // TODO: do something with error, can't communicate with LRS
+    }
+
+
+    lrs.saveStatement(
+      statement,
+      {
+        callback: function (err, xhr) {
+          if (err !== null) {
+            if (xhr !== null) {
+              console.log("Failed to save statement: " + xhr.responseText + " (" + xhr.status + ")");
+              return;
+            }
+            console.log("Failed to save statement: " + err);
+            return;
+          }
+          // TODO: do something with success (possibly ignore)
+          console.log("Statement saved");
+    }    
+    });
+
+
+    
+
+    // // Synchronous (not recommende) http://rusticisoftware.github.io/TinCanJS/
+
+    // var result = lrs.saveStatement(statement);
+    // console.log(statement)
+    //   if (result.err !== null) {
+    //       if (/^\d+$/.test(result.err)) {
+    //           if (result.err === 0) {
+    //               console.log("Failed to save statement: aborted, offline, or invalid CORS endpoint");
+    //               // TODO: do something with error, didn't save statement
+    //           }
+    //           else {
+    //               console.log("Failed to save statement: " + result.xhr.responseText);
+    //               // TODO: do something with error, didn't save statement
+    //           }
+    //       }
+    //       else {
+    //           console.log("Failed to save statement: " + result.err);
+    //           // TODO: do something with error, didn't save statement
+    //       }
+    //   }
+    //   else {
+    //       console.log("Statement saved");
+    //       // TOOO: do something with success (possibly ignore)
+    //   }
+    // // Synchronous (not recommende) -- FINISHED
+      
+  }
+
+   
 
 })();
