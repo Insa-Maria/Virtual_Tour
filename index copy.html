@@ -7,7 +7,7 @@
 <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0 maximum-scale=3.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
 
 <script type="text/javascript" src="xAPI-test/cryptojs_v3.1.2.js"></script>  
 <script type="text/javascript" src="xAPI-test/xapiwrapper.min.js"></script>  
@@ -17,7 +17,7 @@
 
 </head>
 
-<body class="multiple-scenes view-control-buttons" >
+<body>
 
 
   <!-- ADD MOZILLA HUB FULLSCREEN --> 
@@ -25,9 +25,24 @@
   
   <div id="container">
     
-    <div align="center">
-      <iframe id="change" name="change" src="//classic.minecraft.net"></iframe>
-    </div>
+    <form class="initial-content animate" style="z-index:999999">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+      <div>
+        <label for="link">
+        <b>Paste Multiplayer Link Here</b></label>
+        <!-- <center><input type="text" onsubmit="changeIframe()" id="detroit" placeholder="https://classic.minecraft.net/?join=somelettersand#s" name="link" required></center> -->
+        <input type="text" id="minecraftInput" onchange="changeIframe(this.value)" id="detroit" placeholder="https://classic.minecraft.net/?join=somelettersand#s" name="link" required>
+        <button class="button" type="button">Go</button>
+      </div>
+      
+      <div class="container">
+          <center><button class="button .close" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></center>
+      </div>
+  </form>
+  
+  <iframe id="change" name="change" src="//classic.minecraft.net" ></iframe>
+    
 
 
     <div> 
@@ -48,34 +63,16 @@
         var input = document.getElementById("detroit");
     </script>
 
-    <div id="id01" class="sprckn-initial" display='block'>
+    <!-- <div id="id01" class="sprckn-initial" display='block'>
   
-    <form class="initial-content animate">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     
-        <div class="sprckn-initial-content">
-            <label for="link"><b>Paste Multiplayer Link Here</b></label>
-            <!-- <center><input type="text" onsubmit="changeIframe()" id="detroit" placeholder="https://classic.minecraft.net/?join=somelettersand#s" name="link" required></center> -->
-            <center><input type="text" id="minecraftInput" onchange="changeIframe(this.value)" id="detroit" placeholder="https://classic.minecraft.net/?join=somelettersand#s" name="link" required></center>
-            <center><button type="button">Go</button></center>
-        </div>
-        
-        <div class="container" style="background-color:#f1f1f1">
-            <center><button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></center>
-        </div>
-    </form>
   
-    </div>
+    </div> -->
   
   </div>
   
 
-
-
-<div id="pano"></div>
-
-
-
+<!-- 
 <nav>
     
   <div id="titleBar">
@@ -123,14 +120,7 @@
         <nav>
           <label for="outdoors-sub1" id="maps-toggle" class="scene maps-toggle" href="javascript:void(0)" data-id="0-campus-map" style=" display: block; height: 40px; text-align: left; display:inline-block; padding: 12px 25px; font-weight: 500; font-size: 17px;"><i class="fa fa-map-o" aria-hidden="true"></i>&nbsp;&nbsp;Campus Map</label>
         </nav> 
-        <!-- <button id="maps-toggle" class="maps-toggle title-toggle" aria-labelledby="maps-label"  aria-expanded="false" role="group">&nbsp;1. Campus Map</button>
-        <nav class="maps" aria-labelledby="maps-label" id="maps">
-          
-          <ul>
-            <li><a for="archive" href="javascript:void(0)" class="scene" data-id="0-campus-map">Campus Map</a></li>
-          </ul>
         
-        </nav> -->
       </li>
 
       <li>
@@ -553,34 +543,12 @@
 
 
 
-  <div id="sceneView">
-    <a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1" tabindex="0" role="button">
-      <img class="icon" src="./img/up.png" alt="Click icon to look up">
-    </a>
-    <a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-      <img class="icon" src="./img/down.png" alt="Click icon to look down">
-    </a>
-    <a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-      <img class="icon" src="./img/left.png" alt="Click icon to look left">
-    </a>
-    <a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-      <img class="icon" src="./img/right.png" alt="Click icon to look right">
-    </a>
-    <a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-      <img class="icon" src="./img/plus.png" alt="Click icon to zomm in">
-    </a>
-    <a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-      <img class="icon" src="./img/minus.png" alt="Click icon to zoom out">
-    </a>
-
-
-  </div>
 
 
 
 
 
-</nav>
+</nav> -->
 
 <script src="vendor/es5-shim.js"></script>
 <script src="vendor/eventShim.js"></script>

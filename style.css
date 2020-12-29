@@ -54,6 +54,19 @@ iframe {
   width: max-content;
   height: max-content; 
   overflow: auto;
+
+  position:fixed; 
+  top:0; 
+  left:0; 
+  bottom:0; 
+  right:0; 
+  width:100%; 
+  height:100%; 
+  border:none; 
+  margin:0; 
+  padding:0; 
+  overflow:hidden; 
+  z-index:999999;
 }
 
 .cancelbtn {
@@ -74,9 +87,6 @@ img.avatar {
   border-radius: 50%;
 }
 
-.container {
-  padding: 16px;
-}
 
 span.psw {
   float: right;
@@ -416,7 +426,7 @@ body.fullscreen-enabled #fullscreenToggle {
   margin: 5px;
 }
 
-If there is a fullscreen button, autorotate must placed a bit to the left
+/* If there is a fullscreen button, autorotate must placed a bit to the left */
 body.fullscreen-enabled #autorotateToggle {
   right: 5px;
 }
