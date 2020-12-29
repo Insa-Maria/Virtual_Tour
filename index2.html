@@ -21,47 +21,63 @@
 
 
   <!-- ADD MOZILLA HUB FULLSCREEN --> 
+  <div id="setup" class="animate">
 
-  
-  <div id="container">
-    
-    <form class="initial-content animate" style="z-index:999999">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-  
-      <div>
-        <label for="link">
-        <b>Paste Multiplayer Link Here</b></label>
-        <!-- <center><input type="text" onsubmit="changeIframe()" id="detroit" placeholder="https://classic.minecraft.net/?join=somelettersand#s" name="link" required></center> -->
-        <input type="text" id="minecraftInput" onchange="changeIframe(this.value)" id="detroit" placeholder="https://classic.minecraft.net/?join=somelettersand#s" name="link" required>
-        <button class="button" type="button">Go</button>
-      </div>
-      
-      <div class="container">
-          <center><button class="button .close" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button></center>
-      </div>
-  </form>
-  
-  <iframe id="change" name="change" src="//classic.minecraft.net" ></iframe>
-    
+    <div class="rectangle1"></div>
 
+    <div class="rectangle2">
 
-    <div> 
-      <button class="button" id="button"><b>Fullscreen</b> </button>
-      <button class="button" id="modal" onclick="document.getElementById('id01').style.display='block'"><b>Multiplayer</b></button>
-    </div> 
+      <a id="gcuBar">
+        <img class="icon" src="./img/GCULogoP293_shadow_white.png" alt="GCU Logotype">
+      </a> 
 
-    <script type="text/javascript" src="/fullscreen.js"></script>
-      
-    <script type="text/javascript">
-        function changeIframe(url) {
-            document.getElementById('change').src = url;
-        // CORRECTED: document.write(" <iframe  id='change' name='change' src='#" + input + "' width='800'  height='500'   allowfullscreen></iframe>");
+      <script type="text/javascript">
+        
+      function changeIframe2(){
+          var url = document.getElementById('minecraftInput').value
+          console.log(url)
+
+          document.getElementById('change').src = url;
+          document.getElementById('setup').style.display='none'
         }
-    </script>
 
-    <script type="text/javascript">  
-        var input = document.getElementById("detroit");
-    </script>
+
+      </script>      
+
+      <form > <!-- style="z-index:999999" -->
+        
+        <center><h1 class="title">GCU 360 Virtual Tour | 3D Campus Map</h1></center>
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required/>
+        </div>
+        
+        <div>
+          <label for="link">Paste Mozilla Hub Link Here:</label>
+          <input type="text" id="minecraftInput" placeholder="https://hubs.mozilla.com/example" name="link" required>
+        </div>
+
+        <div>
+          <center><button class="button" type="button" onclick="changeIframe2()">Go</button></center>
+        </div>      
+        
+      </form>
+
+
+      <div class="bottom">
+        <center><h1 class="gcuName">Glasgow Caledonian University | Glasgow, UK  </center>
+          <!-- <a href="https://www.gcu.ac.uk/"  class="gcuName" alt="GCU website link">gcu.ac.uk</a> -->
+        </h1>
+        
+      </div>
+      
+      
+    </div>
+    
+   
 
     <!-- <div id="id01" class="sprckn-initial" display='block'>
   
@@ -70,6 +86,20 @@
     </div> -->
   
   </div>
+  
+  <!-- //classic.minecraft.net -->
+  <iframe id="change" name="change" src="index.html" ></iframe> 
+        
+  <script type="text/javascript">
+      function changeIframe(url) {
+          document.getElementById('change').src = url;
+      // CORRECTED: document.write(" <iframe  id='change' name='change' src='#" + input + "' width='800'  height='500'   allowfullscreen></iframe>");
+      }
+  </script>
+
+  <!-- <script type="text/javascript">  
+      var input = document.getElementById("detroit");
+  </script> -->
   
 
 <!-- 

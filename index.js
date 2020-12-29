@@ -31,10 +31,11 @@
   var sceneControlElement = document.querySelector('#sceneControl');
 
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
-  // var sceneViewToggleElement = document.querySelector('#sceneViewToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
-
+  // var threeDmapButtonElement = document.querySelector('#ThreeDmapButton');
+  //not working
+  // var changeIframeButtonElement = document.querySelector('#changeIframeButton');
 
   //Add the xAPI TheVerb and TheObject objects! ***NEW***
   // const TinCan = require("tincanjs");
@@ -186,6 +187,22 @@
   } else {
     document.body.classList.add('fullscreen-disabled');
   }
+
+  // Set handler for ThreeD map Button
+  // threeDmapButtonElement.addEventListener('click', function () {
+  //   window.location = 'index2.html';
+  // })
+
+
+
+  // Set handler for loading Mozilla Hub
+  // var url = document.getElementById('minecraftInput').value;
+  // console.log(url);
+  // changeIframeButtonElement.addEventListener('click', changeIframe2(url));
+
+ 
+
+
 
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
@@ -937,7 +954,11 @@
     return wrapper;
   }
 
-
+  // Change Iframe on index2.html to link added by user 
+  // function changeIframe2(url){
+    
+  //   document.getElementById('change').src = url;
+  // } 
 
 
 
