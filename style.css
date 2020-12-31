@@ -277,27 +277,15 @@ body.multiple-scenes.mobile #titleBar {
 }
 
 #ThreeDmapButton {
-  /* display: none;
   position: absolute;
-  bottom: 55px;
+  top: 740px;
   right: 10px;
-  width: 40px;
+  width: 90px;
   height: 40px;
-  padding: 5px;
-  background-color: rgb(103,115,131);
-  background-color: rgba(103,115,131,0.8);
+  background-color: rgb(0, 87, 165);
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
-  border-radius: 5px; */
-  position: absolute;
-  top: 152.5px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  background-color: rgb(73, 80, 87);
-  -moz-border-radius: 5px; 
-  -webkit-border-radius: 5px; 
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .mobile #ThreeDmapButton {
@@ -319,8 +307,11 @@ body.fullscreen-enabled #ThreeDmapButton {
   right: 5px;
   width: 30px;
   height: 30px;
-
+  margin-right: 25px;
+  margin-bottom: 2px;
+  vertical-align: middle;
 }
+  
 
 .mobile #ThreeDmapButton .icon {
   position: absolute;

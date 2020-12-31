@@ -40,7 +40,7 @@ html, body {
     top: 0%;
     bottom: 0%;
 
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.85);
 }
 
 .rectangle2{
@@ -187,7 +187,7 @@ iframe {
 
 
 
-
+/* Imported from EMBEDED IFRAME project */
 
 
 .cancelbtn {
@@ -273,3 +273,33 @@ iframe {
   }
   
  
+
+  /* imported from STYLE.CSS */
+
+  #ThreeDmapButton {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(0, 87, 165);
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+    border-radius: 20px;
+  }
+  
+  body.fullscreen-enabled #ThreeDmapButton {
+    display: block;
+  }
+  
+  #ThreeDmapButton .icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+  }
+  
