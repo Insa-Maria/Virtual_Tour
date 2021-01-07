@@ -33,18 +33,9 @@
   var sceneListToggleElement = document.querySelector('#sceneListToggle');
   var autorotateToggleElement = document.querySelector('#autorotateToggle');
   var fullscreenToggleElement = document.querySelector('#fullscreenToggle');
-  // var threeDmapButtonElement = document.querySelector('#ThreeDmapButton');
-  //not working
-  // var changeIframeButtonElement = document.querySelector('#changeIframeButton');
-
-  //Add the xAPI TheVerb and TheObject objects! ***NEW***
-  // const TinCan = require("tincanjs");
 
   var TheVerb = {id:"http://adlnet.gov/expapi/verbs/experienced", display:{ "en-US": "experienced" }};
   var TheObject = {id:"http://myurl.com/activities/marzipano", "definition":{ "description":{ "en-US": "" }}};
-  //  var TheObject_link = {id:"http://myurl.com/activities/marzipano_linkhotspot", "definition": {"name": { "en-US": "" }},"description":""};
-
-
 
   // Detect desktop or mobile mode.
   if (window.matchMedia) {
@@ -115,14 +106,7 @@
       var element = createLinkHotspotElement(hotspot);
       scene.hotspotContainer().createHotspot(element, { yaw: hotspot.yaw, pitch: hotspot.pitch });
 
-      // // added from   https://digitallearningsolutions.com.au/connecting-marzipano-to-xapi-part-one/
-      // element.addEventListener('click', function() {
-      //   TheObject_link.definition.name = 'Link - Click. '+ hotspot.title;
-      //   TheObject_link.description =  hotspot.text;
-        
-      //  sendxAPI_link(hotspot,TheVerb,TheObject_link);
-      // });
-      
+    
     });
 
     // Create info hotspots.
@@ -141,7 +125,6 @@
     
     });
 
-    //scene.hotspotContainer().createHotspot( document.getElementById('myframe'), { yaw: -0.5150948165335372, pitch: 0.08472012770918269 }, { perspective: { radius: 1640, extraRotations: "rotateX(5deg)" }} );
     // Create video hotspots.
     data.videoHotspots.forEach(function(hotspot) {
       var element = createVideoHotspotElement(hotspot);
@@ -188,27 +171,10 @@
     document.body.classList.add('fullscreen-disabled');
   }
 
-  // Set handler for ThreeD map Button
-  // threeDmapButtonElement.addEventListener('click', function () {
-  //   window.location = 'index2.html';
-  // })
-
-
-
-  // Set handler for loading Mozilla Hub
-  // var url = document.getElementById('minecraftInput').value;
-  // console.log(url);
-  // changeIframeButtonElement.addEventListener('click', changeIframe2(url));
-
- 
-
-
 
   // Set handler for scene list toggle.
   sceneListToggleElement.addEventListener('click', toggleSceneList);
 
-  // Set handler for scene view toggle.
-  // sceneViewToggleElement.addEventListener('click', toggleSceneView);
 
   // Start with the scene list open on desktop.
   if (!document.body.classList.contains('mobile')) {
@@ -438,8 +404,7 @@
     stopAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
-    // addElementIframspot();
-        
+     
   }
 
   function removeElementIframspot(){
@@ -448,8 +413,6 @@
     while (delete_elements.length>0){
       delete_elements[0].parentNode.removeChild(delete_elements[0]);
     }
-    // console.log(delete_elements);
-    // return delete_elements;
   }
 
   function addElementIframspot(hotspot){
@@ -463,8 +426,6 @@
       
       video.classList.add('iframespot');
       video.innerHTML = '<iframe width="340" height="170" src=""></iframe>"';
-      // videowrapper.appendChild(video);
-      // wrapper.classList.toggle('visible');
     }; 
   }
 
@@ -905,11 +866,7 @@
       if (!modal.classList.toggle('visible')) {
         return;
       }
-      // Create a modal for the hotspot content to appear on mobile mode.
-      // video.classList.add('iframespot');
-      // video.innerHTML = '<iframe width="340" height="170" src="' + hotspot.text + '"></iframe>"';
-      // videowrapper.appendChild(video);
-
+     
       wrapper.appendChild(header);
       wrapper.appendChild(videowrapper);
 
@@ -934,7 +891,6 @@
 
     })
 
-
     
 
     // Show content when hotspot is clicked.
@@ -942,7 +898,6 @@
 
     // Hide content when close icon is clicked.
     modal.querySelector('.video-hotspot-close-wrapper').addEventListener('click', toggle);
-
 
 
     // Prevent touch and scroll events from reaching the parent element.
@@ -999,7 +954,7 @@
         "objectType": "Agent" 
       },
       "verb": {  
-        "id": TheVerb.id, //different from xAPI-test
+        "id": TheVerb.id, 
         "display": { "en-US": TheVerb.display["en-US"] }
       },
       "object": {  
@@ -1019,12 +974,7 @@
       lrs = new TinCan.LRS(
         {
           "endpoint" : "https://trial-lrs.yetanalytics.io/xapi/",  
-          "auth" : "Basic " + toBase64 ("eace9d1160f335dec0c78cf31463aed1:9a46fb8a07dbdaa72116eff29b0e9d35")  
-               
-          // "endpoint" : "https://trial-lrs.yetanalytics.io/xapi/",
-          // "user" : "eace9d1160f335dec0c78cf31463aed1",
-          // "password" : "9a46fb8a07dbdaa72116eff29b0e9d35",
-          // "allowFail": false
+          "auth" : "Basic " + toBase64 ("username:password")  
         }
       );
     }

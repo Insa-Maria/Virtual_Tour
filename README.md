@@ -24,7 +24,7 @@ Overview of the steps to follow to set up Marzipano, Hubs and LRS with the softw
    1. Create 3D environment and Link
    2. Get Link to Allow Users Log In
 
-[Click here](https://github.com/Insa-Maria/Virtual_Tour/blob/master/Github_tutorial.docx) for a more detailed documentation of the above decsribed steps.
+[Click here](https://github.com/Insa-Maria/Virtual_Tour/blob/master/Documentation.pdf) for a more detailed documentation of the above decsribed steps.
 
 ## Citations
 
