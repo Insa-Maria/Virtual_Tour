@@ -11,7 +11,7 @@
 
 <script type="text/javascript" src="xAPI-test/cryptojs_v3.1.2.js"></script>  
 <script type="text/javascript" src="xAPI-test/xapiwrapper.min.js"></script>  
-<script type="text/javascript" src="xAPI-test/tincanjs/build/tincan-min.js"></script>
+<script type="text/javascript" src="xAPI-test/tincan-min.js"></script>
 
 
 
@@ -35,7 +35,7 @@
   </div>
   
   <a id="gcuBar">
-    <img class="icon" src="./img/GCULogoP293_shadow_white.png" alt="GCU Logotype">
+    <img class="icon" src="./img/organisation_logo.png" alt="GCU Logotype">
     <h1 class="sceneName"></h1>
   </a> 
 
@@ -59,12 +59,13 @@
         <img class="icon on" src="./img/windowed.png" alt="Icon to turn Fullscreen mode off">
       </a>
 
-      <a href="index2.html" id="ThreeDmapButton" onclick="location.href='index2.html';">
+      <!-- <a href="index_home.html" id="ThreeDmapButton" onclick="location.href='_home.html';">
         <img class="icon 3d" src="./img/3dmodel.png" alt="Icon  to move to 3D map mode off">
-      </a>
+      </a> -->
 
     </div>
     
+    <!-- LIST TITLE -->
     <ul class="heading">GCU Glasgow Campus</ul>
 
     <ul class="scenes">
@@ -85,6 +86,7 @@
       </li>
 
       <li>
+        
         <button id="outdoors-toggle" class="outdoors-toggle  title-toggle" aria-labelledby="outdoors-label"  aria-expanded="true" role="group">&nbsp;1. Campus Open Areas</button>
         <nav class="outdoors active" aria-labelledby="outdoors-label" id="outdoors">
           <ul>
@@ -93,7 +95,7 @@
               <hr style="margin-block-start: 0em; margin-block-end: 0em; height: 0.1px; ">
               <label for="outdoors-sub1" class="title-sub"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;&nbsp;Entrances</label>
               
-              <li><a href="javascript:void(0)" class="scene" data-id="1-cowcaddens-rd-main-entrance">Main Entrance</i></a></li>
+              <li><a href="javascript:void(0)" class="scene" data-id="1-cowcaddens-rd-main-entrance">Main Entrance</a></li>
               <li><a href="javascript:void(0)" class="scene" data-id="2-cowcaddens-rd-entrance">Cowcaddens Rd, ARC Entrance</a></li>
               <li><a href="javascript:void(0)" class="scene" data-id="3-hannover-st-entrance">North Hanover St Entrance</a></li>
               
@@ -524,7 +526,12 @@
       <img class="icon" src="./img/minus.png" alt="Click icon to zoom out">
     </a>
 
+  </div>
 
+  <div>
+    <a href="index_home.html" id="ThreeDmapButton" onclick="location.href='index_home.html';">
+      <img class="icon 3d" src="./img/3dmodel.png" alt="Icon  to move to 3D map mode off">
+    </a>
   </div>
 
 
@@ -543,7 +550,7 @@
 <script src="vendor/DeviceOrientationControlMethod.js"></script>
 
 
-<script src="data_all.js"></script>
+<script src="data.js"></script>
 <script src="index.js"></script>
 
 

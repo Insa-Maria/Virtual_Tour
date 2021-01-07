@@ -278,7 +278,8 @@ body.multiple-scenes.mobile #titleBar {
 
 #ThreeDmapButton {
   position: absolute;
-  top: 740px;
+  /* top: 740px; */
+  bottom: 20px;
   right: 10px;
   width: 90px;
   height: 40px;
@@ -286,6 +287,8 @@ body.multiple-scenes.mobile #titleBar {
   -moz-border-radius: 5px; 
   -webkit-border-radius: 5px; 
   border-radius: 20px;
+  -webkit-transition: margin-bottom 0.5s ease-in-out;
+  transition: margin-bottom 0.5s ease-in-out;
 }
 
 .mobile #ThreeDmapButton {
@@ -1714,6 +1717,8 @@ body.view-control-buttons .viewControlButton {
 .viewControlButton-6 {
   margin-left: 105px;
 }
+
+
 
 
 

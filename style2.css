@@ -275,9 +275,9 @@ iframe {
  
 
   /* imported from STYLE.CSS */
-
   #ThreeDmapButton {
     position: absolute;
+    /* top: 740px; */
     bottom: 20px;
     right: 10px;
     width: 90px;
@@ -286,6 +286,17 @@ iframe {
     -moz-border-radius: 5px; 
     -webkit-border-radius: 5px; 
     border-radius: 20px;
+    -webkit-transition: margin-bottom 0.5s ease-in-out;
+    transition: margin-bottom 0.5s ease-in-out;
+  }
+  
+  .mobile #ThreeDmapButton {
+    position: absolute;
+    top: 105px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
   }
   
   body.fullscreen-enabled #ThreeDmapButton {
@@ -302,4 +313,25 @@ iframe {
     margin-bottom: 2px;
     vertical-align: middle;
   }
+    
   
+  .mobile #ThreeDmapButton .icon {
+    position: absolute;
+    width: auto;
+  }
+  
+  #ThreeDmapButton .icon.on {
+    display: none;
+  }
+  
+  #ThreeDmapButton .icon.off {
+    display: block;
+  }
+  
+  #ThreeDmapButton.enabled .icon.on {
+    display: block;
+  }
+  
+  #ThreeDmapButton.enabled .icon.off {
+    display: none;
+  }

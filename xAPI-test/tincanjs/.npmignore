@@ -1,9 +1,0 @@
-*.tgz
-src
-test
-doc
-vendor
-build/tincan-min.map
-.travis.yml
-yuidoc.json
-bower.json

@@ -658,7 +658,6 @@
     Caley.classList.toggle("active");
   }
 
-
   
 
   function createMapLinkHotspotElement(hotspot) {
@@ -954,16 +953,6 @@
     return wrapper;
   }
 
-  // Change Iframe on index2.html to link added by user 
-  // function changeIframe2(url){
-    
-  //   document.getElementById('change').src = url;
-  // } 
-
-
-
-
-
   // Prevent touch and scroll events from reaching the parent element.
   function stopTouchAndScrollEventPropagation(element, eventList) {
     var eventList = [ 'touchstart', 'touchmove', 'touchend', 'touchcancel',
@@ -974,7 +963,6 @@
       });
     }
   }
-
 
 
   function findSceneById(id) {
@@ -1064,35 +1052,7 @@
     }    
     });
 
-
-    
-
-    // // Synchronous (not recommende) http://rusticisoftware.github.io/TinCanJS/
-
-    // var result = lrs.saveStatement(statement);
-    // console.log(statement)
-    //   if (result.err !== null) {
-    //       if (/^\d+$/.test(result.err)) {
-    //           if (result.err === 0) {
-    //               console.log("Failed to save statement: aborted, offline, or invalid CORS endpoint");
-    //               // TODO: do something with error, didn't save statement
-    //           }
-    //           else {
-    //               console.log("Failed to save statement: " + result.xhr.responseText);
-    //               // TODO: do something with error, didn't save statement
-    //           }
-    //       }
-    //       else {
-    //           console.log("Failed to save statement: " + result.err);
-    //           // TODO: do something with error, didn't save statement
-    //       }
-    //   }
-    //   else {
-    //       console.log("Statement saved");
-    //       // TOOO: do something with success (possibly ignore)
-    //   }
-    // // Synchronous (not recommende) -- FINISHED
-      
+     
   }
 
    

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+<title>3D Virtual Tour | Glasgow Caledonian University | Scotland, UK</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0 maximum-scale=3.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style2.css">
+
+<script type="text/javascript" src="xAPI-test/cryptojs_v3.1.2.js"></script>  
+<script type="text/javascript" src="xAPI-test/xapiwrapper.min.js"></script>  
+<script type="text/javascript" src="xAPI-test/tincan-min.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- ADD MOZILLA HUB FULLSCREEN --> 
+  <div id="setup" class="animate">
+
+    <div class="rectangle1"></div>
+
+    <div class="rectangle2">
+
+      <a id="gcuBar">
+        <img class="icon" src="./img/organisation_logo.png" alt="GCU Logotype">
+      </a> 
+
+      <script type="text/javascript">
+        
+      function changeIframe2(){
+          var url = document.getElementById('minecraftInput').value
+          console.log(url)
+
+          document.getElementById('change').src = url;
+          document.getElementById('setup').style.display='none'
+        }
+
+      </script>      
+
+      <form > <!-- style="z-index:999999" -->
+        
+        <center><h1 class="title">GCU 360 Virtual Tour | 3D Campus Map</h1></center>
+
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+        <div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required/>
+        </div>
+        
+        <div>
+          <label for="link">Paste Mozilla Hub Link Here:</label>
+          <input type="text" id="minecraftInput" placeholder="https://hubs.mozilla.com/example" name="link" required>
+        </div>
+
+        <div>
+          <center><button class="button" type="button" onclick="changeIframe2()">Go</button></center>
+        </div>      
+        
+      </form>
+
+      <div class="bottom">
+        <center><h1 class="gcuName">Glasgow Caledonian University | Glasgow, UK  </center>
+          <!-- <a href="https://www.gcu.ac.uk/"  class="gcuName" alt="GCU website link">gcu.ac.uk</a> -->
+        </h1>
+        
+      </div>
+      
+    </div>
+    <!-- <div id="id01" class="sprckn-initial" display='block'></div> -->
+  
+  </div>
+  
+ 
+  <div>
+    <a href="index.html" id="ThreeDmapButton" onclick="location.href='index.html';">
+      <img class="icon 2d" src="./img/2dmodel.png" alt="Icon  to move to 2D map mode off">
+    </a>
+  </div>
+
+  
+
+  <iframe id="change" name="change" src="https://hubs.mozilla.com/spoke" ></iframe> 
+        
+  <script type="text/javascript">
+      function changeIframe(url) {
+          document.getElementById('change').src = url;
+      // CORRECTED: document.write(" <iframe  id='change' name='change' src='#" + input + "' width='800'  height='500'   allowfullscreen></iframe>");
+      }
+  </script>
+
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+<script src="vendor/DeviceOrientationControlMethod.js"></script>
+
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+
+</body>
+</html>
