@@ -8,6 +8,11 @@ Users with minimal coding experience are able to develop a low-cost web-based VT
 
 Overview of the steps to follow to set up Marzipano, Hubs and LRS with the software framework presented in this repository
 
+ Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
+
 1.	Download [Virtual Tour Framework](https://github.com/Insa-Maria/Virtual_Tour) (software framework)
 2.	Create Virtual Tour with 360 images and [Marzipano Tool](https://www.marzipano.net/tool/) and 360 images
 3.	Customise Virtual Tour to your Organisation
