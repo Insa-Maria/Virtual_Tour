@@ -152,7 +152,7 @@ form div .button:hover {
     left: 20px;
     /* right: 40px; */
     height: auto;
-    width: auto; */
+    width: auto; 
     text-align: left;  
     text-align: left;
 }
@@ -161,7 +161,7 @@ form div .button:hover {
     padding: 5px; 
     margin: 5px;
     bottom: 0px;
-    color: ;
+    color: #000000;
 }
 
 
