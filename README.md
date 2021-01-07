@@ -8,25 +8,21 @@ Users with minimal coding experience are able to develop a low-cost web-based VT
 
 Overview of the steps to follow to set up Marzipano, Hubs and LRS with the software framework presented in this repository
 
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
+ 
 1.	Download [Virtual Tour Framework](https://github.com/Insa-Maria/Virtual_Tour) (software framework)
 2.	Create Virtual Tour with 360 images and [Marzipano Tool](https://www.marzipano.net/tool/) and 360 images
-3.	Customise Virtual Tour to your Organisation
-   i. Implement Web Design
-   ii. Integrate 360 images
+3.	Customise Virtual Tour to your Organisation: 
+   i. Implement Web Design,
+   ii. Integrate 360 images,
    iii. Integrate MaplinHotspots and VideoHotspots
    iv. Integrate Accessible Sub-Grouped Menu
-4. Learning Record Stores (LRS) Set Up
-   i. Create Learning Record Store account
-   ii. Connect your website to the LRS and send statement
+4. Learning Record Stores (LRS) Set Up: 
+   i. Create Learning Record Store account,
+   ii. Connect your website to the LRS and send statement,
    iii. Run a Test
 5. Host your Virtual Tour using Amazon S3 (AWS S3)
-6. Create 3D Environment with [Mozilla Hub](https://hubs.mozilla.com/spoke)
-   i. Create 3D environment and Link
+6. Create 3D Environment with [Mozilla Hub](https://hubs.mozilla.com/spoke): 
+   i. Create 3D environment and Link,
    ii. Get Link to Allow Users Log In
 
 [Click here](https://github.com/Insa-Maria/Virtual_Tour/blob/master/Documentation.pdf) for a more detailed documentation of the above decsribed steps.
