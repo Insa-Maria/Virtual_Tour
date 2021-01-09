@@ -4,9 +4,13 @@
 
 Users with minimal coding experience are able to develop a low-cost web-based VT using a 360 camera, the Open Source tools [Marzipano](https://www.marzipano.net/) and [Hubs](https://hubs.mozilla.com/spoke), the software framework and documentation presented in this GitHub repository.
 
+Collaborative 3D Environment
 ![alt text](https://github.com/Insa-Maria/Virtual_Tour/blob/master/documentation/3Dcollaborative.png)
 
+360-degree Virtual Tour - [Visit here!](https://campus.gcu.ac.uk/)
 ![alt text](https://github.com/Insa-Maria/Virtual_Tour/blob/master/documentation/360VirtualTour.png)
+
+
 
 ## Getting Started
 
