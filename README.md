@@ -2,7 +2,11 @@
 
 **3D LoWe VT** (**3D** **Lo**w-cost **We**b-based **V**irtual **T**our) is a software framework for developing a Virtual Tour (VT) experience rapidly that can compete in functionality with more sophisticated VT.
 
-Users with minimal coding experience are able to develop a low-cost web-based VT using a 360 camera, the Open Source tools [Marzipano](https://www.marzipano.net/) and [Hubs](https://hubs.mozilla.com/spoke), the software framework and documentation presented in this GitHub repository
+Users with minimal coding experience are able to develop a low-cost web-based VT using a 360 camera, the Open Source tools [Marzipano](https://www.marzipano.net/) and [Hubs](https://hubs.mozilla.com/spoke), the software framework and documentation presented in this GitHub repository.
+
+![alt text](https://github.com/Insa-Maria/Virtual_Tour/blob/master/documentation/3Dcollaborative.png)
+
+![alt text](https://github.com/Insa-Maria/Virtual_Tour/blob/master/documentation/360VirtualTour.png)
 
 ## Getting Started
 
@@ -25,7 +29,7 @@ Overview of the steps to follow to set up Marzipano, Hubs and LRS with the softw
       1. Create 3D environment and Link,
       2. Get Link to Allow Users Log In
 
-[Click here](https://github.com/Insa-Maria/Virtual_Tour/blob/master/Documentation.pdf) for a more detailed documentation of the above described steps.
+[Click here](https://github.com/Insa-Maria/Virtual_Tour/blob/master/documentation/Documentation.pdf) for a more detailed documentation of the above described steps.
 
 ## Citations
 
